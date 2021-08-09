@@ -1,6 +1,6 @@
 # mipagina
 
-A new Flutter project.
+Mi portfolio.
 
 ## Getting Started
 

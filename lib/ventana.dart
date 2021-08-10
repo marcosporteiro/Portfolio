@@ -1,6 +1,5 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:mipagina/main.dart';
 import 'package:mipagina/responsive.dart';
 import 'menu.dart';

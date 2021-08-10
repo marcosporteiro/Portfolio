@@ -19,21 +19,17 @@ class ventana extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: Responsive.isDesktop(context)
-          ? BoxConstraints(minWidth: 1000, minHeight: 1000)
-          : BoxConstraints(minWidth: 520, minHeight: 1000),
-      height: MediaQuery.of(context).size.height,
-      width: Responsive.isDesktop(context)
-          ? MediaQuery.of(context).size.width -
-              MediaQuery.of(context).size.width / 5
-          : MediaQuery.of(context).size.width,
-      color: colorFondo,
-      child: ListView.builder(
-        itemCount: 5,
-        itemExtent: MediaQuery.of(context).size.height,
-        controller: controlador,
-        itemBuilder: (c, i) => header(
-            elwid: itemAmostrar(ventana: i), decoracion: ladecoracion(i)),
+      child: Expanded(
+        child: Container(
+          color: colorFondo,
+          child: ListView.builder(
+            itemCount: 5,
+            itemExtent: MediaQuery.of(context).size.height,
+            controller: controlador,
+            itemBuilder: (c, i) => header(
+                elwid: itemAmostrar(ventana: i), decoracion: ladecoracion(i)),
+          ),
+        ),
       ),
     );
   }
@@ -53,13 +49,12 @@ class header extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
-      constraints: BoxConstraints(minWidth: 900, minHeight: 1000),
-      padding: EdgeInsets.symmetric(horizontal: 70, vertical: 70),
+      constraints: BoxConstraints(minWidth: 1000, minHeight: 1000),
+      padding: EdgeInsets.symmetric(
+          horizontal: Responsive.isDesktop(context) ? 10 : 0,
+          vertical: Responsive.isDesktop(context) ? 10 : 0),
       decoration: decoracion,
-      child: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: 1000),
-        child: this.elwid,
-      ),
+      child: this.elwid,
     );
   }
 }
@@ -117,29 +112,11 @@ class home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      /*child: ClipRRect(
-        borderRadius: BorderRadius.circular(20),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(
-            sigmaX: 5,
-            sigmaY: 5,
-          ),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              color: colorVentana.withOpacity(0.1),
-              border: Border.all(
-                color: colorVentana.withOpacity(0.0),
-              ),
-            ),
-          ),
-        ),
-      ),*/
       padding: EdgeInsets.all(0),
       //color: Colors.white,
       margin: Responsive.isDesktop(context)
           ? EdgeInsets.only(top: 150, bottom: 10, left: 150, right: 150)
-          : EdgeInsets.all(50),
+          : EdgeInsets.only(top: 150, bottom: 0, left: 5, right: 5),
       child: Column(
         children: [
           Container(
@@ -149,7 +126,7 @@ class home extends StatelessWidget {
               text: TextSpan(
                 text: "",
                 style: fuente(textoGrande.withOpacity(0.9),
-                    Responsive.isDesktop(context) ? 40 : 32, FontWeight.w100),
+                    Responsive.isDesktop(context) ? 40 : 25, FontWeight.w100),
                 /*TextStyle(
                   color: textoGrande.withOpacity(0.9),
                   fontSize: 35,
@@ -169,10 +146,12 @@ class home extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 50),
+            margin:
+                EdgeInsets.only(top: Responsive.isDesktop(context) ? 50 : 45),
             child: Text(
               "¿Me quieres conocer?",
-              style: fuente(textoGrande.withOpacity(0.7), 25, FontWeight.w100),
+              style: fuente(textoGrande.withOpacity(0.7),
+                  Responsive.isDesktop(context) ? 25 : 20, FontWeight.w200),
             ),
           ),
           Container(

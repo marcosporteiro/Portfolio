@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:mipagina/utils.dart';
@@ -19,7 +21,7 @@ class menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: new BoxConstraints(minHeight: 150, minWidth: 278),
+      constraints: new BoxConstraints(minHeight: 150, minWidth: 215),
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width / 5,
       color: colorMenu,
@@ -226,7 +228,7 @@ class topMenu extends StatelessWidget {
           child: Container(
             margin: EdgeInsets.only(
               top: 25,
-              bottom: 15,
+              bottom: 25,
               left: 40,
             ),
             child: Container(
@@ -239,7 +241,7 @@ class topMenu extends StatelessWidget {
         ),
         Expanded(
           child: Container(
-            height: 150,
+            height: 160,
             //color: Colors.red,
             margin: EdgeInsets.all(0),
             child: Container(

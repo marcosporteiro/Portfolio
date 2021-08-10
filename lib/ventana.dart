@@ -132,11 +132,6 @@ class home extends StatelessWidget {
                 text: "",
                 style: fuente(textoGrande.withOpacity(0.9),
                     Responsive.isDesktop(context) ? 40 : 25, FontWeight.w100),
-                /*TextStyle(
-                  color: textoGrande.withOpacity(0.9),
-                  fontSize: 35,
-                  fontWeight: FontWeight.w100,
-                ),*/
                 children: <TextSpan>[
                   TextSpan(text: "Hola! mi nombre es "),
                   TextSpan(

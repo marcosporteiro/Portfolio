@@ -12,6 +12,12 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      
+    - name: Set up Java
+      uses: actions/setup-java@v2
+      with:
+        java-version: '15'
+        distribution: 'adopt'
 
     - name: Setup Flutter
       uses: subosito/flutter-action@v1
@@ -21,11 +27,15 @@ jobs:
     - name: Enable Flutter Web
       run: flutter config --enable-web
 
+    - name: Install pub Dependencies
+      run: flutter pub get
+
     - name: Install dependencies
       run: flutter packages get
 
     - name: Build web
       run: flutter build web --release
+      
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3 

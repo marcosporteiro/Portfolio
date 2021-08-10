@@ -53458,7 +53458,7 @@ default:return M.aU(s,T.kr(L.fj("ERROR",A.lH(s,s,C.j,s,s,s,s,s,s,s,s,s,s,s,s,s,!
 G.KP.prototype={
 R:function(a,b){var s,r,q,p,o=null,n=t.w,m=b.K(n).f.a.a>=1100?new V.aF(150,150,150,10):new V.aF(50,50,50,50),l=P.ab(C.c.aa(229.5),255,255,255)
 l=B.eX(l,b.K(n).f.a.a>=1100?40:32,C.b8)
-l=M.aU(o,T.a6H(o,o,C.cO,!0,o,Q.oo(H.a([Q.oo(o,o,"Hola! mi nombre es "),Q.oo(o,A.lH(o,o,C.j,o,o,o,o,o,o,o,o,o,o,C.bM,o,o,!0,o,o,o,o,o,o,o),"Marcos Porteiro"),Q.oo(o,o,", y voy a contarte un poco sobre Quien soy, y mostrarte un poco de lo que hago. ")],t.sU),l,""),C.bh,o,o,1,C.bi),C.k,o,o,o,o,o,new V.aF(0,50,0,0),o,o,o,o)
+l=M.aU(o,T.a6H(o,o,C.cO,!0,o,Q.oo(H.a([Q.oo(o,o,"Hola! mi nombre es "),Q.oo(o,A.lH(o,o,C.j,o,o,o,o,o,o,o,o,o,o,C.bM,o,o,!0,o,o,o,o,o,o,o),"Marcos Porteiro"),Q.oo(o,o,", y voy a contarte Qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.sU),l,""),C.bh,o,o,1,C.bi),C.k,o,o,o,o,o,new V.aF(0,50,0,0),o,o,o,o)
 s=M.aU(o,L.fj("\xbfMe quieres conocer?",B.eX(P.ab(C.c.aa(178.5),255,255,255),25,C.b8),o),C.k,o,o,o,o,o,new V.aF(0,50,0,0),o,o,o,o)
 r=$.mc()
 q=K.eJ(10)

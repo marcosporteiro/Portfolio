@@ -1,11 +1,11 @@
 {
-    "name": "Marcos Porteiro",
-    "short_name": "Marcos",
+    "name": "Marcos Ignacio Porteiro Fernández",
+    "short_name": "Marcos Porteiro",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#4caf76",
     "theme_color": "#4caf76",
-    "description": "Mi portfolio",
+    "description": "Mi portfolio en flutter.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -15,9 +15,8 @@ const RESOURCES = {
 "assets/assets/images/banner.jpg": "db1c37cb59385d93aefa54f80acafe8a",
 "assets/assets/images/avatar1.png": "86e40fbda65b110a534dd8b3bc3675d4",
 "assets/assets/images/avatar.jpg": "a27fce23bc783bbd090536c0bba40396",
-"assets/AssetManifest.json": "803a51f148d6f6bdac3b609d1241669a",
-"assets/FontManifest.json": "f3f11ef349cd8c41d4df14830814d524",
-"assets/fonts/fa-solid-900.ttf": "98e4fad2412cff8904750b3028f64f2b",
+"assets/AssetManifest.json": "9089b00f3db4bc6201c2cf5737e1779b",
+"assets/FontManifest.json": "e024588c84b5d20cb7869d6f908130e8",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/packages/line_icons/lib/assets/fonts/LineIcons.ttf": "23621397bc1906a79180a918e98f35b2",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
@@ -34,8 +33,8 @@ const RESOURCES = {
 "favicon.ico": "4151ed40fda953c92c87b60c5fdb3537",
 "main.dart.js": "210eb7c569649f131880bc18ad4489ee",
 "faviconold.png": "5dcef449791fa27946b3d35ad8803796",
-"index.html": "009e5c5fcee9fc062939e845ca509806",
-"/": "009e5c5fcee9fc062939e845ca509806"
+"index.html": "997a2b39ac99e33ebe790584e0f5a8c1",
+"/": "997a2b39ac99e33ebe790584e0f5a8c1"
 };
 
 // The application shell files that are downloaded before a service worker can

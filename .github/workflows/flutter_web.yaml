@@ -34,7 +34,7 @@ jobs:
       run: flutter packages get
 
     - name: Build web
-      run: flutter build web -t lib/main.dart --pwa-strategy=none
+      run: flutter build web --release
       
 
     - name: Deploy

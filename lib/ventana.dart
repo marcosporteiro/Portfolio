@@ -67,23 +67,11 @@ class header extends StatelessWidget {
 BoxDecoration ladecoracion(int item) {
   BoxDecoration decoracion;
   String ruta1 = "assets/images/banner.jpg";
-  String ruta2 = "";
-  String ruta3 = "";
 
   switch (item) {
     case 0:
       decoracion = BoxDecoration(
         image: DecorationImage(image: AssetImage(ruta1), fit: BoxFit.cover),
-      );
-      break;
-    case 1:
-      decoracion = BoxDecoration(
-        image: DecorationImage(image: AssetImage(ruta2), fit: BoxFit.cover),
-      );
-      break;
-    case 2:
-      decoracion = BoxDecoration(
-        image: DecorationImage(image: AssetImage(ruta3), fit: BoxFit.cover),
       );
       break;
     default:

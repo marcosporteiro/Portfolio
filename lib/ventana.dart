@@ -176,7 +176,7 @@ class home extends StatelessWidget {
                           fontWeight: FontWeight.w600, color: textoGrande)),
                   TextSpan(
                       text:
-                          ", y voy a contarte un poco sobre Quien soy, y mostrarte un poco de lo que hago. "),
+                          ", y voy a contarte Quién soy, y mostrarte un poco de lo que hago. "),
                 ],
               ),
             ),

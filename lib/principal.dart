@@ -4,7 +4,6 @@ import 'package:mipagina/responsive.dart';
 import 'main.dart';
 import 'menu.dart';
 import 'ventana.dart';
-import 'package:provider/provider.dart';
 
 class cuerpo extends State<MyAppBody> {
   @override

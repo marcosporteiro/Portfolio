@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'menu.dart';
 import 'principal.dart';
 
 Color colorMenu = Color(0xFF222629);
@@ -19,7 +21,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Marcos Porteiro",
-      home: MyAppBody(),
+      //home: MyAppBody(),
+      home: MultiProvider(
+        providers: [
+          ChangeNotifierProvider(
+            create: (context) => MenuController(),
+          ),
+        ],
+        child: MyAppBody(),
+      ),
     );
   }
 }

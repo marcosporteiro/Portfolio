@@ -5,6 +5,7 @@ import 'package:line_icons/line_icons.dart';
 import 'package:mipagina/utils.dart';
 import 'principal.dart';
 import 'ventana.dart';
+import 'package:provider/provider.dart';
 import 'main.dart';
 
 double posi0 = 0;
@@ -282,5 +283,43 @@ class topMenu extends StatelessWidget {
         ),
       ],
     );
+  }
+}
+
+class botonMenu extends StatelessWidget {
+  const botonMenu({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(
+          bottom: MediaQuery.of(context).size.height - 75,
+          right: MediaQuery.of(context).size.width - 75),
+      height: 40,
+      width: 40,
+      decoration: BoxDecoration(
+        color: colorMenu.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(5),
+      ),
+      child: IconButton(
+        icon: Icon(
+          Icons.menu,
+          color: Colors.white.withOpacity(0.8),
+          size: 25,
+        ),
+        onPressed: context.read<MenuController>().controlMenu,
+      ),
+    );
+  }
+}
+
+class MenuController extends ChangeNotifier {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  GlobalKey<ScaffoldState> get scaffoldKey => _scaffoldKey;
+
+  void controlMenu() {
+    if (!_scaffoldKey.currentState!.isDrawerOpen) {
+      _scaffoldKey.currentState!.openDrawer();
+    }
   }
 }

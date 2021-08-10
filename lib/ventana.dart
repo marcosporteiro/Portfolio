@@ -4,6 +4,7 @@ import 'package:mipagina/main.dart';
 import 'package:mipagina/responsive.dart';
 import 'menu.dart';
 import 'principal.dart';
+import 'package:provider/provider.dart';
 
 Color colorFondo = Colors.grey.shade300;
 Color colorVentana = Colors.black12;
@@ -18,11 +19,15 @@ class ventana extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Expanded(
-        child: Container(
-          color: colorFondo,
-          child: ListView.builder(
+    return Expanded(
+      child: Container(
+        color: colorFondo,
+        child: Scaffold(
+          key: context.read<MenuController>().scaffoldKey,
+          drawer: menu(),
+          floatingActionButton:
+              Responsive.isDesktop(context) ? null : botonMenu(),
+          body: ListView.builder(
             itemCount: 5,
             itemExtent: MediaQuery.of(context).size.height,
             controller: controlador,
@@ -270,7 +275,8 @@ class about extends StatelessWidget {
             child: Center(
               child: Text(
                 "Work in progress...",
-                style: fuente(colorTemaMenu, 100, FontWeight.bold),
+                style: fuente(colorTemaMenu,
+                    Responsive.isDesktop(context) ? 70 : 20, FontWeight.bold),
               ),
             ),
           ),
@@ -313,7 +319,8 @@ class portfolio extends StatelessWidget {
             child: Center(
               child: Text(
                 "Work in progress...",
-                style: fuente(colorTemaMenu, 100, FontWeight.bold),
+                style: fuente(colorTemaMenu,
+                    Responsive.isDesktop(context) ? 70 : 20, FontWeight.bold),
               ),
             ),
           ),
@@ -347,7 +354,8 @@ class cv extends StatelessWidget {
             child: Center(
               child: Text(
                 "Work in progress...",
-                style: fuente(colorTemaMenu, 100, FontWeight.bold),
+                style: fuente(colorTemaMenu,
+                    Responsive.isDesktop(context) ? 70 : 20, FontWeight.bold),
               ),
             ),
           ),
@@ -381,7 +389,8 @@ class contact extends StatelessWidget {
             child: Center(
               child: Text(
                 "Work in progress...",
-                style: fuente(colorTemaMenu, 100, FontWeight.bold),
+                style: fuente(colorTemaMenu,
+                    Responsive.isDesktop(context) ? 70 : 20, FontWeight.bold),
               ),
             ),
           ),

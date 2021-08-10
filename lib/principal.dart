@@ -4,6 +4,7 @@ import 'package:mipagina/responsive.dart';
 import 'main.dart';
 import 'menu.dart';
 import 'ventana.dart';
+import 'package:provider/provider.dart';
 
 class cuerpo extends State<MyAppBody> {
   @override
@@ -17,6 +18,7 @@ class cuerpo extends State<MyAppBody> {
       posi2 = MediaQuery.of(context).size.height * 2;
       posi3 = MediaQuery.of(context).size.height * 3;
       posi4 = MediaQuery.of(context).size.height * 4;
+
       if (posi0.round() <= (controlador.position.pixels).round()) {
         posiScroll = 0;
         setState(() {

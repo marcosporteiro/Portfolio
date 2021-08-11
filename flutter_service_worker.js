@@ -3,43 +3,45 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/assets/images/pic03.jpg": "7b239b51055a6dcf5196d115f84ed3e6",
-"assets/assets/images/sobreMi.png": "a0f0cfb142579ff4131bd359e047c187",
+  "assets/assets/images/fondoAbout.jpg": "b64ea5662ffdba0f00a68113b2868980",
+"assets/assets/images/pic03.jpg": "7b239b51055a6dcf5196d115f84ed3e6",
+"assets/assets/images/sobreMi.png": "e899d73005d710cf97c488bd0a3a59be",
 "assets/assets/images/favicon.ico": "4151ed40fda953c92c87b60c5fdb3537",
 "assets/assets/images/pic04.jpg": "f847c18e4e7d7dad49ffb4d9de1fdf61",
 "assets/assets/images/pic02.jpg": "97b7e4cb905caccc446689caa563c338",
 "assets/assets/images/fondo1.jpg": "32de9dfbd937e5514d5a9c835f10d07b",
 "assets/assets/images/fondo2.jpg": "9c318c3a3577040dfa7fb8c695988076",
+"assets/assets/images/imagen1.jpg": "9e5ab9446437797b5340333397d73383",
 "assets/assets/images/avatar.png": "7ceb2ecd1bca2368223899eda38943d2",
 "assets/assets/images/banner.jpg": "db1c37cb59385d93aefa54f80acafe8a",
 "assets/assets/images/avatar1.png": "86e40fbda65b110a534dd8b3bc3675d4",
 "assets/assets/images/avatar.jpg": "a27fce23bc783bbd090536c0bba40396",
-"assets/AssetManifest.json": "4012655634df287f93a697356ff2a1ac",
+"assets/AssetManifest.json": "cb5d13a3aae2ce0ec3a4ab9d85159a7c",
 "assets/FontManifest.json": "e024588c84b5d20cb7869d6f908130e8",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/packages/line_icons/lib/assets/fonts/LineIcons.ttf": "23621397bc1906a79180a918e98f35b2",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/NOTICES": "c32c80aace4b846504f88e7aefc5b353",
-"icons/Icon-192.png": "fb08070b9717719bdef3fab02fa09c23",
+"icons/Icon-192.png": "0ba73cd722a14d89e29f5d13a24294a2",
 "icons/Icon-192old.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/favicon.png": "6a198a4d4b76a32837c3114f71d28b9d",
-"icons/favicon.ico": "77868fcbe0c893c0666a5a84805c6493",
+"icons/favicon.png": "8d159029077b9d6629ada4690b3baec0",
+"icons/favicon.ico": "1665e4bb03d060b66d2a82641167a46e",
 "icons/Icon-512old.png": "96e752610906ba2a93c65f8abe1645f1",
-"icons/Icon-512.png": "d4c006ba76c0a53ffeca688c8b1fcdfc",
-"favicon.png": "6a198a4d4b76a32837c3114f71d28b9d",
+"icons/Icon-512.png": "d2f5d6ffc41f7a4d3d05d00fea7c8b72",
+"favicon.png": "8d159029077b9d6629ada4690b3baec0",
 "manifest.json": "ecf8d4eea71ae54799788ad9586a3654",
 "version.json": "a8f83101c2f51eceebd1cdcc7b8ff5fc",
-"favicon.ico": "77868fcbe0c893c0666a5a84805c6493",
-"main.dart.js": "a49405c223b0836828f33b6e26972fc9",
+"favicon.ico": "1665e4bb03d060b66d2a82641167a46e",
+"main.dart.js": "9b8bae6775e045d606e60f023181f2ce",
 "faviconold.png": "5dcef449791fa27946b3d35ad8803796",
-"index.html": "7fdea1eacf32fb2456760a0b52579d1d",
-"/": "7fdea1eacf32fb2456760a0b52579d1d"
+"index.html": "ee81b047a3cbac56e209060ab8a7e771",
+"/": "ee81b047a3cbac56e209060ab8a7e771"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
- // "/",
+  "/",
 "main.dart.js",
 "index.html",
 "assets/NOTICES",

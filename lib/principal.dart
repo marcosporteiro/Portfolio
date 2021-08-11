@@ -71,10 +71,31 @@ class cuerpo extends State<MyAppBody> {
   }
 }
 
-TextStyle fuente(Color color, double size, FontWeight weight) {
-  return GoogleFonts.raleway(
+TextStyle fuente(int fuente, Color color, double size, FontWeight weight) {
+  TextStyle raleway = GoogleFonts.raleway(
     color: color,
     fontSize: size,
     fontWeight: weight,
   );
+  TextStyle roboto = GoogleFonts.roboto(
+    color: color,
+    fontSize: size,
+    fontWeight: weight,
+  );
+  TextStyle lato = GoogleFonts.lato(
+    color: color,
+    fontSize: size,
+    fontWeight: weight,
+  );
+  switch (fuente) {
+    case 1:
+      return raleway;
+    case 2:
+      return roboto;
+    case 3:
+      return lato;
+
+    default:
+      return raleway;
+  }
 }

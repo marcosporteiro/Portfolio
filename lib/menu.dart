@@ -104,7 +104,7 @@ class menu extends StatelessWidget {
               child: Text(
                 "miporteiro@hotmail.com",
                 style: fuente(
-                    Colors.white.withOpacity(0.2), 12, FontWeight.normal),
+                    1, Colors.white.withOpacity(0.2), 12, FontWeight.normal),
                 textAlign: TextAlign.center,
               ),
             ),
@@ -132,11 +132,11 @@ Color getColor(int posi) {
 }
 
 class botones extends StatelessWidget {
-  final String texto;
+  botones(this.texto, this.icono, this.posi, {Key? key}) : super(key: key);
+
   final IconData icono;
   final double posi;
-
-  botones(this.texto, this.icono, this.posi, {Key? key}) : super(key: key);
+  final String texto;
 
   @override
   Widget build(BuildContext context) {
@@ -181,7 +181,7 @@ class botones extends StatelessWidget {
                         margin: EdgeInsets.only(right: 25),
                         child: Text(
                           this.texto,
-                          style: fuente(Colors.white, 15, FontWeight.w200),
+                          style: fuente(1, Colors.white, 15, FontWeight.w200),
                         ),
                       ),
                       Container(
@@ -252,7 +252,7 @@ class topMenu extends StatelessWidget {
                     width: MediaQuery.of(context).size.width,
                     child: Text(
                       "Marcos Porterio",
-                      style: fuente(textoGrande, 21, FontWeight.w600),
+                      style: fuente(1, textoGrande, 21, FontWeight.w600),
                       textAlign: TextAlign.right,
                     ),
                   ),
@@ -261,7 +261,7 @@ class topMenu extends StatelessWidget {
                     width: MediaQuery.of(context).size.width,
                     child: Text(
                       "Estudiante de Informática",
-                      style: fuente(textoChico, 11, FontWeight.normal),
+                      style: fuente(1, textoChico, 11, FontWeight.normal),
                       textAlign: TextAlign.right,
                     ),
                   ),
@@ -270,7 +270,7 @@ class topMenu extends StatelessWidget {
                     width: MediaQuery.of(context).size.width,
                     child: Text(
                       "Desarrollador",
-                      style: fuente(textoChico, 11, FontWeight.normal),
+                      style: fuente(1, textoChico, 11, FontWeight.normal),
                       textAlign: TextAlign.right,
                     ),
                   )
@@ -313,6 +313,7 @@ class botonMenu extends StatelessWidget {
 
 class MenuController extends ChangeNotifier {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
   GlobalKey<ScaffoldState> get scaffoldKey => _scaffoldKey;
 
   void controlMenu() {

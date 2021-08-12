@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mipagina/utils/responsive.dart';
+import 'package:mouse_parallax/mouse_parallax.dart';
 
 import '../utils/utils.dart';
 import '../utils/colores.dart';
@@ -33,7 +34,7 @@ class About extends StatelessWidget {
                       Container(
                         child: Text(
                           "SOBRE MÍ",
-                          style: fuente(1, Colors.black, 40, FontWeight.bold),
+                          style: fuente(1, colorMenu, 40, FontWeight.bold),
                         ),
                       ),
                       Container(
@@ -41,7 +42,7 @@ class About extends StatelessWidget {
                         width: 25,
                         child: Divider(
                           thickness: 2,
-                          color: Colors.black.withOpacity(0.7),
+                          color: colorMenu,
                         ),
                       ),
                       Container(
@@ -121,12 +122,12 @@ class About extends StatelessWidget {
                         margin: EdgeInsets.only(top: 20, left: 0, right: 0),
                         child: Text(
                           "METAS",
-                          style: fuente(1, Colors.black, 40, FontWeight.bold),
+                          style: fuente(1, colorMenu, 40, FontWeight.bold),
                         ),
                       ),
                       Container(
                         margin: EdgeInsets.only(top: 20, left: 0, right: 0),
-                        width: MediaQuery.of(context).size.width / 3 + 50,
+                        width: (MediaQuery.of(context).size.width / 3) + 50,
                         //color: Colors.green,
                         child: Text(
                           "Actualmente estoy buscando mi primer trabajo en el área de lo que más me gusta, para seguir aprendiendo y crecer.",
@@ -158,28 +159,38 @@ class About extends StatelessWidget {
                   ? MediaQuery.of(context).size.height
                   : 300,
               width: Responsive.isDesktop(context)
-                  ? MediaQuery.of(context).size.height / 2.1
+                  ? MediaQuery.of(context).size.height / 2.25
                   : 350 / 2,
               margin: EdgeInsets.all(25),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: colorTemaMenu.withOpacity(1),
               ),
-              child: Container(
-                decoration: BoxDecoration(
-                  //color: Colors.red,
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(20),
-                  child: Container(
-                    //backgroundColor: Colors.transparent,
-                    child: Image(
-                      image: AssetImage("assets/images/fondoAbout.jpg"),
-                      fit: BoxFit.fill,
+              child: ParallaxStack(
+                layers: [
+                  ParallaxLayer(
+                    yRotation: 0.35,
+                    xRotation: 0.1,
+                    xOffset: 20,
+                    yOffset: 20,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        //color: Colors.red,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(20),
+                        child: Container(
+                          //backgroundColor: Colors.transparent,
+                          child: Image(
+                            image: AssetImage("assets/images/fondoAbout.jpg"),
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
-                ),
+                ],
               ),
             ),
           ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mipagina/responsive.dart';
+import 'package:mipagina/utils/responsive.dart';
+
 import 'main.dart';
 import 'menu.dart';
 import 'ventana.dart';
@@ -68,34 +69,5 @@ class cuerpo extends State<MyAppBody> {
         ),
       ),
     );
-  }
-}
-
-TextStyle fuente(int fuente, Color color, double size, FontWeight weight) {
-  TextStyle raleway = GoogleFonts.raleway(
-    color: color,
-    fontSize: size,
-    fontWeight: weight,
-  );
-  TextStyle roboto = GoogleFonts.roboto(
-    color: color,
-    fontSize: size,
-    fontWeight: weight,
-  );
-  TextStyle lato = GoogleFonts.lato(
-    color: color,
-    fontSize: size,
-    fontWeight: weight,
-  );
-  switch (fuente) {
-    case 1:
-      return raleway;
-    case 2:
-      return roboto;
-    case 3:
-      return lato;
-
-    default:
-      return raleway;
   }
 }

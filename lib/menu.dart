@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:mipagina/utils.dart';
-import 'principal.dart';
+import 'package:mipagina/utils/utils.dart';
+
 import 'ventana.dart';
 import 'package:provider/provider.dart';
-import 'main.dart';
+import 'utils/colores.dart';
 
 double posi0 = 0;
 double posi1 = 0;

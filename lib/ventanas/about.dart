@@ -4,8 +4,8 @@ import 'package:mipagina/utils/responsive.dart';
 import '../utils/utils.dart';
 import '../utils/colores.dart';
 
-class about extends StatelessWidget {
-  const about({Key? key}) : super(key: key);
+class About extends StatelessWidget {
+  const About({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -75,14 +75,14 @@ class about extends StatelessWidget {
                                 text: " y actualmente estoy viviendo en",
                               ),
                               TextSpan(
-                                text: " Montevidedo, Uruguay.",
+                                text: " Montevideo, Uruguay.",
                                 style: TextStyle(
                                     fontWeight: FontWeight.w700,
                                     color: colorTemaMenu),
                               ),
                               TextSpan(
                                 text:
-                                    "\n\nDesde pequeño me llamó mucho la atención la tecnología, poreso luego de hacer 4to de liceo decidí cambiarme a la",
+                                    "\n\nDesde pequeño me llamó mucho la atención la tecnología, por eso luego de hacer 4to de liceo decidí cambiarme a la",
                               ),
                               TextSpan(
                                 text: " Utu de informática",
@@ -129,7 +129,7 @@ class about extends StatelessWidget {
                         width: MediaQuery.of(context).size.width / 3 + 50,
                         //color: Colors.green,
                         child: Text(
-                          "Actualmente estoy buscando mi primer trabajo en el area de lo que más me gusta, para seguir apreindiendo y crecer.",
+                          "Actualmente estoy buscando mi primer trabajo en el área de lo que más me gusta, para seguir aprendiendo y crecer.",
                           style: fuente(2, Colors.black.withOpacity(1), 18,
                               FontWeight.w300),
                           textAlign: TextAlign.center,

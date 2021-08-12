@@ -2,6 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+double posi0 = 0;
+double posi1 = 0;
+double posi2 = 0;
+double posi3 = 0;
+double posi4 = 0;
+
+double posiScroll = 0;
+
+ScrollController controlador = ScrollController();
+
 class Utils {
   static Future openLink({required String url}) => _launchUrl(url);
 

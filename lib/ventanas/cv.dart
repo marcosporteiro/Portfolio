@@ -4,8 +4,8 @@ import '../utils/colores.dart';
 import '../utils/utils.dart';
 import '../utils/responsive.dart';
 
-class cv extends StatelessWidget {
-  const cv({Key? key}) : super(key: key);
+class Cv extends StatelessWidget {
+  const Cv({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

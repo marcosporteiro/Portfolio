@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../utils/colores.dart';
-import '../menu.dart';
 import '../utils/utils.dart';
 import '../utils/responsive.dart';
-import '../ventana.dart';
 
-class home extends StatelessWidget {
-  const home({Key? key}) : super(key: key);
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

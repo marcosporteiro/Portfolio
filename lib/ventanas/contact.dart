@@ -4,8 +4,8 @@ import '../utils/colores.dart';
 import '../utils/utils.dart';
 import '../utils/responsive.dart';
 
-class contact extends StatelessWidget {
-  const contact({Key? key}) : super(key: key);
+class Contact extends StatelessWidget {
+  const Contact({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -6,14 +6,6 @@ import 'ventana.dart';
 import 'package:provider/provider.dart';
 import 'utils/colores.dart';
 
-double posi0 = 0;
-double posi1 = 0;
-double posi2 = 0;
-double posi3 = 0;
-double posi4 = 0;
-
-double posiScroll = 0;
-
 class menu extends StatelessWidget {
   const menu({Key? key}) : super(key: key);
 

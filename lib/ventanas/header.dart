@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
-class header extends StatelessWidget {
-  const header({
+class Header extends StatelessWidget {
+  const Header({
     Key? key,
     required this.elwid,
     required this.decoracion,

@@ -4,8 +4,8 @@ import 'package:mipagina/utils/responsive.dart';
 import '../utils/colores.dart';
 import '../utils/utils.dart';
 
-class portfolio extends StatelessWidget {
-  const portfolio({Key? key}) : super(key: key);
+class Portfolio extends StatelessWidget {
+  const Portfolio({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

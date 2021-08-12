@@ -13,8 +13,6 @@ import 'menu.dart';
 
 import 'package:provider/provider.dart';
 
-ScrollController controlador = ScrollController();
-
 class ventana extends StatelessWidget {
   ventana({Key? key}) : super(key: key);
 
@@ -33,8 +31,8 @@ class ventana extends StatelessWidget {
               itemCount: 5,
               itemExtent: MediaQuery.of(context).size.height,
               controller: controlador,
-              itemBuilder: (c, i) => header(
-                  elwid: itemAmostrar(ventana: i), decoracion: ladecoracion(i)),
+              itemBuilder: (c, i) => Header(
+                  elwid: ItemAmostrar(ventana: i), decoracion: ladecoracion(i)),
             ),
           ),
         ),
@@ -43,8 +41,8 @@ class ventana extends StatelessWidget {
   }
 }
 
-class itemAmostrar extends StatelessWidget {
-  const itemAmostrar({Key? key, required this.ventana}) : super(key: key);
+class ItemAmostrar extends StatelessWidget {
+  const ItemAmostrar({Key? key, required this.ventana}) : super(key: key);
   final int ventana;
 
   @override
@@ -52,15 +50,15 @@ class itemAmostrar extends StatelessWidget {
     Widget res;
     switch (ventana) {
       case 0:
-        return home();
+        return Home();
       case 1:
-        return about();
+        return About();
       case 2:
-        return portfolio();
+        return Portfolio();
       case 3:
-        return cv();
+        return Cv();
       case 4:
-        return contact();
+        return Contact();
       default:
         return Container(
           color: Colors.red,

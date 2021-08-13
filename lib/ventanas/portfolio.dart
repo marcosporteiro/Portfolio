@@ -194,8 +194,11 @@ class BotonGaleria extends StatelessWidget {
       child: FotoGaleria(
         texto: texto,
         linkFoto: linkFoto,
-        tamanio: Size(MediaQuery.of(context).size.width / 6,
-            MediaQuery.of(context).size.width / 6),
+        tamanio: Responsive.isDesktop(context)
+            ? Size(MediaQuery.of(context).size.width / 5,
+                MediaQuery.of(context).size.width / 5)
+            : Size(MediaQuery.of(context).size.width / 2,
+                MediaQuery.of(context).size.width / 2),
       ),
       onPressed: () async {
         await showDialog(

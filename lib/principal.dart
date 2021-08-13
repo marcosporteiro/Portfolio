@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mipagina/utils/responsive.dart';
+import 'package:mipagina/ventanas/about.dart';
 
 import 'main.dart';
 import 'menu.dart';
 import 'utils/utils.dart';
 import 'ventana.dart';
+
+bool sePuedeScrollear = false;
 
 class cuerpo extends State<MyAppBody> {
   @override

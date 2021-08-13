@@ -6,17 +6,18 @@ const RESOURCES = {
   "assets/assets/images/fondoAbout.jpg": "e45cd47f0582adbe2378bd74194209f0",
 "assets/assets/images/sobreMi.png": "e899d73005d710cf97c488bd0a3a59be",
 "assets/assets/images/favicon.ico": "4151ed40fda953c92c87b60c5fdb3537",
-"assets/assets/images/pic1.jpg": "97b7e4cb905caccc446689caa563c338",
-"assets/assets/images/pic2.jpg": "7b239b51055a6dcf5196d115f84ed3e6",
+"assets/assets/images/pic4.jpg": "ff643eaf4d93c3adcc8f4952e92b78b8",
+"assets/assets/images/pic1.jpg": "72c4a16e409d1f0ef538aefc19a97c0c",
+"assets/assets/images/pic2.jpg": "ba044fecd49c0f380de1de612b5e0005",
 "assets/assets/images/avatar.png": "7ceb2ecd1bca2368223899eda38943d2",
 "assets/assets/images/banner.jpg": "db1c37cb59385d93aefa54f80acafe8a",
-"assets/assets/images/pic3.jpg": "f847c18e4e7d7dad49ffb4d9de1fdf61",
-"assets/AssetManifest.json": "862d239856665108fd2460617c125aec",
+"assets/assets/images/pic3.jpg": "296b6771f54181baac913250a917dd62",
+"assets/AssetManifest.json": "8dcfe9c63123fee474c71a33877f0e34",
 "assets/FontManifest.json": "e024588c84b5d20cb7869d6f908130e8",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/packages/line_icons/lib/assets/fonts/LineIcons.ttf": "23621397bc1906a79180a918e98f35b2",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/NOTICES": "822986d6c521c58dbcbcd4f641cdb8b7",
+"assets/NOTICES": "48f65db2a87d74118ae0d6bca8a79bae",
 "icons/Icon-192.png": "0ba73cd722a14d89e29f5d13a24294a2",
 "icons/Icon-192old.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/favicon.png": "8d159029077b9d6629ada4690b3baec0",
@@ -27,16 +28,16 @@ const RESOURCES = {
 "manifest.json": "ecf8d4eea71ae54799788ad9586a3654",
 "version.json": "a8f83101c2f51eceebd1cdcc7b8ff5fc",
 "favicon.ico": "1665e4bb03d060b66d2a82641167a46e",
-"main.dart.js": "2f797d14eb3eb00e32f00884e60c1b30",
+"main.dart.js": "12aad9971c08794ba32dac48a8544bfa",
 "faviconold.png": "5dcef449791fa27946b3d35ad8803796",
-"index.html": "54e19602b7b3c823bf88d89401ebbe23",
-"/": "54e19602b7b3c823bf88d89401ebbe23"
+"index.html": "7af0abfd94eda100fea5e14a6b7e9942",
+"/": "7af0abfd94eda100fea5e14a6b7e9942"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-//  "/",
+  "/",
 "main.dart.js",
 "index.html",
 "assets/NOTICES",

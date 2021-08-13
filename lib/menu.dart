@@ -188,7 +188,7 @@ class botones extends StatelessWidget {
               ),
               onPressed: () {
                 controlador.animateTo(posi * MediaQuery.of(context).size.height,
-                    duration: Duration(milliseconds: 500),
+                    duration: Duration(milliseconds: 600),
                     curve: Curves.easeIn);
                 posi0 = MediaQuery.of(context).size.height * 0;
                 posi1 = MediaQuery.of(context).size.height * 1;

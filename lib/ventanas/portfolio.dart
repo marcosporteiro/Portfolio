@@ -13,7 +13,7 @@ class Portfolio extends StatelessWidget {
     return Container(
       padding: Responsive.isDesktop(context)
           ? EdgeInsets.only(top: 70, bottom: 70, left: 70, right: 70)
-          : EdgeInsets.only(top: 20, bottom: 20, left: 20, right: 20),
+          : EdgeInsets.only(top: 20, bottom: 20, left: 10, right: 10),
       child: Flex(
         direction: isWideScreen(MediaQuery.of(context).size.height,
                 MediaQuery.of(context).size.width)
@@ -66,7 +66,7 @@ class Portfolio extends StatelessWidget {
                             ),
                             TextSpan(
                               text:
-                                  " que realicé mientras estudiaba o por mi cuenta",
+                                  " que realicé en la utu o de forma personal.",
                             ),
                           ],
                         ),
@@ -78,7 +78,7 @@ class Portfolio extends StatelessWidget {
             ),
           ),
           Expanded(
-            flex: 3,
+            flex: Responsive.isDesktop(context) ? 3 : 2,
             child: Container(
               padding: EdgeInsets.all(10),
               //color: Colors.blue,
@@ -88,16 +88,28 @@ class Portfolio extends StatelessWidget {
                   runSpacing: 10,
                   children: [
                     BotonGaleria(
-                      texto: "GESTAMBO - UTU",
+                      texto: "Gestambo - UTU",
                       linkFoto: "assets/images/pic1.jpg",
+                      description:
+                          "Proyecto final de utu, el software tenía que gestionar un tambo (altas, bajas y modificaciones), control de animales y empleados.",
                     ),
                     BotonGaleria(
-                      texto: "GESTAMBO - UTU",
+                      texto: "Gestambo - UTU",
                       linkFoto: "assets/images/pic2.jpg",
+                      description:
+                          "Proyecto final de utu, el software tenía que gestionar un tambo (altas, bajas y modificaciones), control de animales y empleados.",
                     ),
                     BotonGaleria(
-                      texto: "GESTAMBO - UTU",
+                      texto: "Gestambo - UTU",
                       linkFoto: "assets/images/pic3.jpg",
+                      description:
+                          "Proyecto final de utu, el software tenía que gestionar un tambo (altas, bajas y modificaciones), control de animales y empleados.",
+                    ),
+                    BotonGaleria(
+                      texto: "Mi portfolio",
+                      linkFoto: "assets/images/pic4.jpg",
+                      description:
+                          "Mi portfolio web, hecho en flutter para demostrar un poco de lo que puedo ser capaz.",
                     ),
                   ],
                 ),
@@ -130,44 +142,56 @@ class FotoGaleria extends StatelessWidget {
           //borderRadius: BorderRadius.circular(10),
           //color: colorTemaMenu,
           ),
-      child: Stack(
-        children: [
-          Container(
+      child: ParallaxStack(
+        layers: [
+          ParallaxLayer(
+            yRotation: 0.25,
+            xRotation: 0,
+            xOffset: 15,
+            yOffset: 15,
             child: Container(
-              decoration: BoxDecoration(
-                //borderRadius: BorderRadius.circular(0),
-                image: new DecorationImage(
-                  fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(
-                      Colors.black.withOpacity(0.9), BlendMode.dstATop),
-                  image: AssetImage(linkFoto),
-                ),
+              child: Stack(
+                children: [
+                  Container(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        //borderRadius: BorderRadius.circular(0),
+                        image: new DecorationImage(
+                          fit: BoxFit.cover,
+                          /*colorFilter: ColorFilter.mode(
+                              Colors.black.withOpacity(0.9), BlendMode.dstATop),*/
+                          image: AssetImage(linkFoto),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: tamanio.height,
+                    width: tamanio.width,
+                    color: colorMenu.withOpacity(0.5),
+                  ),
+                  Positioned(
+                    bottom: 20,
+                    left: 30,
+                    right: 30,
+                    child: Container(
+                      width: tamanio.width,
+                      height: 20,
+                      padding: EdgeInsets.symmetric(horizontal: 5),
+                      decoration: BoxDecoration(
+                          //color: Colors.black.withOpacity(0.0),
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Text(
+                        texto,
+                        textAlign: TextAlign.center,
+                        style: fuente(1, textoGrande, 15, FontWeight.w400),
+                      ),
+                    ),
+                  )
+                ],
               ),
             ),
           ),
-          Container(
-            height: tamanio.height,
-            width: tamanio.width,
-            color: colorMenu.withOpacity(0.5),
-          ),
-          Positioned(
-            bottom: 20,
-            left: 30,
-            right: 30,
-            child: Container(
-              width: tamanio.width,
-              height: 20,
-              padding: EdgeInsets.symmetric(horizontal: 5),
-              decoration: BoxDecoration(
-                  //color: Colors.black.withOpacity(0.0),
-                  borderRadius: BorderRadius.circular(10)),
-              child: Text(
-                texto,
-                textAlign: TextAlign.center,
-                style: fuente(1, textoGrande, 15, FontWeight.w400),
-              ),
-            ),
-          )
         ],
       ),
     );
@@ -177,8 +201,13 @@ class FotoGaleria extends StatelessWidget {
 class BotonGaleria extends StatelessWidget {
   final String texto;
   final String linkFoto;
+  final String description;
 
-  const BotonGaleria({Key? key, required this.texto, required this.linkFoto})
+  const BotonGaleria(
+      {Key? key,
+      required this.texto,
+      required this.linkFoto,
+      required this.description})
       : super(key: key);
 
   @override
@@ -187,7 +216,7 @@ class BotonGaleria extends StatelessWidget {
       style: ButtonStyle(
         //backgroundColor: MaterialStateProperty.all(colorFondo.withOpacity(1)),
         overlayColor: MaterialStateProperty.all(
-          Colors.black.withOpacity(0.6),
+          colorTemaMenu.withOpacity(1),
         ),
         splashFactory: NoSplash.splashFactory,
       ),
@@ -195,14 +224,20 @@ class BotonGaleria extends StatelessWidget {
         texto: texto,
         linkFoto: linkFoto,
         tamanio: Responsive.isDesktop(context)
-            ? Size(MediaQuery.of(context).size.width / 5,
-                MediaQuery.of(context).size.width / 5)
-            : Size(MediaQuery.of(context).size.width / 2,
-                MediaQuery.of(context).size.width / 2),
+            ? Size(MediaQuery.of(context).size.width / 5 - 40,
+                MediaQuery.of(context).size.width / 5 - 55)
+            : Size(MediaQuery.of(context).size.width / 2 - 50,
+                MediaQuery.of(context).size.width / 2 - 50),
       ),
       onPressed: () async {
         await showDialog(
-            context: context, builder: (_) => ImageDialog(linkFoto: linkFoto));
+          context: context,
+          builder: (_) => AbrirConAnimacion(
+            texto: texto,
+            linkFoto: linkFoto,
+            description: description,
+          ),
+        );
       },
     );
   }
@@ -210,7 +245,10 @@ class BotonGaleria extends StatelessWidget {
 
 class ImageDialog extends StatelessWidget {
   final String linkFoto;
-  const ImageDialog({Key? key, required this.linkFoto}) : super(key: key);
+  final String description;
+  const ImageDialog(
+      {Key? key, required this.linkFoto, required this.description})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -218,20 +256,102 @@ class ImageDialog extends StatelessWidget {
       margin: EdgeInsets.only(left: Responsive.isDesktop(context) ? 215 : 0),
       child: Dialog(
         backgroundColor: Colors.transparent,
-        elevation: 100,
+        elevation: 0,
+        child: Stack(
+          children: [
+            Container(
+              width: Responsive.isDesktop(context)
+                  ? MediaQuery.of(context).size.width -
+                      MediaQuery.of(context).size.width / 2.5
+                  : MediaQuery.of(context).size.width - 20,
+              height: Responsive.isDesktop(context)
+                  ? MediaQuery.of(context).size.height -
+                      MediaQuery.of(context).size.height / 4
+                  : MediaQuery.of(context).size.height - 150,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: ExactAssetImage(linkFoto), fit: BoxFit.contain)),
+            ),
+            Positioned(
+              bottom: Responsive.isDesktop(context) ? 100 : 10,
+              left: Responsive.isDesktop(context) ? 80 : 10,
+              right: Responsive.isDesktop(context) ? 80 : 10,
+              child: Container(
+                width: MediaQuery.of(context).size.width -
+                    MediaQuery.of(context).size.width / 2.5 -
+                    100,
+                height: Responsive.isDesktop(context) ? 100 : 170,
+                decoration: BoxDecoration(
+                  color: colorMenu.withOpacity(0.7),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Center(
+                  child: Text(
+                    description,
+                    style: fuente(1, Colors.white, 18, FontWeight.w300),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class AbrirConAnimacion extends StatefulWidget {
+  final String texto;
+  final String linkFoto;
+  final String description;
+
+  const AbrirConAnimacion(
+      {Key? key,
+      required this.texto,
+      required this.linkFoto,
+      required this.description})
+      : super(key: key);
+  @override
+  State<StatefulWidget> createState() => AbrirConAnimacionState(
+      texto: texto, description: description, linkFoto: linkFoto);
+}
+
+class AbrirConAnimacionState extends State<AbrirConAnimacion>
+    with SingleTickerProviderStateMixin {
+  final String texto;
+  final String linkFoto;
+  final String description;
+
+  AbrirConAnimacionState(
+      {required this.texto, required this.linkFoto, required this.description});
+  late AnimationController controller;
+  late Animation<double> scaleAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+
+    controller =
+        AnimationController(vsync: this, duration: Duration(milliseconds: 550));
+    scaleAnimation = CurvedAnimation(
+        parent: controller, curve: Curves.fastLinearToSlowEaseIn);
+
+    controller.addListener(() {
+      setState(() {});
+    });
+    controller.forward();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ScaleTransition(
+        scale: scaleAnimation,
         child: Container(
-          width: MediaQuery.of(context).size.width -
-              MediaQuery.of(context).size.width / 2.5,
-          height: MediaQuery.of(context).size.height -
-              MediaQuery.of(context).size.height / 2.5,
-          child: Container(
-            width: MediaQuery.of(context).size.width -
-                MediaQuery.of(context).size.width / 2.5,
-            height: MediaQuery.of(context).size.width -
-                MediaQuery.of(context).size.width / 2.5,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: ExactAssetImage(linkFoto), fit: BoxFit.contain)),
+          child: Padding(
+            padding: const EdgeInsets.all(50.0),
+            child: ImageDialog(linkFoto: linkFoto, description: description),
           ),
         ),
       ),

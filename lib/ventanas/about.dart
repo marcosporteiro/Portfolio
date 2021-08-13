@@ -94,6 +94,20 @@ class About extends StatelessWidget {
                             ),
                             TextSpan(
                               text:
+                                  "\n\nDecidí crear esta app/website desde 0 con",
+                            ),
+                            TextSpan(
+                              text: " Flutter",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  color: colorTemaMenu),
+                            ),
+                            TextSpan(
+                              text:
+                                  " desde 0 con  para poder demostrar un poco de lo que soy capaz",
+                            ),
+                            TextSpan(
+                              text:
                                   "\n\nDesde pequeño me llamó mucho la atención la tecnología, por eso luego de hacer 4to de liceo decidí cambiarme a la",
                             ),
                             TextSpan(
@@ -169,7 +183,7 @@ class About extends StatelessWidget {
               //constraints: BoxConstraints(minWidth: 500),
               height: Responsive.isDesktop(context)
                   ? MediaQuery.of(context).size.height
-                  : 300,
+                  : 200,
               width: Responsive.isDesktop(context)
                   ? MediaQuery.of(context).size.height / 2.25
                   : 350 / 2,

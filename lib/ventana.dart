@@ -28,6 +28,8 @@ class ventana extends StatelessWidget {
           body: Container(
             color: colorFondo,
             child: ListView.builder(
+              shrinkWrap: true,
+              addAutomaticKeepAlives: true,
               itemCount: 5,
               itemExtent: MediaQuery.of(context).size.height,
               controller: controlador,

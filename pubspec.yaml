@@ -33,6 +33,11 @@ dependencies:
   url_launcher: ^6.0.9
   provider: ^5.0.0
   mouse_parallax: ^1.1.0
+  email_validator: ^2.0.1
+  
+  flutter_styled_toast: ^2.0.0
+
+
 
 
 

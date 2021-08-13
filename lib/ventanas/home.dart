@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mouse_parallax/mouse_parallax.dart';
 
 import '../utils/colores.dart';
 import '../utils/utils.dart';
@@ -58,44 +57,39 @@ class Home extends StatelessWidget {
               decoration: BoxDecoration(
                   color: colorTemaMenu.withOpacity(0.8),
                   borderRadius: BorderRadius.circular(10)),
-              child: ParallaxStack(
-                layers: [
-                  TextButton(
-                    style: ButtonStyle(
-                      overlayColor: MaterialStateProperty.all(
-                        Colors.black.withOpacity(0.1),
-                      ),
-                      splashFactory: NoSplash.splashFactory,
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(20)),
-                        ),
-                      ),
-                    ),
-                    child: Container(
-                      child: Container(
-                        child: Center(
-                          child: Text(
-                            "Leer más",
-                            textAlign: TextAlign.center,
-                            style: fuente(1, Colors.white, 20, FontWeight.w300),
-                          ),
-                        ),
-                      ),
-                    ),
-                    onPressed: () {
-                      controlador.animateTo(
-                          1 * MediaQuery.of(context).size.height,
-                          duration: Duration(milliseconds: 500),
-                          curve: Curves.easeIn);
-                      posi0 = MediaQuery.of(context).size.height * 0;
-                      posi1 = MediaQuery.of(context).size.height * 1;
-                      posi2 = MediaQuery.of(context).size.height * 2;
-                      posi3 = MediaQuery.of(context).size.height * 3;
-                      posi4 = MediaQuery.of(context).size.height * 4;
-                    },
+              child: TextButton(
+                style: ButtonStyle(
+                  overlayColor: MaterialStateProperty.all(
+                    Colors.black.withOpacity(0.1),
                   ),
-                ],
+                  splashFactory: NoSplash.splashFactory,
+                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                    ),
+                  ),
+                ),
+                child: Container(
+                  child: Container(
+                    child: Center(
+                      child: Text(
+                        "Leer más",
+                        textAlign: TextAlign.center,
+                        style: fuente(1, Colors.white, 20, FontWeight.w300),
+                      ),
+                    ),
+                  ),
+                ),
+                onPressed: () {
+                  controlador.animateTo(1 * MediaQuery.of(context).size.height,
+                      duration: Duration(milliseconds: 500),
+                      curve: Curves.easeIn);
+                  posi0 = MediaQuery.of(context).size.height * 0;
+                  posi1 = MediaQuery.of(context).size.height * 1;
+                  posi2 = MediaQuery.of(context).size.height * 2;
+                  posi3 = MediaQuery.of(context).size.height * 3;
+                  posi4 = MediaQuery.of(context).size.height * 4;
+                },
               ),
             ),
           ],

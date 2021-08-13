@@ -55137,7 +55137,8 @@ q=K.jh(10)
 return M.ae(p,T.oC(C.bO,H.a([s,r,T.Vd(20,M.ae(p,L.dN(this.c,B.dl(1,C.k,15,C.q),C.ak,p),C.i,p,p,new S.co(p,p,p,q,p,p,C.F),p,20,p,new V.ah(5,0,5,0),p,p,o),p,p,30,30,p,p)],t.E),C.bH),C.i,p,p,new S.co(p,p,p,p,p,p,C.F),p,n,p,p,p,p,o)}}
 S.mO.prototype={
 M:function(a,b){var s=null,r=A.mR(s,s,s,s,s,s,s,s,s,new V.bW(P.a7(153,0,0,0),t.FT),s,s,s,s,C.cp,s,s,s),q=t.w
-return U.ER(new S.AK(this.c,this.d,new P.L(b.C(q).f.a.a/6,b.C(q).f.a.a/6),s),new S.Nx(this,b),r)}}
+q=b.C(q).f.a.a>=850?new P.L(b.C(q).f.a.a/5,b.C(q).f.a.a/5):new P.L(b.C(q).f.a.a/2,b.C(q).f.a.a/2)
+return U.ER(new S.AK(this.c,this.d,q,s),new S.Nx(this,b),r)}}
 S.Nx.prototype={
 $0:function(){var s=0,r=P.a3(t.H),q=this,p,o,n
 var $async$$0=P.a_(function(a,b){if(a===1)return P.a0(b,r)

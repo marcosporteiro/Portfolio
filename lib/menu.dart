@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:mipagina/utils/utils.dart';
-
-import 'ventana.dart';
 import 'package:provider/provider.dart';
-import 'utils/colores.dart';
 
-class menu extends StatelessWidget {
-  const menu({Key? key}) : super(key: key);
+import 'package:mipagina/utils/colores.dart';
+
+class Menu extends StatelessWidget {
+  const Menu({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +18,12 @@ class menu extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            topMenu(),
-            botones("Inico", Icons.home, 0),
-            botones("Sobre mí", Icons.person, 1),
-            botones("Portfolio", Icons.collections, 2),
-            botones("Curriculum", Icons.description, 3),
-            botones("Contacto", Icons.mail, 4),
+            TopMenu(),
+            Botones("Inico", Icons.home, 0),
+            Botones("Sobre mí", Icons.person, 1),
+            Botones("Portfolio", Icons.collections, 2),
+            Botones("Curriculum", Icons.description, 3),
+            Botones("Contacto", Icons.mail, 4),
             Container(
               //color: Colors.red,
               constraints: BoxConstraints(minHeight: 20),
@@ -123,8 +122,8 @@ Color getColor(int posi) {
   }
 }
 
-class botones extends StatelessWidget {
-  botones(this.texto, this.icono, this.posi, {Key? key}) : super(key: key);
+class Botones extends StatelessWidget {
+  Botones(this.texto, this.icono, this.posi, {Key? key}) : super(key: key);
 
   final IconData icono;
   final double posi;
@@ -204,8 +203,8 @@ class botones extends StatelessWidget {
   }
 }
 
-class topMenu extends StatelessWidget {
-  const topMenu({Key? key}) : super(key: key);
+class TopMenu extends StatelessWidget {
+  const TopMenu({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -276,8 +275,8 @@ class topMenu extends StatelessWidget {
   }
 }
 
-class botonMenu extends StatelessWidget {
-  const botonMenu({Key? key}) : super(key: key);
+class BotonMenu extends StatelessWidget {
+  const BotonMenu({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

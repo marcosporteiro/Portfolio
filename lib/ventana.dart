@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:mipagina/utils/responsive.dart';
 import 'package:mipagina/utils/utils.dart';
-
-import 'utils/colores.dart';
-import 'ventanas/about.dart';
-import 'ventanas/contact.dart';
-import 'ventanas/cv.dart';
-import 'ventanas/header.dart';
-import 'ventanas/home.dart';
-import 'ventanas/portfolio.dart';
-import 'menu.dart';
-
 import 'package:provider/provider.dart';
 
-class ventana extends StatelessWidget {
-  ventana({Key? key}) : super(key: key);
+import 'package:mipagina/utils/colores.dart';
+import 'package:mipagina/ventanas/about.dart';
+import 'package:mipagina/ventanas/contact.dart';
+import 'package:mipagina/ventanas/cv.dart';
+import 'package:mipagina/ventanas/header.dart';
+import 'package:mipagina/ventanas/home.dart';
+import 'package:mipagina/ventanas/portfolio.dart';
+import 'package:mipagina/menu.dart';
+
+class Ventana extends StatelessWidget {
+  Ventana({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,9 +21,9 @@ class ventana extends StatelessWidget {
       child: Container(
         child: Scaffold(
           key: context.read<MenuController>().scaffoldKey,
-          drawer: menu(),
+          drawer: Menu(),
           floatingActionButton:
-              Responsive.isDesktop(context) ? null : botonMenu(),
+              Responsive.isDesktop(context) ? null : BotonMenu(),
           body: Container(
             color: colorFondo,
             child: ListView.builder(
@@ -49,7 +48,6 @@ class ItemAmostrar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget res;
     switch (ventana) {
       case 0:
         return Home();

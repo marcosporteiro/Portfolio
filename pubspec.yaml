@@ -36,7 +36,7 @@ dependencies:
   email_validator: ^2.0.1
   flutter_styled_toast: ^2.0.0
   http: ^0.13.3
-
+  dwds: ^11.2.0
 
 
 

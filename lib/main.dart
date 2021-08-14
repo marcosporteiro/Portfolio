@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'menu.dart';
-import 'principal.dart';
+
+import 'package:mipagina/menu.dart';
+import 'package:mipagina/principal.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,5 +33,5 @@ class MyAppBody extends StatefulWidget {
   MyAppBody({Key? key}) : super(key: key);
 
   @override
-  cuerpo createState() => cuerpo();
+  Cuerpo createState() => Cuerpo();
 }

@@ -23,11 +23,11 @@ class Utils {
   }
 }
 
-int Edad(int dia, mes, anio) {
+int edad(int dia, mes, anio) {
   DateTime cumple = DateTime(anio, mes, dia);
   DateTime hoy = DateTime.now();
   int edad = hoy.difference(cumple).inDays;
-  edad = (edad / 365).toInt();
+  edad = edad ~/ 365;
 
   return edad;
 }
@@ -38,7 +38,7 @@ bool isWideScreen(double altura, double largo) {
 
 BoxDecoration ladecoracion(int item) {
   BoxDecoration decoracion;
-  String ruta1 = "assets/images/banner.jpg";
+  const String ruta1 = "assets/images/banner.jpg";
 
   switch (item) {
     case 0:

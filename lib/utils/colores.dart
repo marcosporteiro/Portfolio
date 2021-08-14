@@ -16,5 +16,5 @@ const Color colorVentana = Colors.black12;
 
 const Color colorOscuro = Color(0xFF393c3f);
 
-const Color Texto1 = Colors.white;
-Color Texto2 = Colors.black.withOpacity(0.7);
+const Color texto1 = Colors.white;
+Color texto2 = Colors.black.withOpacity(0.7);

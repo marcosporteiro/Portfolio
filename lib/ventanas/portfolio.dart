@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mipagina/utils/responsive.dart';
 import 'package:mouse_parallax/mouse_parallax.dart';
 
-import '../utils/colores.dart';
-import '../utils/utils.dart';
+import 'package:mipagina/utils/colores.dart';
+import 'package:mipagina/utils/utils.dart';
 
 class Portfolio extends StatelessWidget {
   const Portfolio({Key? key}) : super(key: key);

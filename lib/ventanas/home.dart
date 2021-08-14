@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../utils/colores.dart';
-import '../utils/utils.dart';
-import '../utils/responsive.dart';
+import 'package:mipagina/utils/colores.dart';
+import 'package:mipagina/utils/utils.dart';
+import 'package:mipagina/utils/responsive.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);

@@ -1,14 +1,13 @@
 import 'dart:convert';
 
 import 'package:email_validator/email_validator.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_styled_toast/flutter_styled_toast.dart';
 import 'package:http/http.dart' as http;
 
-import '../utils/colores.dart';
-import '../utils/utils.dart';
-import '../utils/responsive.dart';
+import 'package:mipagina/utils/colores.dart';
+import 'package:mipagina/utils/utils.dart';
+import 'package:mipagina/utils/responsive.dart';
 
 class Contact extends StatelessWidget {
   const Contact({Key? key}) : super(key: key);
@@ -136,9 +135,9 @@ class Contact extends StatelessWidget {
 }
 
 class Mails extends StatelessWidget {
-  final emailController = TextEditingController();
-  final mensajeController = TextEditingController();
-  final formKey = GlobalKey<FormState>();
+  static final emailController = TextEditingController();
+  static final mensajeController = TextEditingController();
+  static final formKey = GlobalKey<FormState>();
 
   Mails({Key? key}) : super(key: key);
 
@@ -305,6 +304,7 @@ Future sendEmail({
   final userId = 'user_a0k5WKADc1fyFVg4FEilf';
 
   final url = Uri.parse('https://api.emailjs.com/api/v1.0/email/send');
+  // ignore: unused_local_variable
   final response = await http.post(
     url,
     headers: {

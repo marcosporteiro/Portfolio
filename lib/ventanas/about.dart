@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:mipagina/utils/responsive.dart';
 import 'package:mouse_parallax/mouse_parallax.dart';
 
-import '../principal.dart';
-import '../utils/utils.dart';
-import '../utils/colores.dart';
+import 'package:mipagina/principal.dart';
+import 'package:mipagina/utils/utils.dart';
+import 'package:mipagina/utils/colores.dart';
 
 class About extends StatelessWidget {
   const About({Key? key}) : super(key: key);
@@ -79,7 +79,7 @@ class About extends StatelessWidget {
                               text: " tengo ",
                             ),
                             TextSpan(
-                                text: "${Edad(5, 11, 1997)} años",
+                                text: "${edad(5, 11, 1997)} años",
                                 style: TextStyle(
                                     fontWeight: FontWeight.w700,
                                     color: colorTemaMenu)),

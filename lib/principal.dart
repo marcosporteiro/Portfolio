@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:mipagina/utils/responsive.dart';
-import 'package:mipagina/ventanas/about.dart';
 
-import 'main.dart';
-import 'menu.dart';
-import 'utils/utils.dart';
-import 'ventana.dart';
+import 'package:mipagina/main.dart';
+import 'package:mipagina/menu.dart';
+import 'package:mipagina/utils/utils.dart';
+import 'package:mipagina/ventana.dart';
 
 bool sePuedeScrollear = false;
 
-class cuerpo extends State<MyAppBody> {
+class Cuerpo extends State<MyAppBody> {
   @override
   void initState() {
     super.initState();
@@ -26,31 +24,36 @@ class cuerpo extends State<MyAppBody> {
       if (posi0.round() <= (controlador.position.pixels).round()) {
         posiScroll = 0;
         setState(() {
-          botones;
+          // ignore: unnecessary_statements
+          Botones;
         });
       }
       if (posi1 <= controlador.position.pixels.round()) {
         posiScroll = 1;
         setState(() {
-          botones;
+          // ignore: unnecessary_statements
+          Botones;
         });
       }
       if (posi2.round() <= controlador.position.pixels.round()) {
         posiScroll = 2;
         setState(() {
-          botones;
+          // ignore: unnecessary_statements
+          Botones;
         });
       }
       if (posi3.round() <= controlador.position.pixels.round()) {
         posiScroll = 3;
         setState(() {
-          botones;
+          // ignore: unnecessary_statements
+          Botones;
         });
       }
       if (posi4.round() <= controlador.position.pixels.round()) {
         posiScroll = 4;
         setState(() {
-          botones;
+          // ignore: unnecessary_statements
+          Botones;
         });
       }
     });
@@ -66,8 +69,8 @@ class cuerpo extends State<MyAppBody> {
         child: Container(
           child: Row(
             children: [
-              if (Responsive.isDesktop(context)) menu(),
-              ventana(),
+              if (Responsive.isDesktop(context)) Menu(),
+              Ventana(),
             ],
           ),
         ),

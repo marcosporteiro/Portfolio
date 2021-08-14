@@ -284,7 +284,7 @@ Future sendEmail({
   required String subject,
   required String message,
 }) async {
-  final serviceId = 'service_459qh2p';
+  final serviceId = 'service_yv6gpsn';
   final templateId = 'template_ncn0ag9';
   final userId = 'user_a0k5WKADc1fyFVg4FEilf';
 

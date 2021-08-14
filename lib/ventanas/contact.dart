@@ -162,8 +162,6 @@ class Mails extends StatelessWidget {
               child: TextFormField(
                 cursorColor: colorTemaMenu,
                 controller: emailController,
-                //keyboardType: TextInputType.emailAddress,
-                //autofillHints: [AutofillHints.email],
                 validator: (email) =>
                     email != null && !EmailValidator.validate(email)
                         ? "Email invalido"
@@ -198,7 +196,7 @@ class Mails extends StatelessWidget {
                 cursorColor: colorTemaMenu,
                 decoration: InputDecoration(
                   hintText: "Su mensaje",
-                  contentPadding: EdgeInsets.all(20),
+                  contentPadding: EdgeInsets.all(10),
                   isDense: true,
                   labelStyle: fuente(
                       1, Colors.black.withOpacity(1), 18, FontWeight.w300),
@@ -258,6 +256,7 @@ class Mails extends StatelessWidget {
                         print(mensaje);
                         showToast("Enviando...",
                             context: context,
+                            duration: Duration(seconds: 4),
                             backgroundColor: Colors.amber,
                             position: StyledToastPosition(
                                 align: Alignment.bottomRight, offset: 45));
@@ -265,6 +264,7 @@ class Mails extends StatelessWidget {
                         showToast("Mensaje enviado.",
                             context: context,
                             backgroundColor: Colors.green,
+                            duration: Duration(seconds: 4),
                             position: StyledToastPosition(
                                 align: Alignment.bottomRight, offset: 45));
                         botonClikeado = true;
@@ -272,6 +272,7 @@ class Mails extends StatelessWidget {
                         showToast(
                             "El mensaje no se pudo enviar. " + e.toString(),
                             context: context,
+                            duration: Duration(seconds: 5),
                             backgroundColor: Colors.red,
                             position: StyledToastPosition(
                                 align: Alignment.bottomRight, offset: 45));
@@ -281,6 +282,7 @@ class Mails extends StatelessWidget {
                     showToast("Solo puedes enviar un mensaje a la vez.",
                         context: context,
                         backgroundColor: Colors.red,
+                        duration: Duration(seconds: 2),
                         position: StyledToastPosition(
                             align: Alignment.bottomRight, offset: 45));
                   }

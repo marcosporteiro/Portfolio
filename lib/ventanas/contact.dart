@@ -1,7 +1,10 @@
+import 'dart:convert';
+
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_styled_toast/flutter_styled_toast.dart';
+import 'package:http/http.dart' as http;
 
 import '../utils/colores.dart';
 import '../utils/utils.dart';
@@ -159,8 +162,8 @@ class Mails extends StatelessWidget {
               child: TextFormField(
                 cursorColor: colorTemaMenu,
                 controller: emailController,
-                textInputAction: TextInputAction.next,
-                autofillHints: [AutofillHints.email],
+                //keyboardType: TextInputType.emailAddress,
+                //autofillHints: [AutofillHints.email],
                 validator: (email) =>
                     email != null && !EmailValidator.validate(email)
                         ? "Email invalido"
@@ -180,7 +183,6 @@ class Mails extends StatelessWidget {
                     borderSide: BorderSide(color: colorTemaMenu),
                   ),
                 ),
-                keyboardType: TextInputType.emailAddress,
               ),
             ),
             Container(
@@ -194,7 +196,6 @@ class Mails extends StatelessWidget {
                     ? null
                     : "Ingrese un mensaje",
                 cursorColor: colorTemaMenu,
-                textInputAction: TextInputAction.next,
                 decoration: InputDecoration(
                   hintText: "Su mensaje",
                   contentPadding: EdgeInsets.all(20),
@@ -251,10 +252,23 @@ class Mails extends StatelessWidget {
                   if (form!.validate()) {
                     final email = emailController.text;
                     final mensaje = mensajeController.text;
-                    print(email);
-                    print(mensaje);
 
-                    //sendMail(email, mensaje, context);
+                    try {
+                      print(email);
+                      print(mensaje);
+                      await sendEmail(subject: email, message: mensaje);
+                      showToast("Mensaje enviado.",
+                          context: context,
+                          backgroundColor: Colors.green,
+                          position: StyledToastPosition(
+                              align: Alignment.bottomRight, offset: 45));
+                    } catch (e) {
+                      showToast("El mensaje no se pudo enviar. " + e.toString(),
+                          context: context,
+                          backgroundColor: Colors.red,
+                          position: StyledToastPosition(
+                              align: Alignment.bottomRight, offset: 45));
+                    }
                   }
                 },
               ),
@@ -265,33 +279,29 @@ class Mails extends StatelessWidget {
     );
   }
 }
-/*
-Future<void> sendMail(
-    String email, String mensaje, BuildContext context) async {
-  String usuario = "miporteiropw@gmail.com";
-  String contra = "53830860";
 
-  final smtpServer = gmail(usuario, contra);
-  final msj = Message()
-    ..from = Address(usuario)
-    ..recipients.add("miporteiro@hotmail.com")
-    ..subject = "Mensaje de: ${email} desde portfolio."
-    ..html = mensaje;
+Future sendEmail({
+  required String subject,
+  required String message,
+}) async {
+  final serviceId = 'service_459qh2p';
+  final templateId = 'template_ncn0ag9';
+  final userId = 'user_a0k5WKADc1fyFVg4FEilf';
 
-  try {
-    final SendReport = await send(msj, smtpServer);
-    print("\nMensaje enviado.\n");
-    showToast("Mensaje enviado.",
-        context: context,
-        backgroundColor: Colors.green,
-        position:
-            StyledToastPosition(align: Alignment.bottomRight, offset: 45));
-  } on MailerException catch (e) {
-    print("\nEl mensaje no se pudo enviar.\n" + e.toString());
-    showToast("El mensaje no se pudo enviar.",
-        context: context,
-        backgroundColor: Colors.red,
-        position:
-            StyledToastPosition(align: Alignment.bottomRight, offset: 45));
-  }
-}*/
+  final url = Uri.parse('https://api.emailjs.com/api/v1.0/email/send');
+  final response = await http.post(
+    url,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: json.encode({
+      'service_id': serviceId,
+      'template_id': templateId,
+      'user_id': userId,
+      'template_params': {
+        'user_subject': subject,
+        'user_message': message,
+      },
+    }),
+  );
+}

@@ -256,7 +256,7 @@ class Mails extends StatelessWidget {
                         print(mensaje);
                         showToast("Enviando...",
                             context: context,
-                            duration: Duration(seconds: 4),
+                            duration: Duration(seconds: 8),
                             backgroundColor: Colors.amber,
                             position: StyledToastPosition(
                                 align: Alignment.bottomRight, offset: 45));
@@ -272,7 +272,7 @@ class Mails extends StatelessWidget {
                         showToast(
                             "El mensaje no se pudo enviar. " + e.toString(),
                             context: context,
-                            duration: Duration(seconds: 5),
+                            duration: Duration(seconds: 4),
                             backgroundColor: Colors.red,
                             position: StyledToastPosition(
                                 align: Alignment.bottomRight, offset: 45));

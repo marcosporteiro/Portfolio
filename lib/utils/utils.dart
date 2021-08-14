@@ -7,6 +7,7 @@ double posi1 = 0;
 double posi2 = 0;
 double posi3 = 0;
 double posi4 = 0;
+bool botonClikeado = false;
 
 double posiScroll = 0;
 

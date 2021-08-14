@@ -219,6 +219,7 @@ class Mails extends StatelessWidget {
               //boton
               height: 75,
               width: 200,
+
               margin: EdgeInsets.all(20),
               decoration: BoxDecoration(
                   color: colorTemaMenu.withOpacity(1),
@@ -247,28 +248,41 @@ class Mails extends StatelessWidget {
                   ),
                 ),
                 onPressed: () async {
-                  final form = formKey.currentState;
-
-                  if (form!.validate()) {
-                    final email = emailController.text;
-                    final mensaje = mensajeController.text;
-
-                    try {
-                      print(email);
-                      print(mensaje);
-                      await sendEmail(subject: email, message: mensaje);
-                      showToast("Mensaje enviado.",
-                          context: context,
-                          backgroundColor: Colors.green,
-                          position: StyledToastPosition(
-                              align: Alignment.bottomRight, offset: 45));
-                    } catch (e) {
-                      showToast("El mensaje no se pudo enviar. " + e.toString(),
-                          context: context,
-                          backgroundColor: Colors.red,
-                          position: StyledToastPosition(
-                              align: Alignment.bottomRight, offset: 45));
+                  if (!botonClikeado) {
+                    final form = formKey.currentState;
+                    if (form!.validate()) {
+                      final email = emailController.text;
+                      final mensaje = mensajeController.text;
+                      try {
+                        print(email);
+                        print(mensaje);
+                        showToast("Enviando...",
+                            context: context,
+                            backgroundColor: Colors.amber,
+                            position: StyledToastPosition(
+                                align: Alignment.bottomRight, offset: 45));
+                        await sendEmail(subject: email, message: mensaje);
+                        showToast("Mensaje enviado.",
+                            context: context,
+                            backgroundColor: Colors.green,
+                            position: StyledToastPosition(
+                                align: Alignment.bottomRight, offset: 45));
+                        botonClikeado = true;
+                      } catch (e) {
+                        showToast(
+                            "El mensaje no se pudo enviar. " + e.toString(),
+                            context: context,
+                            backgroundColor: Colors.red,
+                            position: StyledToastPosition(
+                                align: Alignment.bottomRight, offset: 45));
+                      }
                     }
+                  } else {
+                    showToast("Solo puedes enviar un mensaje a la vez.",
+                        context: context,
+                        backgroundColor: Colors.red,
+                        position: StyledToastPosition(
+                            align: Alignment.bottomRight, offset: 45));
                   }
                 },
               ),

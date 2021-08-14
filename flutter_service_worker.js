@@ -28,16 +28,16 @@ const RESOURCES = {
 "manifest.json": "ecf8d4eea71ae54799788ad9586a3654",
 "version.json": "a8f83101c2f51eceebd1cdcc7b8ff5fc",
 "favicon.ico": "1665e4bb03d060b66d2a82641167a46e",
-"main.dart.js": "066e83ae118db1f946e7ecf13b9fb03a",
+"main.dart.js": "b593ff623c3296b3bab8d84b725a84db",
 "faviconold.png": "5dcef449791fa27946b3d35ad8803796",
-"index.html": "8223866f0d0a02a58192237933999cad",
-"/": "8223866f0d0a02a58192237933999cad"
+"index.html": "8802a46578f16649fbd7da0d38ba247c",
+"/": "8802a46578f16649fbd7da0d38ba247c"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-//  "/",
+  "/",
 "main.dart.js",
 "index.html",
 "assets/NOTICES",

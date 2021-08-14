@@ -63547,7 +63547,7 @@ q=8
 P.k3(m)
 P.k3(l)
 j=n.b
-M.ad6("Enviando...",C.w8,j,P.bT(0,0,4),new Z.qd(C.cN,45))
+M.ad6("Enviando...",C.w8,j,P.bT(0,0,8),new Z.qd(C.cN,45))
 s=11
 return P.a7(Z.ad2(l,m),$async$$0)
 case 11:M.ad6("Mensaje enviado.",C.w7,j,P.bT(0,0,4),new Z.qd(C.cN,45))
@@ -63558,7 +63558,7 @@ break
 case 8:q=7
 g=p
 k=H.U(g)
-M.ad6(C.b.X("El mensaje no se pudo enviar. ",J.dy(k)),C.hq,n.b,P.bT(0,0,5),new Z.qd(C.cN,45))
+M.ad6(C.b.X("El mensaje no se pudo enviar. ",J.dy(k)),C.hq,n.b,P.bT(0,0,4),new Z.qd(C.cN,45))
 s=10
 break
 case 7:s=1

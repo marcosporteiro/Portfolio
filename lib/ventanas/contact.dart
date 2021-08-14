@@ -252,8 +252,8 @@ class Mails extends StatelessWidget {
                       final email = emailController.text;
                       final mensaje = mensajeController.text;
                       try {
-                        print(email);
-                        print(mensaje);
+                        // print(email);
+                        // print(mensaje);
                         showToast("Enviando...",
                             context: context,
                             duration: Duration(seconds: 8),

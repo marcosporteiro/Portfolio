@@ -3,8 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/assets/images/fondoAbout.jpg": "e45cd47f0582adbe2378bd74194209f0",
-"assets/assets/images/sobreMi.png": "e899d73005d710cf97c488bd0a3a59be",
+  "assets/assets/images/banner3.jpg": "0e99ab72ff04328f1cb2a4c25315cb8c",
+"assets/assets/images/fondoAbout.jpg": "e45cd47f0582adbe2378bd74194209f0",
+"assets/assets/images/banner2.jpg": "3df16983c68f8839bfb18e14bbbccc07",
 "assets/assets/images/favicon.ico": "4151ed40fda953c92c87b60c5fdb3537",
 "assets/assets/images/pic4.jpg": "ff643eaf4d93c3adcc8f4952e92b78b8",
 "assets/assets/images/pic1.jpg": "72c4a16e409d1f0ef538aefc19a97c0c",
@@ -12,7 +13,7 @@ const RESOURCES = {
 "assets/assets/images/avatar.png": "7ceb2ecd1bca2368223899eda38943d2",
 "assets/assets/images/banner.jpg": "db1c37cb59385d93aefa54f80acafe8a",
 "assets/assets/images/pic3.jpg": "296b6771f54181baac913250a917dd62",
-"assets/AssetManifest.json": "8dcfe9c63123fee474c71a33877f0e34",
+"assets/AssetManifest.json": "490d0fe2fb0d83ef52e9b799b31eeb6c",
 "assets/FontManifest.json": "e024588c84b5d20cb7869d6f908130e8",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/packages/line_icons/lib/assets/fonts/LineIcons.ttf": "23621397bc1906a79180a918e98f35b2",
@@ -28,16 +29,16 @@ const RESOURCES = {
 "manifest.json": "ecf8d4eea71ae54799788ad9586a3654",
 "version.json": "a8f83101c2f51eceebd1cdcc7b8ff5fc",
 "favicon.ico": "1665e4bb03d060b66d2a82641167a46e",
-"main.dart.js": "11940063744515d63f39a04caef7246a",
+"main.dart.js": "a578fb894a8beee11532f6ea4eb4d8b0",
 "faviconold.png": "5dcef449791fa27946b3d35ad8803796",
-"index.html": "9e67285d5ed182b5f2d0cb72f20a7db0",
-"/": "9e67285d5ed182b5f2d0cb72f20a7db0"
+"index.html": "b2d1b2e9eb6988059f1a8c54efd8711a",
+"/": "b2d1b2e9eb6988059f1a8c54efd8711a"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-//  "/",
+  "/",
 "main.dart.js",
 "index.html",
 "assets/NOTICES",

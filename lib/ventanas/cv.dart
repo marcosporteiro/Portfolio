@@ -210,7 +210,7 @@ class Cv extends StatelessWidget {
                                           2,
                                           Colors.black.withOpacity(1),
                                           18,
-                                          FontWeight.w300),
+                                          FontWeight.w400),
                                     ),
                                     BarrDeProgreso(progreso: 60),
                                     SelectableText(
@@ -219,7 +219,7 @@ class Cv extends StatelessWidget {
                                           2,
                                           Colors.black.withOpacity(1),
                                           18,
-                                          FontWeight.w300),
+                                          FontWeight.w400),
                                     ),
                                     BarrDeProgreso(progreso: 85),
                                     SelectableText(
@@ -228,7 +228,7 @@ class Cv extends StatelessWidget {
                                           2,
                                           Colors.black.withOpacity(1),
                                           18,
-                                          FontWeight.w300),
+                                          FontWeight.w400),
                                     ),
                                     BarrDeProgreso(progreso: 55),
                                     SelectableText(
@@ -237,7 +237,7 @@ class Cv extends StatelessWidget {
                                           2,
                                           Colors.black.withOpacity(1),
                                           18,
-                                          FontWeight.w300),
+                                          FontWeight.w400),
                                     ),
                                     BarrDeProgreso(progreso: 70),
                                     SelectableText(
@@ -246,7 +246,7 @@ class Cv extends StatelessWidget {
                                           2,
                                           Colors.black.withOpacity(1),
                                           18,
-                                          FontWeight.w300),
+                                          FontWeight.w400),
                                     ),
                                     BarrDeProgreso(progreso: 50),
                                     SelectableText(
@@ -255,7 +255,7 @@ class Cv extends StatelessWidget {
                                           2,
                                           Colors.black.withOpacity(1),
                                           18,
-                                          FontWeight.w300),
+                                          FontWeight.w400),
                                     ),
                                     BarrDeProgreso(progreso: 70),
                                   ],
@@ -426,12 +426,12 @@ class BarrDeProgreso extends StatelessWidget {
         barPointers: <LinearBarPointer>[
           LinearBarPointer(
               value: progreso,
-              thickness: 20,
+              thickness: 15,
               edgeStyle: LinearEdgeStyle.bothCurve,
               color: colorTemaMenu),
         ],
         axisTrackStyle: LinearAxisTrackStyle(
-          thickness: 20,
+          thickness: 15,
           edgeStyle: LinearEdgeStyle.bothCurve,
           borderWidth: 1,
           borderColor: _brightness == Brightness.dark

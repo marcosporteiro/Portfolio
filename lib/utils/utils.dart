@@ -38,7 +38,7 @@ bool isWideScreen(double altura, double largo) {
 
 BoxDecoration ladecoracion(int item) {
   BoxDecoration decoracion;
-  const String ruta1 = "assets/images/banner.jpg";
+  const String ruta1 = "assets/images/banner3.jpg";
 
   switch (item) {
     case 0:

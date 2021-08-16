@@ -212,7 +212,7 @@ class Cv extends StatelessWidget {
                                           18,
                                           FontWeight.w400),
                                     ),
-                                    BarrDeProgreso(progreso: 60),
+                                    BarrDeProgreso(progreso: 75),
                                     SelectableText(
                                       "Flutter ",
                                       style: fuente(
@@ -230,7 +230,7 @@ class Cv extends StatelessWidget {
                                           18,
                                           FontWeight.w400),
                                     ),
-                                    BarrDeProgreso(progreso: 55),
+                                    BarrDeProgreso(progreso: 60),
                                     SelectableText(
                                       "HTML / CSS ",
                                       style: fuente(

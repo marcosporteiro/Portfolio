@@ -22,7 +22,7 @@ class Menu extends StatelessWidget {
             Botones("Inico", Icons.home, 0),
             Botones("Sobre mí", Icons.person, 1),
             Botones("Portfolio", Icons.collections, 2),
-            Botones("Curriculum", Icons.description, 3),
+            Botones("Currículum", Icons.description, 3),
             Botones("Contacto", Icons.mail, 4),
             Container(
               //color: Colors.red,

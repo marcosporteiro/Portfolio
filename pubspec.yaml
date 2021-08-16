@@ -37,6 +37,7 @@ dependencies:
   flutter_styled_toast: ^2.0.0
   http: ^0.13.3
   dwds: ^11.2.0
+  syncfusion_flutter_gauges: ^19.2.55
 
 
 

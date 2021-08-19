@@ -41,7 +41,7 @@ class MyAppBody extends StatefulWidget {
 
 bool obtenerIdioma() {
   String sysLang = ui.window.locale.languageCode;
-  print("Lang: " + sysLang);
+  print("Language: " + sysLang);
   if (sysLang == "es") {
     return false;
   } else {

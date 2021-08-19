@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'dart:ui' as ui;
 
 import 'package:mipagina/menu.dart';
 import 'package:mipagina/principal.dart';
@@ -39,5 +40,11 @@ class MyAppBody extends StatefulWidget {
 }
 
 bool obtenerIdioma() {
-  return false;
+  String sysLang = ui.window.locale.languageCode;
+  print("Lang: " + sysLang);
+  if (sysLang == "es") {
+    return false;
+  } else {
+    return true;
+  }
 }

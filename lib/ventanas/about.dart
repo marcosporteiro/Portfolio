@@ -96,7 +96,7 @@ class About extends StatelessWidget {
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: ingles ? en.about8 : es.about18,
+                              text: ingles ? en.about8 : es.about8,
                             ),
                             TextSpan(
                               text: ingles ? en.about9 : es.about9,

@@ -18,7 +18,7 @@ const String menu2 = "Desarrollador";
 const String home1 = "Hola! mi nombre es ";
 const String home2 = nombre;
 const String home3 =
-    ", en esta lugar voy a contarte quién soy, y mostrarte un poco de lo que hago. ";
+    ", hice esta página web para contarte quién soy, y mostrarte un poco de lo que hago. ";
 const String home4 = "¿Me quieres conocer?";
 const String home5 = "Leer más";
 

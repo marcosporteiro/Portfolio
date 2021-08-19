@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:line_icons/line_icons.dart';
-import 'package:mipagina/utils/utils.dart';
 import 'package:provider/provider.dart';
+import 'package:line_icons/line_icons.dart';
 
+import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/utils/colores.dart';
+
+import 'package:mipagina/strings_es.dart';
+import 'package:mipagina/strings_en.dart' as en;
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
@@ -19,11 +22,11 @@ class Menu extends StatelessWidget {
         child: Column(
           children: [
             TopMenu(),
-            Botones("Inico", Icons.home, 0),
-            Botones("Sobre mí", Icons.person, 1),
-            Botones("Portfolio", Icons.collections, 2),
-            Botones("Currículum", Icons.description, 3),
-            Botones("Contacto", Icons.mail, 4),
+            Botones(boton1, Icons.home, 0),
+            Botones(boton2, Icons.person, 1),
+            Botones(boton3, Icons.collections, 2),
+            Botones(boton4, Icons.description, 3),
+            Botones(boton5, Icons.mail, 4),
             Container(
               //color: Colors.red,
               constraints: BoxConstraints(minHeight: 20),
@@ -242,7 +245,7 @@ class TopMenu extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width,
                     child: Text(
-                      "Marcos Porterio",
+                      nombre,
                       style: fuente(1, textoGrande, 21, FontWeight.w600),
                       textAlign: TextAlign.right,
                     ),
@@ -251,7 +254,7 @@ class TopMenu extends StatelessWidget {
                     margin: EdgeInsets.only(top: 10),
                     width: MediaQuery.of(context).size.width,
                     child: Text(
-                      "Estudiante de Informática",
+                      menu1,
                       style: fuente(1, textoChico, 11, FontWeight.normal),
                       textAlign: TextAlign.right,
                     ),
@@ -260,7 +263,7 @@ class TopMenu extends StatelessWidget {
                     margin: EdgeInsets.only(top: 5),
                     width: MediaQuery.of(context).size.width,
                     child: Text(
-                      "Desarrollador",
+                      menu2,
                       style: fuente(1, textoChico, 11, FontWeight.normal),
                       textAlign: TextAlign.right,
                     ),

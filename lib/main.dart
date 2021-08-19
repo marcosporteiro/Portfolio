@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import 'package:mipagina/menu.dart';
 import 'package:mipagina/principal.dart';
+import 'package:mipagina/utils/utils.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

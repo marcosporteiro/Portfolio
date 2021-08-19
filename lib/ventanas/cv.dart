@@ -5,6 +5,9 @@ import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/utils/responsive.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
+import 'package:mipagina/strings_es.dart';
+import 'package:mipagina/strings_en.dart' as en;
+
 class Cv extends StatelessWidget {
   const Cv({Key? key}) : super(key: key);
 
@@ -33,7 +36,7 @@ class Cv extends StatelessWidget {
                   children: [
                     Container(
                       child: Text(
-                        "MI CURRíCULUM",
+                        cv1,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -57,15 +60,15 @@ class Cv extends StatelessWidget {
                           style: fuente(1, Colors.black.withOpacity(1), 18,
                               FontWeight.w300),
                           children: <TextSpan>[
-                            TextSpan(text: "Mi "),
+                            TextSpan(text: cv2),
                             TextSpan(
-                              text: "currículum",
+                              text: cv3,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: " vitae",
+                              text: cv4,
                             ),
                           ],
                         ),
@@ -87,7 +90,7 @@ class Cv extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                "FORMACIÓN",
+                                cv5,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
@@ -101,7 +104,7 @@ class Cv extends StatelessWidget {
                                     Column(
                                       children: [
                                         SelectableText(
-                                          "En curso",
+                                          cv6,
                                           style: fuente(1, colorMenu, 20,
                                               FontWeight.w600),
                                         ),
@@ -109,7 +112,7 @@ class Cv extends StatelessWidget {
                                           height: 10,
                                         ),
                                         SelectableText(
-                                          "Facultad de ingeniería (Udelar)",
+                                          cv7,
                                           textAlign: TextAlign.center,
                                           style: fuente(
                                               2,
@@ -131,7 +134,7 @@ class Cv extends StatelessWidget {
                                     Column(
                                       children: [
                                         SelectableText(
-                                          "2017 - 2017: ",
+                                          cv8,
                                           style: fuente(1, colorMenu, 20,
                                               FontWeight.w600),
                                         ),
@@ -139,7 +142,7 @@ class Cv extends StatelessWidget {
                                           height: 10,
                                         ),
                                         SelectableText(
-                                          "Analista GeneXus 15 (Jovenes a programar)",
+                                          cv9,
                                           textAlign: TextAlign.center,
                                           style: fuente(
                                               2,
@@ -161,7 +164,7 @@ class Cv extends StatelessWidget {
                                     Column(
                                       children: [
                                         SelectableText(
-                                          "2013 - 2016: ",
+                                          cv10,
                                           style: fuente(1, colorMenu, 20,
                                               FontWeight.w600),
                                         ),
@@ -169,7 +172,7 @@ class Cv extends StatelessWidget {
                                           height: 10,
                                         ),
                                         SelectableText(
-                                          "Escuela Superior de Informática",
+                                          cv11,
                                           textAlign: TextAlign.center,
                                           style: fuente(
                                               2,
@@ -193,7 +196,7 @@ class Cv extends StatelessWidget {
                           child: Column(
                             children: [
                               Text(
-                                "HABILIDADES",
+                                cv12,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
@@ -205,7 +208,7 @@ class Cv extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     SelectableText(
-                                      "Java",
+                                      cv13,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -214,7 +217,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 75),
                                     SelectableText(
-                                      "Flutter ",
+                                      cv14,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -223,7 +226,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 85),
                                     SelectableText(
-                                      "GeneXus 15",
+                                      cv15,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -232,7 +235,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 60),
                                     SelectableText(
-                                      "HTML / CSS ",
+                                      cv16,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -241,7 +244,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 70),
                                     SelectableText(
-                                      ".Net ",
+                                      cv17,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -250,7 +253,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 50),
                                     SelectableText(
-                                      "C++ ",
+                                      cv18,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -282,7 +285,7 @@ class Cv extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                "CERTIFICADOS",
+                                cv19,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
@@ -296,7 +299,7 @@ class Cv extends StatelessWidget {
                                     Column(
                                       children: [
                                         SelectableText(
-                                          "\u2022 Analista GeneXus 15\n\u2022 Bachiller tecnológico en informática",
+                                          cv20,
                                           textAlign: TextAlign.center,
                                           style: fuente(1, colorTemaMenu, 20,
                                               FontWeight.w600),
@@ -317,7 +320,7 @@ class Cv extends StatelessWidget {
                           child: Column(
                             children: [
                               Text(
-                                "IDIOMAS",
+                                cv21,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
@@ -329,7 +332,7 @@ class Cv extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     SelectableText(
-                                      "Español",
+                                      cv22,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -338,7 +341,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 100),
                                     SelectableText(
-                                      "Inglés",
+                                      cv23,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -380,7 +383,7 @@ class Cv extends StatelessWidget {
                           child: Container(
                             child: Center(
                               child: Text(
-                                "Descargar",
+                                cv24,
                                 textAlign: TextAlign.center,
                                 style: fuente(
                                     1, Colors.white, 20, FontWeight.w300),

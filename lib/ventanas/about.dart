@@ -6,6 +6,9 @@ import 'package:mipagina/principal.dart';
 import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/utils/colores.dart';
 
+import 'package:mipagina/strings_es.dart';
+import 'package:mipagina/strings_en.dart' as en;
+
 class About extends StatelessWidget {
   const About({Key? key}) : super(key: key);
 
@@ -44,7 +47,7 @@ class About extends StatelessWidget {
                   children: [
                     Container(
                       child: Text(
-                        "SOBRE MÍ",
+                        about1,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -68,76 +71,71 @@ class About extends StatelessWidget {
                           style: fuente(1, Colors.black.withOpacity(1), 18,
                               FontWeight.w300),
                           children: <TextSpan>[
-                            TextSpan(text: "Mi nombre es "),
+                            TextSpan(text: about2),
                             TextSpan(
-                              text: "Marcos Porteiro",
+                              text: nombre,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: " tengo ",
+                              text: about4,
                             ),
                             TextSpan(
-                                text: "${edad(5, 11, 1997)} años",
+                                text: about5,
                                 style: TextStyle(
                                     fontWeight: FontWeight.w700,
                                     color: colorTemaMenu)),
                             TextSpan(
-                              text: " y actualmente estoy viviendo en",
+                              text: about6,
                             ),
                             TextSpan(
-                              text: " Montevideo, Uruguay.",
+                              text: about7,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text:
-                                  "\n\nDecidí crear esta app/website desde 0 con",
+                              text: about8,
                             ),
                             TextSpan(
-                              text: " Flutter",
+                              text: about9,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text:
-                                  " para poder demostrar un poco de lo que soy capaz",
+                              text: about10,
                             ),
                             TextSpan(
-                              text:
-                                  "\n\nDesde pequeño me llamó mucho la atención la tecnología, por eso luego de hacer 4to de liceo decidí cambiarme a la",
+                              text: about11,
                             ),
                             TextSpan(
-                              text: " Utu de informática",
+                              text: about12,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text:
-                                  " para estudiar lo que más me apasionaba. Allí tuve mi primer contacto con lo relacionado a lo que hoy busco dedicarme que es,",
+                              text: about13,
                             ),
                             TextSpan(
-                              text: " Desarrollar software.",
+                              text: about14,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: "\n\nActualmente estoy cursando la",
+                              text: about15,
                             ),
                             TextSpan(
-                              text: " Facultad de ingeniería",
+                              text: about16,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text:
-                                  " donde quiero ampliar mi conocimiento al máximo para llegar a ser un profesional.",
+                              text: about17,
                             ),
                           ],
                         ),
@@ -146,7 +144,7 @@ class About extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(top: 20, left: 0, right: 0),
                       child: Text(
-                        "METAS",
+                        about18,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -155,7 +153,7 @@ class About extends StatelessWidget {
                       width: (MediaQuery.of(context).size.width / 3) + 50,
                       //color: Colors.green,
                       child: Text(
-                        "Actualmente estoy buscando mi primer trabajo en el área de lo que más me gusta, para seguir aprendiendo y crecer.",
+                        about19,
                         style: fuente(2, Colors.black.withOpacity(1), 18,
                             FontWeight.w300),
                         textAlign: TextAlign.center,
@@ -166,7 +164,7 @@ class About extends StatelessWidget {
                       width: MediaQuery.of(context).size.width / 3 + 50,
                       //color: Colors.green,
                       child: Text(
-                        "\n\u2022 Conocer muchas tecnologías \n\n\u2022 Trabajar en un buen ambiente\n\n\u2022 Mejorar mis habilidades\n\n\u2022 Seguir aprendiendo mucho más!",
+                        about20,
                         style: fuente(2, Colors.black.withOpacity(1), 18,
                             FontWeight.w300),
                         textAlign: TextAlign.center,

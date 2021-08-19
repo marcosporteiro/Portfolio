@@ -4,6 +4,9 @@ import 'package:mipagina/utils/colores.dart';
 import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/utils/responsive.dart';
 
+import 'package:mipagina/strings_es.dart';
+import 'package:mipagina/strings_en.dart' as en;
+
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -28,14 +31,12 @@ class Home extends StatelessWidget {
                   style: fuente(1, textoGrande.withOpacity(0.9),
                       Responsive.isDesktop(context) ? 40 : 25, FontWeight.w100),
                   children: <TextSpan>[
-                    TextSpan(text: "Hola! mi nombre es "),
+                    TextSpan(text: home1),
                     TextSpan(
-                        text: "Marcos Porteiro",
+                        text: nombre,
                         style: TextStyle(
                             fontWeight: FontWeight.w600, color: textoGrande)),
-                    TextSpan(
-                        text:
-                            ", en esta lugar voy a contarte quién soy, y mostrarte un poco de lo que hago. "),
+                    TextSpan(text: home3),
                   ],
                 ),
               ),
@@ -44,7 +45,7 @@ class Home extends StatelessWidget {
               margin:
                   EdgeInsets.only(top: Responsive.isDesktop(context) ? 50 : 45),
               child: Text(
-                "¿Me quieres conocer?",
+                home4,
                 style: fuente(1, textoGrande.withOpacity(0.7),
                     Responsive.isDesktop(context) ? 25 : 20, FontWeight.w200),
               ),
@@ -73,7 +74,7 @@ class Home extends StatelessWidget {
                   child: Container(
                     child: Center(
                       child: Text(
-                        "Leer más",
+                        home5,
                         textAlign: TextAlign.center,
                         style: fuente(1, Colors.white, 20, FontWeight.w300),
                       ),

@@ -4,6 +4,8 @@ import 'package:mouse_parallax/mouse_parallax.dart';
 
 import 'package:mipagina/utils/colores.dart';
 import 'package:mipagina/utils/utils.dart';
+import 'package:mipagina/strings_es.dart';
+import 'package:mipagina/strings_en.dart' as en;
 
 class Portfolio extends StatelessWidget {
   const Portfolio({Key? key}) : super(key: key);
@@ -33,7 +35,7 @@ class Portfolio extends StatelessWidget {
                   children: [
                     Container(
                       child: Text(
-                        "PORTFOLIO",
+                        portfolio1,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -57,16 +59,15 @@ class Portfolio extends StatelessWidget {
                           style: fuente(1, Colors.black.withOpacity(1), 18,
                               FontWeight.w300),
                           children: <TextSpan>[
-                            TextSpan(text: "Algunos de mis "),
+                            TextSpan(text: portfolio2),
                             TextSpan(
-                              text: "proyectos",
+                              text: portfolio3,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text:
-                                  " que realicé en la utu o de forma personal para aprender.",
+                              text: portfolio4,
                             ),
                           ],
                         ),
@@ -88,28 +89,24 @@ class Portfolio extends StatelessWidget {
                   runSpacing: 10,
                   children: [
                     BotonGaleria(
-                      texto: "Gestambo - UTU",
+                      texto: portfolio5,
                       linkFoto: "assets/images/pic1.jpg",
-                      description:
-                          "Proyecto final de utu, el software tenía que gestionar un tambo (altas, bajas y modificaciones), control de animales y empleados.",
+                      description: portfolio6,
                     ),
                     BotonGaleria(
-                      texto: "Gestambo - UTU",
+                      texto: portfolio5,
                       linkFoto: "assets/images/pic2.jpg",
-                      description:
-                          "Proyecto final de utu, el software tenía que gestionar un tambo (altas, bajas y modificaciones), control de animales y empleados.",
+                      description: portfolio6,
                     ),
                     BotonGaleria(
-                      texto: "Gestambo - UTU",
+                      texto: portfolio5,
                       linkFoto: "assets/images/pic3.jpg",
-                      description:
-                          "Proyecto final de utu, el software tenía que gestionar un tambo (altas, bajas y modificaciones), control de animales y empleados.",
+                      description: portfolio6,
                     ),
                     BotonGaleria(
-                      texto: "Mi portfolio",
+                      texto: portfolio7,
                       linkFoto: "assets/images/pic4.jpg",
-                      description:
-                          "Mi portfolio web, hecho en flutter para demostrar un poco de lo que puedo ser capaz.",
+                      description: portfolio8,
                     ),
                   ],
                 ),

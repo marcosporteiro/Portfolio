@@ -9,6 +9,9 @@ import 'package:mipagina/utils/colores.dart';
 import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/utils/responsive.dart';
 
+import 'package:mipagina/strings_es.dart';
+import 'package:mipagina/strings_en.dart' as en;
+
 class Contact extends StatelessWidget {
   const Contact({Key? key}) : super(key: key);
 
@@ -37,7 +40,7 @@ class Contact extends StatelessWidget {
                   children: [
                     Container(
                       child: Text(
-                        "CONTACTO",
+                        contacto1,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -61,15 +64,15 @@ class Contact extends StatelessWidget {
                           style: fuente(1, Colors.black.withOpacity(1), 18,
                               FontWeight.w300),
                           children: <TextSpan>[
-                            TextSpan(text: "Como puedes "),
+                            TextSpan(text: contacto2),
                             TextSpan(
-                              text: "contactar",
+                              text: contacto3,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: " conmigo",
+                              text: contacto4,
                             ),
                           ],
                         ),
@@ -92,12 +95,12 @@ class Contact extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                "TELÉFONO",
+                                contacto5,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
                               SelectableText(
-                                "\n(+598) 98 431 331",
+                                contacto6,
                                 style: fuente(2, Colors.black.withOpacity(1),
                                     18, FontWeight.w300),
                               ),
@@ -109,12 +112,12 @@ class Contact extends StatelessWidget {
                           child: Column(
                             children: [
                               Text(
-                                "CORREO",
+                                contacto7,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
                               SelectableText(
-                                "\nmipoteiro@hotmail.com",
+                                contacto8,
                                 style: fuente(2, Colors.black.withOpacity(1),
                                     18, FontWeight.w300),
                               ),
@@ -163,11 +166,11 @@ class Mails extends StatelessWidget {
                 controller: emailController,
                 validator: (email) =>
                     email != null && !EmailValidator.validate(email)
-                        ? "Email invalido"
+                        ? contacto9
                         : null,
                 decoration: InputDecoration(
-                  labelText: "Mail",
-                  hintText: "nombre@ejemplo.com",
+                  labelText: contacto10,
+                  hintText: contacto11,
                   labelStyle: fuente(
                       1, Colors.black.withOpacity(1), 18, FontWeight.w300),
                   fillColor: Colors.white,
@@ -189,12 +192,11 @@ class Mails extends StatelessWidget {
               child: TextFormField(
                 maxLines: 5,
                 controller: mensajeController,
-                validator: (mensaje) => mensaje != null && mensaje != ""
-                    ? null
-                    : "Ingrese un mensaje",
+                validator: (mensaje) =>
+                    mensaje != null && mensaje != "" ? null : contacto12,
                 cursorColor: colorTemaMenu,
                 decoration: InputDecoration(
-                  hintText: "Su mensaje",
+                  hintText: contacto13,
                   contentPadding: EdgeInsets.all(10),
                   isDense: true,
                   labelStyle: fuente(
@@ -237,7 +239,7 @@ class Mails extends StatelessWidget {
                   child: Container(
                     child: Center(
                       child: Text(
-                        "Enviar",
+                        contacto14,
                         textAlign: TextAlign.center,
                         style: fuente(1, Colors.white, 20, FontWeight.w300),
                       ),
@@ -253,14 +255,14 @@ class Mails extends StatelessWidget {
                       try {
                         // print(email);
                         // print(mensaje);
-                        showToast("Enviando...",
+                        showToast(contacto15,
                             context: context,
                             duration: Duration(seconds: 8),
                             backgroundColor: Colors.amber,
                             position: StyledToastPosition(
                                 align: Alignment.bottomRight, offset: 45));
                         await sendEmail(subject: email, message: mensaje);
-                        showToast("Mensaje enviado.",
+                        showToast(contacto16,
                             context: context,
                             backgroundColor: Colors.green,
                             duration: Duration(seconds: 4),
@@ -268,8 +270,7 @@ class Mails extends StatelessWidget {
                                 align: Alignment.bottomRight, offset: 45));
                         botonClikeado = true;
                       } catch (e) {
-                        showToast(
-                            "El mensaje no se pudo enviar. " + e.toString(),
+                        showToast(contacto16 + e.toString(),
                             context: context,
                             duration: Duration(seconds: 4),
                             backgroundColor: Colors.red,
@@ -278,7 +279,7 @@ class Mails extends StatelessWidget {
                       }
                     }
                   } else {
-                    showToast("Solo puedes enviar un mensaje a la vez.",
+                    showToast(contacto18,
                         context: context,
                         backgroundColor: Colors.red,
                         duration: Duration(seconds: 2),

@@ -104,7 +104,7 @@ class About extends StatelessWidget {
                             ),
                             TextSpan(
                               text:
-                                  " desde 0 con  para poder demostrar un poco de lo que soy capaz",
+                                  " para poder demostrar un poco de lo que soy capaz",
                             ),
                             TextSpan(
                               text:

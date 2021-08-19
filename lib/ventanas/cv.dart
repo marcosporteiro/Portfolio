@@ -223,7 +223,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 85),
                                     SelectableText(
-                                      "GeneXus ",
+                                      "GeneXus 15",
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -250,7 +250,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 50),
                                     SelectableText(
-                                      "c++ ",
+                                      "C++ ",
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),

@@ -66,7 +66,7 @@ class Portfolio extends StatelessWidget {
                             ),
                             TextSpan(
                               text:
-                                  " que realicé en la utu o de forma personal.",
+                                  " que realicé en la utu o de forma personal para aprender.",
                             ),
                           ],
                         ),

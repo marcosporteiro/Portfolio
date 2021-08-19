@@ -9,7 +9,7 @@ import 'package:mipagina/utils/colores.dart';
 import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/utils/responsive.dart';
 
-import 'package:mipagina/strings_es.dart';
+import 'package:mipagina/strings_es.dart' as es;
 import 'package:mipagina/strings_en.dart' as en;
 
 class Contact extends StatelessWidget {
@@ -40,7 +40,7 @@ class Contact extends StatelessWidget {
                   children: [
                     Container(
                       child: Text(
-                        contacto1,
+                        ingles ? en.contacto1 : es.contacto1,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -64,15 +64,16 @@ class Contact extends StatelessWidget {
                           style: fuente(1, Colors.black.withOpacity(1), 18,
                               FontWeight.w300),
                           children: <TextSpan>[
-                            TextSpan(text: contacto2),
                             TextSpan(
-                              text: contacto3,
+                                text: ingles ? en.contacto2 : es.contacto2),
+                            TextSpan(
+                              text: ingles ? en.contacto3 : es.contacto3,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: contacto4,
+                              text: ingles ? en.contacto4 : es.contacto4,
                             ),
                           ],
                         ),
@@ -95,12 +96,12 @@ class Contact extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                contacto5,
+                                ingles ? en.contacto5 : es.contacto5,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
                               SelectableText(
-                                contacto6,
+                                ingles ? en.contacto6 : es.contacto6,
                                 style: fuente(2, Colors.black.withOpacity(1),
                                     18, FontWeight.w300),
                               ),
@@ -112,12 +113,12 @@ class Contact extends StatelessWidget {
                           child: Column(
                             children: [
                               Text(
-                                contacto7,
+                                ingles ? en.contacto7 : es.contacto7,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
                               SelectableText(
-                                contacto8,
+                                ingles ? en.contacto8 : es.contacto8,
                                 style: fuente(2, Colors.black.withOpacity(1),
                                     18, FontWeight.w300),
                               ),
@@ -166,11 +167,13 @@ class Mails extends StatelessWidget {
                 controller: emailController,
                 validator: (email) =>
                     email != null && !EmailValidator.validate(email)
-                        ? contacto9
+                        ? ingles
+                            ? en.contacto9
+                            : es.contacto9
                         : null,
                 decoration: InputDecoration(
-                  labelText: contacto10,
-                  hintText: contacto11,
+                  labelText: ingles ? en.contacto10 : es.contacto10,
+                  hintText: ingles ? en.contacto11 : es.contacto11,
                   labelStyle: fuente(
                       1, Colors.black.withOpacity(1), 18, FontWeight.w300),
                   fillColor: Colors.white,
@@ -192,11 +195,14 @@ class Mails extends StatelessWidget {
               child: TextFormField(
                 maxLines: 5,
                 controller: mensajeController,
-                validator: (mensaje) =>
-                    mensaje != null && mensaje != "" ? null : contacto12,
+                validator: (mensaje) => mensaje != null && mensaje != ""
+                    ? null
+                    : ingles
+                        ? en.contacto12
+                        : es.contacto12,
                 cursorColor: colorTemaMenu,
                 decoration: InputDecoration(
-                  hintText: contacto13,
+                  hintText: ingles ? en.contacto13 : es.contacto13,
                   contentPadding: EdgeInsets.all(10),
                   isDense: true,
                   labelStyle: fuente(
@@ -239,7 +245,7 @@ class Mails extends StatelessWidget {
                   child: Container(
                     child: Center(
                       child: Text(
-                        contacto14,
+                        ingles ? en.contacto14 : es.contacto14,
                         textAlign: TextAlign.center,
                         style: fuente(1, Colors.white, 20, FontWeight.w300),
                       ),
@@ -255,14 +261,14 @@ class Mails extends StatelessWidget {
                       try {
                         // print(email);
                         // print(mensaje);
-                        showToast(contacto15,
+                        showToast(ingles ? en.contacto15 : es.contacto15,
                             context: context,
                             duration: Duration(seconds: 8),
                             backgroundColor: Colors.amber,
                             position: StyledToastPosition(
                                 align: Alignment.bottomRight, offset: 45));
                         await sendEmail(subject: email, message: mensaje);
-                        showToast(contacto16,
+                        showToast(ingles ? en.contacto16 : es.contacto16,
                             context: context,
                             backgroundColor: Colors.green,
                             duration: Duration(seconds: 4),
@@ -270,7 +276,10 @@ class Mails extends StatelessWidget {
                                 align: Alignment.bottomRight, offset: 45));
                         botonClikeado = true;
                       } catch (e) {
-                        showToast(contacto16 + e.toString(),
+                        showToast(
+                            ingles
+                                ? en.contacto17
+                                : es.contacto17 + e.toString(),
                             context: context,
                             duration: Duration(seconds: 4),
                             backgroundColor: Colors.red,
@@ -279,7 +288,7 @@ class Mails extends StatelessWidget {
                       }
                     }
                   } else {
-                    showToast(contacto18,
+                    showToast(ingles ? en.contacto18 : es.contacto18,
                         context: context,
                         backgroundColor: Colors.red,
                         duration: Duration(seconds: 2),

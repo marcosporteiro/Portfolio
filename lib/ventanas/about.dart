@@ -6,7 +6,7 @@ import 'package:mipagina/principal.dart';
 import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/utils/colores.dart';
 
-import 'package:mipagina/strings_es.dart';
+import 'package:mipagina/strings_es.dart' as es;
 import 'package:mipagina/strings_en.dart' as en;
 
 class About extends StatelessWidget {
@@ -47,7 +47,7 @@ class About extends StatelessWidget {
                   children: [
                     Container(
                       child: Text(
-                        about1,
+                        ingles ? en.about1 : es.about1,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -71,71 +71,71 @@ class About extends StatelessWidget {
                           style: fuente(1, Colors.black.withOpacity(1), 18,
                               FontWeight.w300),
                           children: <TextSpan>[
-                            TextSpan(text: about2),
+                            TextSpan(text: ingles ? en.about2 : es.about2),
                             TextSpan(
-                              text: nombre,
+                              text: ingles ? en.nombre : es.nombre,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: about4,
+                              text: ingles ? en.about4 : es.about4,
                             ),
                             TextSpan(
-                                text: about5,
+                                text: ingles ? en.about5 : es.about5,
                                 style: TextStyle(
                                     fontWeight: FontWeight.w700,
                                     color: colorTemaMenu)),
                             TextSpan(
-                              text: about6,
+                              text: ingles ? en.about6 : es.about6,
                             ),
                             TextSpan(
-                              text: about7,
+                              text: ingles ? en.about7 : es.about7,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: about8,
+                              text: ingles ? en.about8 : es.about18,
                             ),
                             TextSpan(
-                              text: about9,
+                              text: ingles ? en.about9 : es.about9,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: about10,
+                              text: ingles ? en.about10 : es.about10,
                             ),
                             TextSpan(
-                              text: about11,
+                              text: ingles ? en.about11 : es.about11,
                             ),
                             TextSpan(
-                              text: about12,
+                              text: ingles ? en.about12 : es.about12,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: about13,
+                              text: ingles ? en.about13 : es.about13,
                             ),
                             TextSpan(
-                              text: about14,
+                              text: ingles ? en.about14 : es.about14,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: about15,
+                              text: ingles ? en.about15 : es.about15,
                             ),
                             TextSpan(
-                              text: about16,
+                              text: ingles ? en.about16 : es.about16,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: about17,
+                              text: ingles ? en.about17 : es.about17,
                             ),
                           ],
                         ),
@@ -144,7 +144,7 @@ class About extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(top: 20, left: 0, right: 0),
                       child: Text(
-                        about18,
+                        ingles ? en.about18 : es.about18,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -153,7 +153,7 @@ class About extends StatelessWidget {
                       width: (MediaQuery.of(context).size.width / 3) + 50,
                       //color: Colors.green,
                       child: Text(
-                        about19,
+                        ingles ? en.about19 : es.about19,
                         style: fuente(2, Colors.black.withOpacity(1), 18,
                             FontWeight.w300),
                         textAlign: TextAlign.center,
@@ -164,7 +164,7 @@ class About extends StatelessWidget {
                       width: MediaQuery.of(context).size.width / 3 + 50,
                       //color: Colors.green,
                       child: Text(
-                        about20,
+                        ingles ? en.about20 : es.about20,
                         style: fuente(2, Colors.black.withOpacity(1), 18,
                             FontWeight.w300),
                         textAlign: TextAlign.center,

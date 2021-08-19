@@ -5,7 +5,7 @@ import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/utils/responsive.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 
-import 'package:mipagina/strings_es.dart';
+import 'package:mipagina/strings_es.dart' as es;
 import 'package:mipagina/strings_en.dart' as en;
 
 class Cv extends StatelessWidget {
@@ -36,7 +36,7 @@ class Cv extends StatelessWidget {
                   children: [
                     Container(
                       child: Text(
-                        cv1,
+                        ingles ? en.cv1 : es.cv1,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -60,15 +60,15 @@ class Cv extends StatelessWidget {
                           style: fuente(1, Colors.black.withOpacity(1), 18,
                               FontWeight.w300),
                           children: <TextSpan>[
-                            TextSpan(text: cv2),
+                            TextSpan(text: ingles ? en.cv2 : es.cv2),
                             TextSpan(
-                              text: cv3,
+                              text: ingles ? en.cv3 : es.cv3,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: cv4,
+                              text: ingles ? en.cv4 : es.cv4,
                             ),
                           ],
                         ),
@@ -90,7 +90,7 @@ class Cv extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                cv5,
+                                ingles ? en.cv5 : es.cv5,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
@@ -104,7 +104,7 @@ class Cv extends StatelessWidget {
                                     Column(
                                       children: [
                                         SelectableText(
-                                          cv6,
+                                          ingles ? en.cv6 : es.cv6,
                                           style: fuente(1, colorMenu, 20,
                                               FontWeight.w600),
                                         ),
@@ -112,7 +112,7 @@ class Cv extends StatelessWidget {
                                           height: 10,
                                         ),
                                         SelectableText(
-                                          cv7,
+                                          ingles ? en.cv7 : es.cv7,
                                           textAlign: TextAlign.center,
                                           style: fuente(
                                               2,
@@ -134,7 +134,7 @@ class Cv extends StatelessWidget {
                                     Column(
                                       children: [
                                         SelectableText(
-                                          cv8,
+                                          ingles ? en.cv8 : es.cv8,
                                           style: fuente(1, colorMenu, 20,
                                               FontWeight.w600),
                                         ),
@@ -142,7 +142,7 @@ class Cv extends StatelessWidget {
                                           height: 10,
                                         ),
                                         SelectableText(
-                                          cv9,
+                                          ingles ? en.cv9 : es.cv9,
                                           textAlign: TextAlign.center,
                                           style: fuente(
                                               2,
@@ -164,7 +164,7 @@ class Cv extends StatelessWidget {
                                     Column(
                                       children: [
                                         SelectableText(
-                                          cv10,
+                                          ingles ? en.cv10 : es.cv10,
                                           style: fuente(1, colorMenu, 20,
                                               FontWeight.w600),
                                         ),
@@ -172,7 +172,7 @@ class Cv extends StatelessWidget {
                                           height: 10,
                                         ),
                                         SelectableText(
-                                          cv11,
+                                          ingles ? en.cv11 : es.cv11,
                                           textAlign: TextAlign.center,
                                           style: fuente(
                                               2,
@@ -196,7 +196,7 @@ class Cv extends StatelessWidget {
                           child: Column(
                             children: [
                               Text(
-                                cv12,
+                                ingles ? en.cv12 : es.cv12,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
@@ -208,7 +208,7 @@ class Cv extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     SelectableText(
-                                      cv13,
+                                      ingles ? en.cv13 : es.cv13,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -217,7 +217,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 75),
                                     SelectableText(
-                                      cv14,
+                                      ingles ? en.cv14 : es.cv14,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -226,7 +226,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 85),
                                     SelectableText(
-                                      cv15,
+                                      ingles ? en.cv15 : es.cv15,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -235,7 +235,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 60),
                                     SelectableText(
-                                      cv16,
+                                      ingles ? en.cv16 : es.cv16,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -244,7 +244,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 70),
                                     SelectableText(
-                                      cv17,
+                                      ingles ? en.cv17 : es.cv17,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -253,7 +253,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 50),
                                     SelectableText(
-                                      cv18,
+                                      ingles ? en.cv18 : es.cv18,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -285,7 +285,7 @@ class Cv extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                cv19,
+                                ingles ? en.cv19 : es.cv19,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
@@ -299,7 +299,7 @@ class Cv extends StatelessWidget {
                                     Column(
                                       children: [
                                         SelectableText(
-                                          cv20,
+                                          ingles ? en.cv20 : es.cv20,
                                           textAlign: TextAlign.center,
                                           style: fuente(1, colorTemaMenu, 20,
                                               FontWeight.w600),
@@ -320,7 +320,7 @@ class Cv extends StatelessWidget {
                           child: Column(
                             children: [
                               Text(
-                                cv21,
+                                ingles ? en.cv21 : es.cv21,
                                 style:
                                     fuente(1, colorMenu, 25, FontWeight.bold),
                               ),
@@ -332,7 +332,7 @@ class Cv extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     SelectableText(
-                                      cv22,
+                                      ingles ? en.cv22 : es.cv22,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -341,7 +341,7 @@ class Cv extends StatelessWidget {
                                     ),
                                     BarrDeProgreso(progreso: 100),
                                     SelectableText(
-                                      cv23,
+                                      ingles ? en.cv23 : es.cv23,
                                       style: fuente(
                                           2,
                                           Colors.black.withOpacity(1),
@@ -383,7 +383,7 @@ class Cv extends StatelessWidget {
                           child: Container(
                             child: Center(
                               child: Text(
-                                cv24,
+                                ingles ? en.cv24 : es.cv24,
                                 textAlign: TextAlign.center,
                                 style: fuente(
                                     1, Colors.white, 20, FontWeight.w300),

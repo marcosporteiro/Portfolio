@@ -4,7 +4,8 @@ import 'package:mouse_parallax/mouse_parallax.dart';
 
 import 'package:mipagina/utils/colores.dart';
 import 'package:mipagina/utils/utils.dart';
-import 'package:mipagina/strings_es.dart';
+
+import 'package:mipagina/strings_es.dart' as es;
 import 'package:mipagina/strings_en.dart' as en;
 
 class Portfolio extends StatelessWidget {
@@ -35,7 +36,7 @@ class Portfolio extends StatelessWidget {
                   children: [
                     Container(
                       child: Text(
-                        portfolio1,
+                        ingles ? en.portfolio1 : es.portfolio1,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -59,15 +60,16 @@ class Portfolio extends StatelessWidget {
                           style: fuente(1, Colors.black.withOpacity(1), 18,
                               FontWeight.w300),
                           children: <TextSpan>[
-                            TextSpan(text: portfolio2),
                             TextSpan(
-                              text: portfolio3,
+                                text: ingles ? en.portfolio2 : es.portfolio2),
+                            TextSpan(
+                              text: ingles ? en.portfolio3 : es.portfolio3,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: portfolio4,
+                              text: ingles ? en.portfolio4 : es.portfolio4,
                             ),
                           ],
                         ),
@@ -89,24 +91,24 @@ class Portfolio extends StatelessWidget {
                   runSpacing: 10,
                   children: [
                     BotonGaleria(
-                      texto: portfolio5,
+                      texto: ingles ? en.portfolio5 : es.portfolio5,
                       linkFoto: "assets/images/pic1.jpg",
-                      description: portfolio6,
+                      description: ingles ? en.portfolio6 : es.portfolio6,
                     ),
                     BotonGaleria(
-                      texto: portfolio5,
+                      texto: ingles ? en.portfolio5 : es.portfolio5,
                       linkFoto: "assets/images/pic2.jpg",
-                      description: portfolio6,
+                      description: ingles ? en.portfolio6 : es.portfolio6,
                     ),
                     BotonGaleria(
-                      texto: portfolio5,
+                      texto: ingles ? en.portfolio5 : es.portfolio5,
                       linkFoto: "assets/images/pic3.jpg",
-                      description: portfolio6,
+                      description: ingles ? en.portfolio6 : es.portfolio6,
                     ),
                     BotonGaleria(
-                      texto: portfolio7,
+                      texto: ingles ? en.portfolio7 : es.portfolio7,
                       linkFoto: "assets/images/pic4.jpg",
-                      description: portfolio8,
+                      description: ingles ? en.portfolio8 : es.portfolio8,
                     ),
                   ],
                 ),

@@ -8,6 +8,7 @@ import 'package:mipagina/utils/utils.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
+  ingles = obtenerIdioma();
   runApp(MyApp());
 }
 
@@ -35,4 +36,8 @@ class MyAppBody extends StatefulWidget {
 
   @override
   Cuerpo createState() => Cuerpo();
+}
+
+bool obtenerIdioma() {
+  return false;
 }

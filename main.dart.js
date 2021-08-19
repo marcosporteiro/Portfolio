@@ -64440,7 +64440,7 @@ m=m?$.aqF():$.aqG()
 m=Q.b8(a0,A.dn(a0,a0,C.a7,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,C.J,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0),m)
 k=Q.b8(a0,a0,$.aN?" and now i'm living in":" y actualmente estoy viviendo en")
 j=Q.b8(a0,A.dn(a0,a0,C.a7,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,C.J,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0)," Montevideo, Uruguay.")
-i=Q.b8(a0,a0,$.aN?"\n\nI decided to create this app/website with":"METAS")
+i=Q.b8(a0,a0,$.aN?"\n\nI decided to create this app/website with":"\n\nDecid\xed crear esta app/website desde 0 con")
 h=Q.b8(a0,A.dn(a0,a0,C.a7,a0,a0,a0,a0,a0,a0,a0,a0,a0,a0,C.J,a0,a0,!0,a0,a0,a0,a0,a0,a0,a0)," Flutter")
 g=$.aN
 f=Q.b8(a0,a0,g?" to show a little of what I'm capable.":" para poder demostrar un poco de lo que soy capaz.")
@@ -64645,7 +64645,7 @@ J:function(a,b){var s,r,q,p=null,o=t.w,n=b.v(o).f.a.a>=850?new V.V(150,190,150,1
 l=B.b2(1,l,b.v(o).f.a.a>=850?40:25,C.aU)
 s=Q.b8(p,p,$.aN?"Hi! my name is ":"Hola! mi nombre es ")
 r=Q.b8(p,A.dn(p,p,C.k,p,p,p,p,p,p,p,p,p,p,C.b5,p,p,!0,p,p,p,p,p,p,p),"Marcos Porteiro")
-m=M.Q(p,T.q1(p,p,C.bd,!0,p,Q.b8(H.a([s,r,Q.b8(p,p,$.aN?", on this website I am going to tell you who I am, and show you a bit of what I do. ":", en esta lugar voy a contarte qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.Ne),l,""),C.a2,p,p,1,C.as),C.h,p,p,p,p,p,new V.V(0,m,0,0),p,p,p,p)
+m=M.Q(p,T.q1(p,p,C.bd,!0,p,Q.b8(H.a([s,r,Q.b8(p,p,$.aN?", on this website I am going to tell you who I am, and show you a bit of what I do. ":", hice esta p\xe1gina web para contarte qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.Ne),l,""),C.a2,p,p,1,C.as),C.h,p,p,p,p,p,new V.V(0,m,0,0),p,p,p,p)
 l=b.v(o).f.a.a>=850?50:45
 s=$.aN?"Do you want to meet me?":"\xbfMe quieres conocer?"
 r=P.S(C.d.a8(178.5),255,255,255)

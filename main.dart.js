@@ -64416,7 +64416,7 @@ m=Q.b7(k,k," tengo ")
 l=H.awx(1997,11,5,0,0,0,0,!1)
 if(!H.lI(l))H.d(H.ka(l))
 l=""+C.f.cs(C.f.cs(P.bM(0,Date.now()-l,0).a,864e8),365)+" a\xf1os"
-q=M.Q(k,T.q0(k,k,C.bd,!0,k,Q.b7(H.a([o,n,m,Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k),l),Q.b7(k,k," y actualmente estoy viviendo en"),Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k)," Montevideo, Uruguay."),Q.b7(k,k,"\n\nDecid\xed crear esta app/website desde 0 con"),Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k)," Flutter"),Q.b7(k,k," desde 0 con  para poder demostrar un poco de lo que soy capaz"),Q.b7(k,k,"\n\nDesde peque\xf1o me llam\xf3 mucho la atenci\xf3n la tecnolog\xeda, por eso luego de hacer 4to de liceo decid\xed cambiarme a la"),Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k)," Utu de inform\xe1tica"),Q.b7(k,k," para estudiar lo que m\xe1s me apasionaba. All\xed tuve mi primer contacto con lo relacionado a lo que hoy busco dedicarme que es,"),Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k)," Desarrollar software."),Q.b7(k,k,"\n\nActualmente estoy cursando la"),Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k)," Facultad de ingenier\xeda"),Q.b7(k,k," donde quiero ampliar mi conocimiento al m\xe1ximo para llegar a ser un profesional.")],t.Ne),p,""),C.a2,k,k,1,C.as),C.h,k,k,k,k,k,k,k,k,k,q)
+q=M.Q(k,T.q0(k,k,C.bd,!0,k,Q.b7(H.a([o,n,m,Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k),l),Q.b7(k,k," y actualmente estoy viviendo en"),Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k)," Montevideo, Uruguay."),Q.b7(k,k,"\n\nDecid\xed crear esta app/website desde 0 con"),Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k)," Flutter"),Q.b7(k,k," para poder demostrar un poco de lo que soy capaz"),Q.b7(k,k,"\n\nDesde peque\xf1o me llam\xf3 mucho la atenci\xf3n la tecnolog\xeda, por eso luego de hacer 4to de liceo decid\xed cambiarme a la"),Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k)," Utu de inform\xe1tica"),Q.b7(k,k," para estudiar lo que m\xe1s me apasionaba. All\xed tuve mi primer contacto con lo relacionado a lo que hoy busco dedicarme que es,"),Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k)," Desarrollar software."),Q.b7(k,k,"\n\nActualmente estoy cursando la"),Q.b7(k,A.dm(k,k,C.a7,k,k,k,k,k,k,k,k,k,k,C.J,k,k,!0,k,k,k,k,k,k,k)," Facultad de ingenier\xeda"),Q.b7(k,k," donde quiero ampliar mi conocimiento al m\xe1ximo para llegar a ser un profesional.")],t.Ne),p,""),C.a2,k,k,1,C.as),C.h,k,k,k,k,k,k,k,k,k,q)
 p=M.Q(k,L.c2("METAS",k,k,k,B.b1(1,C.ac,40,C.J),k,k),C.h,k,k,k,k,k,new V.V(0,20,0,0),k,k,k,k)
 l=b.v(j).f
 l=M.Q(k,L.c2("Actualmente estoy buscando mi primer trabajo en el \xe1rea de lo que m\xe1s me gusta, para seguir aprendiendo y crecer.",k,k,k,B.b1(2,P.S(255,0,0,0),18,C.a0),C.a2,k),C.h,k,k,k,k,k,new V.V(0,20,0,0),k,k,k,l.a.a/3+50)
@@ -64520,7 +64520,7 @@ m=M.Q(f,T.d1(H.a([o,n,M.Q(f,T.d1(H.a([T.d1(H.a([l,k,j,i,Z.ub(P.S(h,34,38,41),50,
 h=L.c2("HABILIDADES",f,f,f,B.b1(1,C.ac,25,C.J),f,f)
 i=M.Q(f,f,C.h,f,f,f,f,15,f,f,f,f,f)
 j=b.v(e).f
-p=T.oY(H.a([m,M.Q(f,T.d1(H.a([h,i,M.Q(f,T.d1(H.a([O.e4("Java",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(75,f),O.e4("Flutter ",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(85,f),O.e4("GeneXus ",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(60,f),O.e4("HTML / CSS ",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(70,f),O.e4(".Net ",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(50,f),O.e4("c++ ",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(70,f)],g),C.R,C.a1,C.N),C.h,f,f,f,f,f,f,f,f,f,j.a.a/4)],g),C.R,C.a1,C.N),C.h,f,f,f,f,f,new V.V(30,20,30,0),f,f,f,f)],g),C.d4,p,f,C.br,C.N,f,f,C.aH)
+p=T.oY(H.a([m,M.Q(f,T.d1(H.a([h,i,M.Q(f,T.d1(H.a([O.e4("Java",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(75,f),O.e4("Flutter ",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(85,f),O.e4("GeneXus 15",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(60,f),O.e4("HTML / CSS ",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(70,f),O.e4(".Net ",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(50,f),O.e4("C++ ",B.b1(2,P.S(255,0,0,0),18,C.r),f),new Y.fZ(70,f)],g),C.R,C.a1,C.N),C.h,f,f,f,f,f,f,f,f,f,j.a.a/4)],g),C.R,C.a1,C.N),C.h,f,f,f,f,f,new V.V(30,20,30,0),f,f,f,f)],g),C.d4,p,f,C.br,C.N,f,f,C.aH)
 o=b.v(e).f.a.b<b.v(e).f.a.a?C.l:C.m
 n=L.c2("CERTIFICADOS",f,f,f,B.b1(1,C.ac,25,C.J),f,f)
 m=M.Q(f,f,C.h,f,f,f,f,15,f,f,f,f,f)
@@ -64549,7 +64549,7 @@ return M.Q(s,this.d,C.h,s,new S.at(1000,1/0,1000,1/0),this.c,s,b.v(r).f.a.b,s,s,
 Y.Ei.prototype={
 J:function(a,b){var s,r,q,p=null,o=t.w,n=b.v(o).f.a.a>=850?new V.V(150,190,150,10):new V.V(5,150,5,0),m=b.v(o).f.a.a>=850?75:50,l=P.S(C.d.a8(229.5),255,255,255)
 l=B.b1(1,l,b.v(o).f.a.a>=850?40:25,C.aU)
-m=M.Q(p,T.q0(p,p,C.bd,!0,p,Q.b7(H.a([Q.b7(p,p,"Hola! mi nombre es "),Q.b7(p,A.dm(p,p,C.k,p,p,p,p,p,p,p,p,p,p,C.b5,p,p,!0,p,p,p,p,p,p,p),"Marcos Porteiro"),Q.b7(p,p,", y voy a contarte Qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.Ne),l,""),C.a2,p,p,1,C.as),C.h,p,p,p,p,p,new V.V(0,m,0,0),p,p,p,p)
+m=M.Q(p,T.q0(p,p,C.bd,!0,p,Q.b7(H.a([Q.b7(p,p,"Hola! mi nombre es "),Q.b7(p,A.dm(p,p,C.k,p,p,p,p,p,p,p,p,p,p,C.b5,p,p,!0,p,p,p,p,p,p,p),"Marcos Porteiro"),Q.b7(p,p,", en esta lugar voy a contarte qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.Ne),l,""),C.a2,p,p,1,C.as),C.h,p,p,p,p,p,new V.V(0,m,0,0),p,p,p,p)
 l=b.v(o).f.a.a>=850?50:45
 s=P.S(C.d.a8(178.5),255,255,255)
 l=M.Q(p,L.c2("\xbfMe quieres conocer?",p,p,p,B.b1(1,s,b.v(o).f.a.a>=850?25:20,C.cr),p,p),C.h,p,p,p,p,p,new V.V(0,l,0,0),p,p,p,p)
@@ -64575,7 +64575,7 @@ r=M.Q(n,Z.ub(C.ac,n,n,2),C.h,n,n,n,n,n,new V.V(0,10,0,20),n,n,n,25)
 q=b.v(k).f.a.a>=850?b.v(k).f.a.a/3+50:n
 p=B.b1(1,P.S(255,0,0,0),18,C.a0)
 o=t.p
-q=T.mg(M.Q(n,E.qb(T.d1(H.a([s,r,M.Q(n,T.q0(n,n,C.bd,!0,n,Q.b7(H.a([Q.b7(n,n,"Algunos de mis "),Q.b7(n,A.dm(n,n,C.a7,n,n,n,n,n,n,n,n,n,n,C.J,n,n,!0,n,n,n,n,n,n,n),"proyectos"),Q.b7(n,n," que realic\xe9 en la utu o de forma personal.")],t.Ne),p,""),C.a2,n,n,1,C.as),C.h,n,n,n,n,n,n,n,n,n,q)],o),C.R,C.a1,C.N)),C.h,n,n,n,n,n,n,n,n,n,n),1)
+q=T.mg(M.Q(n,E.qb(T.d1(H.a([s,r,M.Q(n,T.q0(n,n,C.bd,!0,n,Q.b7(H.a([Q.b7(n,n,"Algunos de mis "),Q.b7(n,A.dm(n,n,C.a7,n,n,n,n,n,n,n,n,n,n,C.J,n,n,!0,n,n,n,n,n,n,n),"proyectos"),Q.b7(n,n," que realic\xe9 en la utu o de forma personal para aprender.")],t.Ne),p,""),C.a2,n,n,1,C.as),C.h,n,n,n,n,n,n,n,n,n,q)],o),C.R,C.a1,C.N)),C.h,n,n,n,n,n,n,n,n,n,n),1)
 k=b.v(k).f.a.a>=850?3:2
 return M.Q(n,T.oY(H.a([q,T.mg(M.Q(n,E.qb(new T.Ju(10,10,H.a([new S.m_(m,"assets/images/pic1.jpg",l,n),new S.m_(m,"assets/images/pic2.jpg",l,n),new S.m_(m,"assets/images/pic3.jpg",l,n),new S.m_("Mi portfolio","assets/images/pic4.jpg","Mi portfolio web, hecho en flutter para demostrar un poco de lo que puedo ser capaz.",n)],o),n)),C.h,n,n,n,n,n,n,new V.V(10,10,10,10),n,n,n),k)],o),C.R,C.m,n,C.a1,C.N,n,n,C.aH),C.h,n,n,n,n,n,n,j,n,n,n)}}
 S.Ea.prototype={

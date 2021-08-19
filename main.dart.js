@@ -19260,7 +19260,7 @@ this.b=b},
 aCm:function(){var s,r=$.b3().b.a.f
 r=r.length===0?C.tc:C.c.gK(r)
 s=r.glB(r)
-P.lO("Lang: "+s)
+P.lO("Language: "+s)
 if(s==="es")return!1
 else return!0},
 Fo:function Fo(a){this.a=a},

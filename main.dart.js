@@ -64292,7 +64292,7 @@ $S:401}
 F.vK.prototype={
 aH:function(){return new V.CW(C.o)}}
 D.vC.prototype={
-J:function(a,b){var s,r,q,p,o,n,m=null,l=t.w,k=b.v(l).f,j=b.v(l).f,i=$.aN,h=i?"Home":"Inico",g=i?"About me":"Sobre m\xed",f=i?"Gallery":"Portfolio",e=i?"Resume":"Curr\xedculum"
+J:function(a,b){var s,r,q,p,o,n,m=null,l=t.w,k=b.v(l).f,j=b.v(l).f,i=$.aN,h=i?"Home":"Inico",g=i?"About me":"Sobre m\xed",f=i?"Resume":"Curr\xedculum",e=i?"Gallery":"Portfolio"
 i=i?"Contact":"Contacto"
 s=M.Q(m,m,C.h,m,new S.at(0,1/0,20,1/0),m,m,b.v(l).f.a.b-650,m,m,m,m,b.v(l).f.a.a)
 r=b.v(l).f
@@ -64302,7 +64302,7 @@ o=t.M1
 n=t.p
 r=M.Q(m,T.a2g(H.a([M.Q(m,U.qP(L.Eo(C.qH,P.S(q,255,255,255),m),new D.Zg(),A.kp(m,m,m,m,m,m,m,m,m,new V.c0(P.S(q,0,0,0),p),m,m,new V.c0(new X.cw(K.BN(new P.b0(50,50)),C.q),o),m,C.bQ,m,m,m)),C.h,m,m,m,m,m,m,new V.V(10,10,10,10),m,m,50),M.Q(m,U.qP(L.Eo(C.qI,P.S(q,255,255,255),m),new D.Zh(),A.kp(m,m,m,m,m,m,m,m,m,new V.c0(P.S(q,0,0,0),p),m,m,new V.c0(new X.cw(K.BN(new P.b0(50,50)),C.q),o),m,C.bQ,m,m,m)),C.h,m,m,m,m,m,m,new V.V(10,10,10,10),m,m,50)],n),C.br),C.h,m,m,m,m,50,m,m,m,m,r.a.a)
 l=b.v(l).f
-return M.Q(m,E.qc(T.d2(H.a([new D.J1(m),new D.kn(C.qC,0,h,m),new D.kn(C.qF,1,g,m),new D.kn(C.qA,2,f,m),new D.kn(C.qB,3,e,m),new D.kn(C.qD,4,i,m),s,r,M.Q(m,L.c3("miporteiro@hotmail.com",m,m,m,B.b2(1,P.S(51,255,255,255),12,C.r),C.a2,m),C.h,m,m,m,m,50,m,m,m,m,l.a.a)],n),C.R,C.a1,C.N)),C.h,C.ac,new S.at(215,1/0,150,1/0),m,m,k.a.b,m,m,m,m,j.a.a/5)}}
+return M.Q(m,E.qc(T.d2(H.a([new D.J1(m),new D.kn(C.qC,0,h,m),new D.kn(C.qF,1,g,m),new D.kn(C.qB,2,f,m),new D.kn(C.qA,3,e,m),new D.kn(C.qD,4,i,m),s,r,M.Q(m,L.c3("miporteiro@hotmail.com",m,m,m,B.b2(1,P.S(51,255,255,255),12,C.r),C.a2,m),C.h,m,m,m,m,50,m,m,m,m,l.a.a)],n),C.R,C.a1,C.N)),C.h,C.ac,new S.at(215,1/0,150,1/0),m,m,k.a.b,m,m,m,m,j.a.a/5)}}
 D.Zg.prototype={
 $0:function(){return B.r1("https://github.com/marcosporteiro")},
 $S:0}
@@ -64420,8 +64420,8 @@ G.EA.prototype={
 J:function(a,b){var s=null
 switch(this.c){case 0:return new Y.Ej(s)
 case 1:return new A.Bp(s)
-case 2:return new S.Gs(s)
-case 3:return new Y.D7(s)
+case 2:return new Y.D7(s)
+case 3:return new S.Gs(s)
 case 4:return new Z.CR(s)
 default:return M.Q(s,T.hW(L.c3("ERROR",s,s,s,A.dn(s,s,C.k,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s,s),s,s),s,s),C.h,C.hB,s,s,s,s,s,s,s,s,s)}}}
 A.Bp.prototype={
@@ -64591,13 +64591,13 @@ i=M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e)
 h=C.d.a8(127.5)
 g=t.p
 i=T.d2(H.a([l,k,j,i,Z.uc(P.S(h,34,38,41),50,50,2)],g),C.R,C.a1,C.N)
-l=O.e5("2017 - 2017: ",B.b2(1,C.ac,20,C.b5),e)
+l=O.e5("2017 - 2017",B.b2(1,C.ac,20,C.b5),e)
 k=M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e)
 j=$.aN?"GeneXus 15 Analist (Jovenes a programar)":"Analista GeneXus 15 (Jovenes a programar)"
 h=T.d2(H.a([l,k,O.e5(j,B.b2(2,P.S(255,0,0,0),18,C.a0),C.a2),M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e),Z.uc(P.S(h,34,38,41),50,50,2)],g),C.R,C.a1,C.N)
-l=O.e5("2013 - 2016: ",B.b2(1,C.ac,20,C.b5),e)
+l=O.e5("2013 - 2016",B.b2(1,C.ac,20,C.b5),e)
 k=M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e)
-o=M.Q(e,T.d2(H.a([o,n,M.Q(e,T.d2(H.a([i,h,T.d2(H.a([l,k,O.e5("Escuela Superior de Inform\xe1tica",B.b2(2,P.S(255,0,0,0),18,C.a0),C.a2),M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e)],g),C.R,C.a1,C.N)],g),C.R,C.a1,C.N),C.h,e,e,e,e,e,e,e,e,e,m.a.a/4)],g),C.R,C.br,C.N),C.h,e,e,e,e,e,new V.V(30,20,30,0),e,e,e,e)
+o=M.Q(e,T.d2(H.a([o,n,M.Q(e,T.d2(H.a([i,h,T.d2(H.a([l,k,O.e5("Escuela Superior de Inform\xe1tica",B.b2(2,P.S(255,0,0,0),18,C.a0),C.a2),M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e)],g),C.R,C.a1,C.N)],g),C.R,C.a1,C.N),C.h,e,e,e,e,e,e,e,e,e,m.a.a/4)],g),C.R,C.br,C.N),C.h,e,e,e,e,e,new V.V(0,20,0,0),e,e,e,e)
 n=$.aN?"SKILLS":"HABILIDADES"
 n=L.c3(n,e,e,e,B.b2(1,C.ac,25,C.J),e,e)
 m=M.Q(e,e,C.h,e,e,e,e,15,e,e,e,e,e)

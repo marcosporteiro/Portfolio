@@ -64506,7 +64506,7 @@ p=M.Q(m,T.cX(H.a([p,O.e5("\n(+598) 98 431 331",B.b2(2,P.R(255,0,0,0),18,C.a1),m)
 n=$.av().a?"MAIL":"CORREO"
 n=L.c1(n,m,m,m,B.b2(1,C.ac,25,C.J),m,m)
 $.av().toString
-return M.Q(m,T.p0(H.a([T.mi(M.Q(m,E.no(T.cX(H.a([s,r,q,new Z.F8(m),T.p0(H.a([p,M.Q(m,T.cX(H.a([n,O.e5("\nmipoteiro@hotmail.com",B.b2(2,P.R(255,0,0,0),18,C.a1),m)],o),C.Q,C.a_,C.M),C.h,m,m,m,m,m,new V.V(20,5,20,0),m,m,m,m)],o),C.Q,l,m,C.br,C.M,m,m,C.aH)],o),C.Q,C.a_,C.M)),C.h,m,m,m,m,m,m,m,m,m,m),1)],o),C.Q,C.m,m,C.a_,C.M,m,m,C.aH),C.h,m,m,m,m,m,m,k,m,m,m)}}
+return M.Q(m,T.p0(H.a([T.mi(M.Q(m,E.no(T.cX(H.a([s,r,q,new Z.F8(m),T.p0(H.a([p,M.Q(m,T.cX(H.a([n,O.e5("\nmiporteiro@hotmail.com",B.b2(2,P.R(255,0,0,0),18,C.a1),m)],o),C.Q,C.a_,C.M),C.h,m,m,m,m,m,new V.V(20,5,20,0),m,m,m,m)],o),C.Q,l,m,C.br,C.M,m,m,C.aH)],o),C.Q,C.a_,C.M)),C.h,m,m,m,m,m,m,m,m,m,m),1)],o),C.Q,C.m,m,C.a_,C.M,m,m,C.aH),C.h,m,m,m,m,m,m,k,m,m,m)}}
 Z.F8.prototype={
 J:function(a,b){var s,r=null,q=t.w,p=b.v(q).f,o=b.v(q).f,n=$.ahX(),m=b.v(q).f,l=b.v(q).f,k=$.ahW(),j=$.av().a,i=j?"EMail":"Mail"
 j=j?"name@example.com":"nombre@ejemplo.com"

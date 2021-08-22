@@ -13,6 +13,13 @@ class Cuerpo extends State<MyAppBody> {
   void initState() {
     super.initState();
 
+    idioma.addListener(() {
+      setState(() {
+        // ignore: unnecessary_statements
+        Cuerpo;
+      });
+    });
+
     controlador.addListener(() {
       //print(controlador.position.pixels.round());
       posi0 = MediaQuery.of(context).size.height * 0;

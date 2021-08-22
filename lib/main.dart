@@ -9,7 +9,7 @@ import 'package:mipagina/utils/utils.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  ingles = obtenerIdioma();
+  idioma.value = obtenerIdioma();
   runApp(MyApp());
 }
 

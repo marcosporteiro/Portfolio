@@ -22,11 +22,11 @@ class Menu extends StatelessWidget {
         child: Column(
           children: [
             TopMenu(),
-            Botones(ingles ? en.boton1 : es.boton1, Icons.home, 0),
-            Botones(ingles ? en.boton2 : es.boton2, Icons.person, 1),
-            Botones(ingles ? en.boton4 : es.boton4, Icons.description, 2),
-            Botones(ingles ? en.boton3 : es.boton3, Icons.collections, 3),
-            Botones(ingles ? en.boton5 : es.boton5, Icons.mail, 4),
+            Botones(idioma.value ? en.boton1 : es.boton1, Icons.home, 0),
+            Botones(idioma.value ? en.boton2 : es.boton2, Icons.person, 1),
+            Botones(idioma.value ? en.boton4 : es.boton4, Icons.description, 2),
+            Botones(idioma.value ? en.boton3 : es.boton3, Icons.collections, 3),
+            Botones(idioma.value ? en.boton5 : es.boton5, Icons.mail, 4),
             Container(
               //color: Colors.red,
               constraints: BoxConstraints(minHeight: 20),
@@ -245,7 +245,7 @@ class TopMenu extends StatelessWidget {
                   Container(
                     width: MediaQuery.of(context).size.width,
                     child: Text(
-                      ingles ? en.nombre : es.nombre,
+                      idioma.value ? en.nombre : es.nombre,
                       style: fuente(1, textoGrande, 21, FontWeight.w600),
                       textAlign: TextAlign.right,
                     ),
@@ -254,7 +254,7 @@ class TopMenu extends StatelessWidget {
                     margin: EdgeInsets.only(top: 10),
                     width: MediaQuery.of(context).size.width,
                     child: Text(
-                      ingles ? en.menu1 : es.menu1,
+                      idioma.value ? en.menu1 : es.menu1,
                       style: fuente(1, textoChico, 11, FontWeight.normal),
                       textAlign: TextAlign.right,
                     ),
@@ -263,7 +263,7 @@ class TopMenu extends StatelessWidget {
                     margin: EdgeInsets.only(top: 5),
                     width: MediaQuery.of(context).size.width,
                     child: Text(
-                      ingles ? en.menu2 : es.menu2,
+                      idioma.value ? en.menu2 : es.menu2,
                       style: fuente(1, textoChico, 11, FontWeight.normal),
                       textAlign: TextAlign.right,
                     ),

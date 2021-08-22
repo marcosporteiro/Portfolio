@@ -36,7 +36,7 @@ class Portfolio extends StatelessWidget {
                   children: [
                     Container(
                       child: Text(
-                        ingles ? en.portfolio1 : es.portfolio1,
+                        idioma.value ? en.portfolio1 : es.portfolio1,
                         style: fuente(1, colorMenu, 40, FontWeight.bold),
                       ),
                     ),
@@ -61,15 +61,19 @@ class Portfolio extends StatelessWidget {
                               FontWeight.w300),
                           children: <TextSpan>[
                             TextSpan(
-                                text: ingles ? en.portfolio2 : es.portfolio2),
+                                text: idioma.value
+                                    ? en.portfolio2
+                                    : es.portfolio2),
                             TextSpan(
-                              text: ingles ? en.portfolio3 : es.portfolio3,
+                              text:
+                                  idioma.value ? en.portfolio3 : es.portfolio3,
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   color: colorTemaMenu),
                             ),
                             TextSpan(
-                              text: ingles ? en.portfolio4 : es.portfolio4,
+                              text:
+                                  idioma.value ? en.portfolio4 : es.portfolio4,
                             ),
                           ],
                         ),
@@ -91,39 +95,42 @@ class Portfolio extends StatelessWidget {
                   runSpacing: 10,
                   children: [
                     BotonGaleria(
-                      texto: ingles ? en.portfolio5 : es.portfolio5,
+                      texto: idioma.value ? en.portfolio5 : es.portfolio5,
                       linkFoto: "assets/images/pic1.jpg",
-                      description: ingles ? en.portfolio6 : es.portfolio6,
+                      description: idioma.value ? en.portfolio6 : es.portfolio6,
                     ),
                     BotonGaleria(
-                      texto: ingles ? en.portfolio5 : es.portfolio5,
+                      texto: idioma.value ? en.portfolio5 : es.portfolio5,
                       linkFoto: "assets/images/pic2.jpg",
-                      description: ingles ? en.portfolio6 : es.portfolio6,
+                      description: idioma.value ? en.portfolio6 : es.portfolio6,
                     ),
                     BotonGaleria(
-                      texto: ingles ? en.portfolio5 : es.portfolio5,
+                      texto: idioma.value ? en.portfolio5 : es.portfolio5,
                       linkFoto: "assets/images/pic3.jpg",
-                      description: ingles ? en.portfolio6 : es.portfolio6,
+                      description: idioma.value ? en.portfolio6 : es.portfolio6,
                     ),
                     BotonGaleria(
-                      texto: ingles ? en.portfolio7 : es.portfolio7,
+                      texto: idioma.value ? en.portfolio7 : es.portfolio7,
                       linkFoto: "assets/images/pic4.jpg",
-                      description: ingles ? en.portfolio8 : es.portfolio8,
+                      description: idioma.value ? en.portfolio8 : es.portfolio8,
                     ),
                     BotonGaleria(
-                      texto: ingles ? en.portfolio9 : es.portfolio9,
+                      texto: idioma.value ? en.portfolio9 : es.portfolio9,
                       linkFoto: "assets/images/diplomaGeneXus.jpg",
-                      description: ingles ? en.portfolio10 : es.portfolio10,
+                      description:
+                          idioma.value ? en.portfolio10 : es.portfolio10,
                     ),
                     BotonGaleria(
-                      texto: ingles ? en.portfolio11 : es.portfolio11,
+                      texto: idioma.value ? en.portfolio11 : es.portfolio11,
                       linkFoto: "assets/images/diplomaCeibal.jpg",
-                      description: ingles ? en.portfolio12 : es.portfolio12,
+                      description:
+                          idioma.value ? en.portfolio12 : es.portfolio12,
                     ),
                     BotonGaleria(
-                      texto: ingles ? en.portfolio13 : es.portfolio13,
+                      texto: idioma.value ? en.portfolio13 : es.portfolio13,
                       linkFoto: "assets/images/diplomaUtu.jpg",
-                      description: ingles ? en.portfolio14 : es.portfolio14,
+                      description:
+                          idioma.value ? en.portfolio14 : es.portfolio14,
                     ),
                   ],
                 ),

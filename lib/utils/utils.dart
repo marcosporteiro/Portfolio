@@ -1,8 +1,9 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-bool ingles = false;
+ValueNotifier<bool> idioma = ValueNotifier<bool>(false);
 
 double posi0 = 0;
 double posi1 = 0;

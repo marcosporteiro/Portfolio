@@ -64678,7 +64678,7 @@ n=Q.b8(c,c,o?"Some of my ":"Algunos de mis ")
 o=o?"Projects":"proyectos"
 o=Q.b8(c,A.dn(c,c,C.a7,c,c,c,c,c,c,c,c,c,c,C.J,c,c,!0,c,c,c,c,c,c,c),o)
 m=t.p
-q=T.mi(M.Q(c,E.qc(T.d2(H.a([s,r,M.Q(c,T.q1(c,c,C.bd,!0,c,Q.b8(H.a([n,o,Q.b8(c,c,$.aN?" that I did in the school or personally to learn.":" que realic\xe9 en la utu o de forma personal para aprender.")],t.Ne),p,""),C.a2,c,c,1,C.as),C.h,c,c,c,c,c,c,c,c,c,q)],m),C.R,C.a1,C.N)),C.h,c,c,c,c,c,c,c,c,c,c),1)
+q=T.mi(M.Q(c,E.qc(T.d2(H.a([s,r,M.Q(c,T.q1(c,c,C.bd,!0,c,Q.b8(H.a([n,o,Q.b8(c,c,$.aN?" that I did in the school or personally to learn and my Diplomas.":" que realic\xe9 en la utu o de forma personal para aprender y m\xeds diplomas.")],t.Ne),p,""),C.a2,c,c,1,C.as),C.h,c,c,c,c,c,c,c,c,c,q)],m),C.R,C.a1,C.N)),C.h,c,c,c,c,c,c,c,c,c,c),1)
 a2=a5.v(a2).f.a.a>=850?3:2
 s=$.aN
 r=s?b:a

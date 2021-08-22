@@ -110,6 +110,21 @@ class Portfolio extends StatelessWidget {
                       linkFoto: "assets/images/pic4.jpg",
                       description: ingles ? en.portfolio8 : es.portfolio8,
                     ),
+                    BotonGaleria(
+                      texto: ingles ? en.portfolio9 : es.portfolio9,
+                      linkFoto: "assets/images/diplomaGeneXus.jpg",
+                      description: ingles ? en.portfolio10 : es.portfolio10,
+                    ),
+                    BotonGaleria(
+                      texto: ingles ? en.portfolio11 : es.portfolio11,
+                      linkFoto: "assets/images/diplomaCeibal.jpg",
+                      description: ingles ? en.portfolio12 : es.portfolio12,
+                    ),
+                    BotonGaleria(
+                      texto: ingles ? en.portfolio13 : es.portfolio13,
+                      linkFoto: "assets/images/diplomaUtu.jpg",
+                      description: ingles ? en.portfolio14 : es.portfolio14,
+                    ),
                   ],
                 ),
               ),
@@ -223,10 +238,10 @@ class BotonGaleria extends StatelessWidget {
         texto: texto,
         linkFoto: linkFoto,
         tamanio: Responsive.isDesktop(context)
-            ? Size(MediaQuery.of(context).size.width / 5 - 40,
-                MediaQuery.of(context).size.width / 5 - 55)
-            : Size(MediaQuery.of(context).size.width / 2 - 50,
-                MediaQuery.of(context).size.width / 2 - 50),
+            ? Size(MediaQuery.of(context).size.width / 6 - 40,
+                MediaQuery.of(context).size.width / 6 - 55)
+            : Size(MediaQuery.of(context).size.width / 3 - 50,
+                MediaQuery.of(context).size.width / 3 - 50),
       ),
       onPressed: () async {
         await showDialog(
@@ -261,7 +276,7 @@ class ImageDialog extends StatelessWidget {
             Container(
               width: Responsive.isDesktop(context)
                   ? MediaQuery.of(context).size.width -
-                      MediaQuery.of(context).size.width / 2.5
+                      MediaQuery.of(context).size.width / 2
                   : MediaQuery.of(context).size.width - 20,
               height: Responsive.isDesktop(context)
                   ? MediaQuery.of(context).size.height -
@@ -276,9 +291,9 @@ class ImageDialog extends StatelessWidget {
               left: Responsive.isDesktop(context) ? 80 : 10,
               right: Responsive.isDesktop(context) ? 80 : 10,
               child: Container(
-                width: MediaQuery.of(context).size.width -
+                /*width: MediaQuery.of(context).size.width -
                     MediaQuery.of(context).size.width / 2.5 -
-                    100,
+                    1000,*/
                 height: Responsive.isDesktop(context) ? 100 : 170,
                 decoration: BoxDecoration(
                   color: colorMenu.withOpacity(0.7),

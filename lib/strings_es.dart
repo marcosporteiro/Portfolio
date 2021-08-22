@@ -68,6 +68,15 @@ const String portfolio7 = "Mi portfolio";
 const String portfolio8 =
     "Mi portfolio web, hecho en flutter para demostrar un poco de lo que puedo ser capaz.";
 
+const String portfolio9 = "Diploma GeneXus";
+const String portfolio10 =
+    "Diploma de la prueba final para Analista GeneXus 15";
+const String portfolio11 = "Diploma Ceibal";
+const String portfolio12 = "Diploma Jovenes a Programar ";
+const String portfolio13 = "Diploma Utu";
+const String portfolio14 =
+    "Diploma de que terminé la utu y obtuve el titulo de Bachiller tecnológico en Informática";
+
 //cv
 
 const String cv1 = "MI CURRíCULUM";

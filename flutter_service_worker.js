@@ -30,14 +30,14 @@ const RESOURCES = {
 "version.json": "a8f83101c2f51eceebd1cdcc7b8ff5fc",
 "favicon.ico": "1665e4bb03d060b66d2a82641167a46e",
 "main.dart.js": "f0e62f3a63a15aa7c7875cbfb1610914",
-"index.html": "e12f452fe479aab85097b5390a3e597f",
-"/": "e12f452fe479aab85097b5390a3e597f"
+"index.html": "2c689cd28105b8e8f908da4eecf1d48a",
+"/": "2c689cd28105b8e8f908da4eecf1d48a"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-//  "/",
+  "/",
 "main.dart.js",
 "index.html",
 "assets/NOTICES",

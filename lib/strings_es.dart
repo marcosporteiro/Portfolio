@@ -58,7 +58,7 @@ const String portfolio1 = "PORTFOLIO";
 const String portfolio2 = "Algunos de mis ";
 const String portfolio3 = "proyectos";
 const String portfolio4 =
-    " que realicé en la utu o de forma personal para aprender.";
+    " que realicé en la utu o de forma personal para aprender y mís diplomas.";
 
 const String portfolio5 = "Gestambo - UTU";
 const String portfolio6 =

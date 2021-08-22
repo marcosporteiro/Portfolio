@@ -56,7 +56,8 @@ const String about20 =
 const String portfolio1 = "GALLERY";
 const String portfolio2 = "Some of my ";
 const String portfolio3 = "Projects";
-const String portfolio4 = " that I did in the school or personally to learn.";
+const String portfolio4 =
+    " that I did in the school or personally to learn and my Diplomas.";
 
 const String portfolio5 = "Gestambo - School";
 const String portfolio6 =

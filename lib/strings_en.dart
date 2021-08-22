@@ -84,9 +84,9 @@ const String cv4 = "";
 const String cv5 = "EDUCATION";
 const String cv6 = "Actually";
 const String cv7 = "Faculty of Engineering (Udelar)";
-const String cv8 = "2017 - 2017: ";
+const String cv8 = "2017 - 2017";
 const String cv9 = "GeneXus 15 Analist (Jovenes a programar)";
-const String cv10 = "2013 - 2016: ";
+const String cv10 = "2013 - 2016";
 const String cv11 = "Escuela Superior de Informática";
 
 const String cv12 = "SKILLS";

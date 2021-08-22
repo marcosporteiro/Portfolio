@@ -86,9 +86,9 @@ const String cv4 = " vitae";
 const String cv5 = "FORMACIÓN";
 const String cv6 = "En curso";
 const String cv7 = "Facultad de ingeniería (Udelar)";
-const String cv8 = "2017 - 2017: ";
+const String cv8 = "2017 - 2017";
 const String cv9 = "Analista GeneXus 15 (Jovenes a programar)";
-const String cv10 = "2013 - 2016: ";
+const String cv10 = "2013 - 2016";
 const String cv11 = "Escuela Superior de Informática";
 
 const String cv12 = "HABILIDADES";

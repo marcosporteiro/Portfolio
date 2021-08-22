@@ -84,7 +84,8 @@ class Cv extends StatelessWidget {
                           : Axis.vertical,
                       children: [
                         Container(
-                          margin: EdgeInsets.only(top: 20, left: 30, right: 30),
+                          //color: Colors.red,
+                          margin: EdgeInsets.only(top: 20, left: 0, right: 0),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,

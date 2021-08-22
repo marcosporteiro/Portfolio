@@ -24,8 +24,8 @@ class Menu extends StatelessWidget {
             TopMenu(),
             Botones(ingles ? en.boton1 : es.boton1, Icons.home, 0),
             Botones(ingles ? en.boton2 : es.boton2, Icons.person, 1),
-            Botones(ingles ? en.boton3 : es.boton3, Icons.collections, 2),
-            Botones(ingles ? en.boton4 : es.boton4, Icons.description, 3),
+            Botones(ingles ? en.boton4 : es.boton4, Icons.description, 2),
+            Botones(ingles ? en.boton3 : es.boton3, Icons.collections, 3),
             Botones(ingles ? en.boton5 : es.boton5, Icons.mail, 4),
             Container(
               //color: Colors.red,

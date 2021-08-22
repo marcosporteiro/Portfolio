@@ -54,9 +54,9 @@ class ItemAmostrar extends StatelessWidget {
       case 1:
         return About();
       case 2:
-        return Portfolio();
-      case 3:
         return Cv();
+      case 3:
+        return Portfolio();
       case 4:
         return Contact();
       default:

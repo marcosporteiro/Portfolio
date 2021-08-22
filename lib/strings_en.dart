@@ -116,7 +116,7 @@ const String contacto4 = " with me";
 const String contacto5 = "PHONE";
 const String contacto6 = "\n(+598) 98 431 331";
 const String contacto7 = "MAIL";
-const String contacto8 = "\nmipoteiro@hotmail.com";
+const String contacto8 = "\nmiporteiro@hotmail.com";
 
 const String contacto9 = "Invalid email";
 const String contacto10 = "EMail";

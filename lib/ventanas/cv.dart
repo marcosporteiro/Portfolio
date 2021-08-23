@@ -216,7 +216,7 @@ class Cv extends StatelessWidget {
                                           18,
                                           FontWeight.w400),
                                     ),
-                                    BarrDeProgreso(progreso: 75),
+                                    BarrDeProgreso(progreso: 85),
                                     SelectableText(
                                       idioma.value ? en.cv14 : es.cv14,
                                       style: fuente(
@@ -225,7 +225,7 @@ class Cv extends StatelessWidget {
                                           18,
                                           FontWeight.w400),
                                     ),
-                                    BarrDeProgreso(progreso: 85),
+                                    BarrDeProgreso(progreso: 80),
                                     SelectableText(
                                       idioma.value ? en.cv15 : es.cv15,
                                       style: fuente(
@@ -234,7 +234,7 @@ class Cv extends StatelessWidget {
                                           18,
                                           FontWeight.w400),
                                     ),
-                                    BarrDeProgreso(progreso: 60),
+                                    BarrDeProgreso(progreso: 85),
                                     SelectableText(
                                       idioma.value ? en.cv16 : es.cv16,
                                       style: fuente(
@@ -252,7 +252,7 @@ class Cv extends StatelessWidget {
                                           18,
                                           FontWeight.w400),
                                     ),
-                                    BarrDeProgreso(progreso: 50),
+                                    BarrDeProgreso(progreso: 70),
                                     SelectableText(
                                       idioma.value ? en.cv18 : es.cv18,
                                       style: fuente(
@@ -261,7 +261,7 @@ class Cv extends StatelessWidget {
                                           18,
                                           FontWeight.w400),
                                     ),
-                                    BarrDeProgreso(progreso: 70),
+                                    BarrDeProgreso(progreso: 65),
                                   ],
                                 ),
                               ),

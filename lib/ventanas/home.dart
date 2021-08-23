@@ -51,7 +51,7 @@ class Home extends StatelessWidget {
             padding: EdgeInsets.all(0),
             margin: Responsive.isDesktop(context)
                 ? EdgeInsets.only(top: 100, bottom: 10, left: 130, right: 130)
-                : EdgeInsets.only(top: 150, bottom: 0, left: 5, right: 5),
+                : EdgeInsets.only(top: 120, bottom: 0, left: 5, right: 5),
             child: SingleChildScrollView(
               child: Column(
                 children: [

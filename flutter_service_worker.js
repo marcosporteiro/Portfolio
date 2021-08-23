@@ -6,16 +6,14 @@ const RESOURCES = {
   "assets/assets/images/diplomaGeneXus.jpg": "d96ba89ecf0ecb80d9b5cd464fa862a3",
 "assets/assets/images/banner3.jpg": "241fd7e046d799905b164fadcdf0c072",
 "assets/assets/images/fondoAbout.jpg": "e45cd47f0582adbe2378bd74194209f0",
-"assets/assets/images/banner2.jpg": "3df16983c68f8839bfb18e14bbbccc07",
 "assets/assets/images/pic4.jpg": "ff643eaf4d93c3adcc8f4952e92b78b8",
 "assets/assets/images/pic1.jpg": "72c4a16e409d1f0ef538aefc19a97c0c",
 "assets/assets/images/diplomaUtu.jpg": "fd397bbde0981c9b664c103dea1571a6",
 "assets/assets/images/pic2.jpg": "ba044fecd49c0f380de1de612b5e0005",
 "assets/assets/images/diplomaCeibal.jpg": "37becf7a757b51d253b6a6f5138f6e68",
 "assets/assets/images/avatar.png": "7ceb2ecd1bca2368223899eda38943d2",
-"assets/assets/images/banner.jpg": "db1c37cb59385d93aefa54f80acafe8a",
 "assets/assets/images/pic3.jpg": "296b6771f54181baac913250a917dd62",
-"assets/AssetManifest.json": "d8161c4c90669c6aad0a489b7fe73f63",
+"assets/AssetManifest.json": "bba71d267214c33a924909f6b91b3ec1",
 "assets/FontManifest.json": "e024588c84b5d20cb7869d6f908130e8",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/packages/line_icons/lib/assets/fonts/LineIcons.ttf": "23621397bc1906a79180a918e98f35b2",
@@ -32,8 +30,8 @@ const RESOURCES = {
 "version.json": "a8f83101c2f51eceebd1cdcc7b8ff5fc",
 "favicon.ico": "fb827b1ac300607bbfde74e178e10e56",
 "main.dart.js": "dda5bb098cf77a9eac2f7828632ad7f7",
-"index.html": "1f70161623a21af787d80a7b190e9529",
-"/": "1f70161623a21af787d80a7b190e9529"
+"index.html": "761223b43b457b8095bf1a864ee749ba",
+"/": "761223b43b457b8095bf1a864ee749ba"
 };
 
 // The application shell files that are downloaded before a service worker can

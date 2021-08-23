@@ -64630,7 +64630,7 @@ h=O.e5("HTML / CSS ",B.b2(2,P.R(255,0,0,0),18,C.r),e)
 $.av().toString
 f=O.e5(".Net ",B.b2(2,P.R(255,0,0,0),18,C.r),e)
 $.av().toString
-p=T.p0(H.a([o,M.Q(e,T.cX(H.a([n,m,M.Q(e,T.cX(H.a([k,new Y.h_(75,e),j,new Y.h_(85,e),i,new Y.h_(60,e),h,new Y.h_(70,e),f,new Y.h_(50,e),O.e5("C++ ",B.b2(2,P.R(255,0,0,0),18,C.r),e),new Y.h_(70,e)],g),C.Q,C.a_,C.M),C.h,e,e,e,e,e,e,e,e,e,l.a.a/4)],g),C.Q,C.a_,C.M),C.h,e,e,e,e,e,new V.V(30,20,30,0),e,e,e,e)],g),C.d4,p,e,C.br,C.M,e,e,C.aH)
+p=T.p0(H.a([o,M.Q(e,T.cX(H.a([n,m,M.Q(e,T.cX(H.a([k,new Y.h_(85,e),j,new Y.h_(80,e),i,new Y.h_(85,e),h,new Y.h_(70,e),f,new Y.h_(70,e),O.e5("C++ ",B.b2(2,P.R(255,0,0,0),18,C.r),e),new Y.h_(65,e)],g),C.Q,C.a_,C.M),C.h,e,e,e,e,e,e,e,e,e,l.a.a/4)],g),C.Q,C.a_,C.M),C.h,e,e,e,e,e,new V.V(30,20,30,0),e,e,e,e)],g),C.d4,p,e,C.br,C.M,e,e,C.aH)
 o=b.v(d).f.a.b<b.v(d).f.a.a?C.l:C.m
 n=$.av().a?"CERTIFICATES":"CERTIFICADOS"
 n=L.c1(n,e,e,e,B.b2(1,C.ac,25,C.J),e,e)
@@ -64667,7 +64667,7 @@ Y.Ej.prototype={
 J:function(a,b){var s,r,q,p,o,n,m=null,l=C.d.a8(25.5),k=t.FT,j=t.M1,i=A.iV(m,m,m,m,m,m,m,m,m,new V.bM(P.R(l,0,0,0),k),m,m,new V.bM(new X.cn(K.ty(new P.aW(10,10)),C.q),j),m,C.bE,m,m,m),h=C.d.a8(178.5)
 i=M.Q(m,U.nx(L.c1("EN/ES",m,m,m,A.d7(m,m,P.R(h,255,255,255),m,m,m,m,m,m,m,m,m,m,C.aq,m,m,!0,m,m,m,m,m,m,m),m,m),new Y.Xb(),i),C.h,m,m,m,m,50,new V.V(0,10,0,0),m,m,m,m)
 s=t.w
-r=b.v(s).f.a.a>=850?new V.V(130,100,130,10):new V.V(5,150,5,0)
+r=b.v(s).f.a.a>=850?new V.V(130,100,130,10):new V.V(5,120,5,0)
 q=b.v(s).f.a.a>=850?75:50
 p=P.R(C.d.a8(229.5),255,255,255)
 p=B.b2(1,p,b.v(s).f.a.a>=850?40:25,C.aU)

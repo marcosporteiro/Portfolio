@@ -26,8 +26,10 @@ class Home extends StatelessWidget {
               onPressed: () {
                 if (idioma.value) {
                   idioma.value = false;
+                  colorTemaMenu = colorTemaMenu1;
                 } else {
                   idioma.value = true;
+                  colorTemaMenu = colorTemaMenu2;
                 }
               },
               style: ButtonStyle(

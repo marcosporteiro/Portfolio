@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mipagina/utils/colores.dart';
 import 'package:provider/provider.dart';
 import 'dart:ui' as ui;
 
@@ -43,8 +44,10 @@ bool obtenerIdioma() {
   String sysLang = ui.window.locale.languageCode;
   print("Language: " + sysLang);
   if (sysLang == "es") {
+    colorTemaMenu = colorTemaMenu1;
     return false;
   } else {
+    colorTemaMenu = colorTemaMenu2;
     return true;
   }
 }

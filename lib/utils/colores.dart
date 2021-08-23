@@ -9,6 +9,7 @@ const Color textoGrande = Colors.white;
 Color textoChico = Colors.white.withOpacity(0.5);
 
 const Color colorFondo = Color(0xFFF5F5F4);
+const Color colorFondo2 = Color(0xFFF1F1F1);
 const Color colorVentana = Colors.black12;
 
 const Color colorOscuro = Color(0xFF393c3f);

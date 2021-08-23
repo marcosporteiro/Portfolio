@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mipagina/utils/colores.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 ValueNotifier<bool> idioma = ValueNotifier<bool>(false);
@@ -47,6 +48,26 @@ BoxDecoration ladecoracion(int item) {
     case 0:
       decoracion = BoxDecoration(
         image: DecorationImage(image: AssetImage(ruta1), fit: BoxFit.cover),
+      );
+      break;
+    case 1:
+      decoracion = BoxDecoration(
+        color: colorFondo,
+      );
+      break;
+    case 2:
+      decoracion = BoxDecoration(
+        color: colorFondo2,
+      );
+      break;
+    case 3:
+      decoracion = BoxDecoration(
+        color: colorFondo,
+      );
+      break;
+    case 4:
+      decoracion = BoxDecoration(
+        color: colorFondo2,
       );
       break;
     default:

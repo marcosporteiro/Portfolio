@@ -64340,7 +64340,7 @@ return T.a2j(H.a([m,T.mi(M.Q(o,M.Q(C.j1,T.cX(H.a([s,r,M.Q(o,L.c1(q,o,o,o,B.b2(1,
 D.BQ.prototype={
 J:function(a,b){var s,r,q=null,p=t.w,o=b.v(p).f
 p=b.v(p).f
-s=P.R(C.d.a8(25.5),34,38,41)
+s=P.R(C.d.a8(25.5),40,40,40)
 r=K.eA(5)
 return M.Q(q,B.avr(L.Eo(C.qE,P.R(204,255,255,255),25),Y.alD(b,!1,t.Jd).ga7e(),q),C.h,q,q,new S.cb(s,q,q,r,q,q,C.P),q,40,new V.V(0,0,p.a.a-75,o.a.b-75),q,q,q,40)}}
 D.i9.prototype={
@@ -64604,12 +64604,12 @@ j=O.e5(j,B.b2(2,P.R(255,0,0,0),18,C.a1),C.a2)
 i=M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e)
 h=C.d.a8(127.5)
 g=t.p
-i=T.cX(H.a([l,k,j,i,Z.ud(P.R(h,34,38,41),50,50,2)],g),C.Q,C.a_,C.M)
+i=T.cX(H.a([l,k,j,i,Z.ud(P.R(h,40,40,40),50,50,2)],g),C.Q,C.a_,C.M)
 $.av().toString
 l=O.e5("2017 - 2017",B.b2(1,C.ac,20,C.b5),e)
 k=M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e)
 j=$.av().a?"GeneXus 15 Analist (Jovenes a programar)":"Analista GeneXus 15 (Jovenes a programar)"
-h=T.cX(H.a([l,k,O.e5(j,B.b2(2,P.R(255,0,0,0),18,C.a1),C.a2),M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e),Z.ud(P.R(h,34,38,41),50,50,2)],g),C.Q,C.a_,C.M)
+h=T.cX(H.a([l,k,O.e5(j,B.b2(2,P.R(255,0,0,0),18,C.a1),C.a2),M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e),Z.ud(P.R(h,40,40,40),50,50,2)],g),C.Q,C.a_,C.M)
 $.av().toString
 l=O.e5("2013 - 2016",B.b2(1,C.ac,20,C.b5),e)
 k=M.Q(e,e,C.h,e,e,e,e,10,e,e,e,e,e)
@@ -64734,7 +64734,7 @@ S.Eb.prototype={
 J:function(a,b){var s,r,q,p,o=null,n=this.e,m=n.b
 n=n.a
 s=M.Q(o,M.Q(o,o,C.h,o,o,new S.cb(o,X.TD(C.dY,new L.km(this.d),o),o,o,o,o,C.P),o,o,o,o,o,o,o),C.h,o,o,o,o,o,o,o,o,o,o)
-r=M.Q(o,o,C.h,P.R(C.d.a8(127.5),34,38,41),o,o,o,m,o,o,o,o,n)
+r=M.Q(o,o,C.h,P.R(C.d.a8(127.5),40,40,40),o,o,o,m,o,o,o,o,n)
 q=K.eA(10)
 p=t.p
 return M.Q(o,U.all(H.a([M.alk(M.Q(o,T.lf(C.bA,H.a([s,r,T.Gt(20,M.Q(o,L.c1(this.c,o,o,o,B.b2(1,C.k,15,C.r),C.a2,o),C.h,o,o,new S.cb(o,o,o,q,o,o,C.P),o,20,o,new V.V(5,0,5,0),o,o,n),o,o,30,30,o,o)],p),C.bx),C.h,o,o,o,o,o,o,o,o,o,o),15,0,15,0.25)],p)),C.h,o,o,new S.cb(o,o,o,o,o,o,C.P),o,m,o,o,o,o,n)}}
@@ -64765,7 +64765,7 @@ k=b.v(n).f.a.a>=850?100:10
 s=b.v(n).f.a.a>=850?80:10
 r=b.v(n).f.a.a>=850?80:10
 n=b.v(n).f.a.a>=850?100:170
-q=P.R(C.d.a8(178.5),34,38,41)
+q=P.R(C.d.a8(178.5),40,40,40)
 p=K.eA(20)
 return M.Q(o,new E.Dp(C.ah,0,T.lf(C.bA,H.a([l,T.Gt(k,M.Q(o,T.hW(L.c1(this.d,o,o,o,B.b2(1,C.k,18,C.a1),C.a2,o),o,o),C.h,o,o,new S.cb(q,o,o,p,o,o,C.P),o,n,o,o,o,o,o),o,o,s,r,o,o)],t.p),C.bx),o),C.h,o,o,o,o,o,new V.V(m,0,0,0),o,o,o,o)}}
 S.lT.prototype={
@@ -69956,7 +69956,7 @@ C.V=new P.z(3019898879)
 C.I=new P.z(3707764736)
 C.oO=new P.z(4039164096)
 C.jJ=new P.z(4278220003)
-C.ac=new P.z(4280428073)
+C.ac=new P.z(4280821800)
 C.jL=new P.z(4281348144)
 C.p2=new P.z(4282549748)
 C.a7=new P.z(4283215734)

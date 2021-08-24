@@ -6,7 +6,6 @@ import 'package:mipagina/utils/responsive.dart';
 
 import 'package:mipagina/strings_es.dart' as es;
 import 'package:mipagina/strings_en.dart' as en;
-import 'package:mouse_parallax/mouse_parallax.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);

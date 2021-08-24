@@ -20,7 +20,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Marcos Porteiro",
-      //home: MyAppBody(),
       home: MultiProvider(
         providers: [
           ChangeNotifierProvider(

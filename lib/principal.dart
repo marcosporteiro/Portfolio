@@ -6,8 +6,6 @@ import 'package:mipagina/menu.dart';
 import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/ventana.dart';
 
-bool sePuedeScrollear = false;
-
 class Cuerpo extends State<MyAppBody> {
   @override
   void initState() {

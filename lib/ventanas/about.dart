@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mipagina/utils/responsive.dart';
 import 'package:mouse_parallax/mouse_parallax.dart';
 
-import 'package:mipagina/principal.dart';
 import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/utils/colores.dart';
 
@@ -26,16 +25,6 @@ class About extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-              child: sePuedeScrollear
-                  ? Icon(
-                      Icons.arrow_downward,
-                      color: colorMenu,
-                    )
-                  : Icon(
-                      Icons.arrow_downward,
-                      color: Colors.transparent,
-                    )),
           Expanded(
             flex: 2,
             child: Container(
@@ -177,9 +166,8 @@ class About extends StatelessWidget {
             ),
           ),
           Expanded(
-            flex: 0,
+            flex: 1,
             child: Container(
-              //constraints: BoxConstraints(minWidth: 500),
               height: Responsive.isDesktop(context)
                   ? MediaQuery.of(context).size.height
                   : 200,

@@ -38,7 +38,9 @@ class Ventana extends StatelessWidget {
               itemExtent: MediaQuery.of(context).size.height,
               controller: controlador,
               itemBuilder: (c, i) => Header(
-                  elwid: ItemAmostrar(ventana: i), decoracion: ladecoracion(i)),
+                  elwid: ItemAmostrar(ventana: i),
+                  decoracion: ladecoracion(i),
+                  item: i),
             ),
           ),
         ),

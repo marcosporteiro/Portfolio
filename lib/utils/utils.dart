@@ -54,7 +54,12 @@ BoxDecoration ladecoracion(int item) {
     case 1:
       decoracion = BoxDecoration(
         color: colorFondo,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(20),
+          topRight: Radius.circular(20),
+        ),
       );
+
       break;
     case 2:
       decoracion = BoxDecoration(
@@ -69,6 +74,10 @@ BoxDecoration ladecoracion(int item) {
     case 4:
       decoracion = BoxDecoration(
         color: colorFondo2,
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(20),
+          bottomRight: Radius.circular(20),
+        ),
       );
       break;
     default:

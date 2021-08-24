@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 //const Color colorMenu = Color(0xFF222629);
-Color colorTemaMenu = Color(0xFFD8A25F);
+Color colorTemaMenu = Color(0xFF4caf76F);
 const Color colorMenu = Color(0xFF282828);
 
-const Color colorTemaMenu1 = Color(0xFFD8A25F);
+const Color colorTemaMenu1 = Color(0xFF4caf76);
 const Color colorTemaMenu2 = Color(0xFF4caf76);
 
 const Color textoGrande = Colors.white;

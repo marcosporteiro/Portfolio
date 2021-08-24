@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 //const Color colorMenu = Color(0xFF222629);
 Color colorTemaMenu = Color(0xFF4caf76);
-const Color colorMenu = Color(0xFF282828);
+const Color colorMenu = Color(0xFF222629);
 
 const Color colorTemaMenu1 = Color(0xFF4caf76);
 const Color colorTemaMenu2 = Color(0xFF4caf76);

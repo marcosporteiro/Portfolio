@@ -28,7 +28,7 @@ class Ventana extends StatelessWidget {
             decoration: BoxDecoration(
               color: colorFondo,
               image: DecorationImage(
-                  image: AssetImage("assets/images/banner3.jpg"),
+                  image: AssetImage("assets/images/banner2.jpg"),
                   fit: BoxFit.cover),
             ),
             child: ListView.builder(

@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "assets/assets/images/diplomaGeneXus.jpg": "d96ba89ecf0ecb80d9b5cd464fa862a3",
-"assets/assets/images/banner3.jpg": "6bcac5bac4ce107dff8dd992500d5b01",
+"assets/assets/images/banner3.jpg": "cf84148f59667671fd7cc8e57c345b1e",
 "assets/assets/images/fondoAbout.jpg": "e45cd47f0582adbe2378bd74194209f0",
 "assets/assets/images/pic4.jpg": "ff643eaf4d93c3adcc8f4952e92b78b8",
 "assets/assets/images/pic1.jpg": "72c4a16e409d1f0ef538aefc19a97c0c",
@@ -27,15 +27,15 @@ const RESOURCES = {
 "manifest.json": "ecf8d4eea71ae54799788ad9586a3654",
 "version.json": "a8f83101c2f51eceebd1cdcc7b8ff5fc",
 "favicon.ico": "1665e4bb03d060b66d2a82641167a46e",
-"main.dart.js": "8ab30b6ca04da5ba674ac4b3359592d0",
-"index.html": "424c6ff8d6fffb3e2f1775f6e2ee5541",
-"/": "424c6ff8d6fffb3e2f1775f6e2ee5541"
+"main.dart.js": "01d1a4021ed42d68164e9e9942c8e323",
+"index.html": "8bcc74926d1eea56fbe6616e60ce9f98",
+"/": "8bcc74926d1eea56fbe6616e60ce9f98"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-//  "/",
+  "/",
 "main.dart.js",
 "index.html",
 "assets/NOTICES",

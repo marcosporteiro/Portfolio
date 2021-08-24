@@ -64694,7 +64694,7 @@ p=P.R(C.d.a8(229.5),255,255,255)
 p=B.b2(1,p,b.v(s).f.a.a>=850?40:25,C.aT)
 o=Q.b8(m,m,$.av().a?"Hi! my name is ":"Hola! mi nombre es ")
 n=Q.b8(m,A.d8(m,m,C.k,m,m,m,m,m,m,m,m,m,m,C.b4,m,m,!0,m,m,m,m,m,m,m),"Marcos Porteiro")
-q=M.Q(m,T.q4(m,m,C.bc,!0,m,Q.b8(H.a([o,n,Q.b8(m,m,$.av().a?", on this website I am going to tell you who I am, and show you a bit of what I do. ":", hice esta p\xe1gina web para contarte qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.Ne),p,""),C.a2,m,m,1,C.as),C.h,m,m,m,m,m,new V.V(0,q,0,0),m,m,m,m)
+q=M.Q(m,T.q4(m,m,C.bc,!0,m,Q.b8(H.a([o,n,Q.b8(m,m,$.av().a?", on this website I am going to tell you who I am, and show you a bit of what I do. ":", e hice esta p\xe1gina web para contarte qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.Ne),p,""),C.a2,m,m,1,C.as),C.h,m,m,m,m,m,new V.V(0,q,0,0),m,m,m,m)
 p=b.v(s).f.a.a>=850?50:45
 o=$.av().a?"Do you want to meet me?":"\xbfMe quieres conocer?"
 h=P.R(h,255,255,255)

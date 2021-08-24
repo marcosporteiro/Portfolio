@@ -64421,7 +64421,7 @@ V.Tk.prototype={
 $0:function(){},
 $S:0}
 G.Ji.prototype={
-J:function(a,b){var s,r,q,p=null,o=Y.alF(b,!1,t.Jd).a,n=t.w,m=b.v(n).f.a.a>=850?p:new D.BR(p),l=X.TD(C.dX,new L.kn("assets/images/banner3.jpg"),p)
+J:function(a,b){var s,r,q,p=null,o=Y.alF(b,!1,t.Jd).a,n=t.w,m=b.v(n).f.a.a>=850?p:new D.BR(p),l=X.TD(C.dX,new L.kn("assets/images/banner2.jpg"),p)
 n=b.v(n).f
 s=$.kj()
 r=s==null&&!0

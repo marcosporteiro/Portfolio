@@ -6,6 +6,7 @@ const RESOURCES = {
   "assets/assets/images/diplomaGeneXus.jpg": "d96ba89ecf0ecb80d9b5cd464fa862a3",
 "assets/assets/images/banner3.jpg": "50f06e73d5ffe0cf0bd4c4a271ee0b91",
 "assets/assets/images/fondoAbout.jpg": "e45cd47f0582adbe2378bd74194209f0",
+"assets/assets/images/banner2.jpg": "28978b43575a07cebd2a1986b8bd06c6",
 "assets/assets/images/pic4.jpg": "ff643eaf4d93c3adcc8f4952e92b78b8",
 "assets/assets/images/pic1.jpg": "72c4a16e409d1f0ef538aefc19a97c0c",
 "assets/assets/images/diplomaUtu.jpg": "fd397bbde0981c9b664c103dea1571a6",
@@ -13,7 +14,7 @@ const RESOURCES = {
 "assets/assets/images/diplomaCeibal.jpg": "37becf7a757b51d253b6a6f5138f6e68",
 "assets/assets/images/avatar.png": "7ceb2ecd1bca2368223899eda38943d2",
 "assets/assets/images/pic3.jpg": "296b6771f54181baac913250a917dd62",
-"assets/AssetManifest.json": "bba71d267214c33a924909f6b91b3ec1",
+"assets/AssetManifest.json": "9ac58452bc50d13725f5078f0974b9d9",
 "assets/FontManifest.json": "e024588c84b5d20cb7869d6f908130e8",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/packages/line_icons/lib/assets/fonts/LineIcons.ttf": "23621397bc1906a79180a918e98f35b2",
@@ -27,15 +28,15 @@ const RESOURCES = {
 "manifest.json": "ecf8d4eea71ae54799788ad9586a3654",
 "version.json": "a8f83101c2f51eceebd1cdcc7b8ff5fc",
 "favicon.ico": "1665e4bb03d060b66d2a82641167a46e",
-"main.dart.js": "d8fff5f48a1842107ebca58696e930ac",
-"index.html": "ba112261cdb905175254f55dbc10a42e",
-"/": "ba112261cdb905175254f55dbc10a42e"
+"main.dart.js": "b2c35e4dbd656f8f386e065bc77e409e",
+"index.html": "abd6c5da57d77165df4484e795893080",
+"/": "abd6c5da57d77165df4484e795893080"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
- // "/",
+  "/",
 "main.dart.js",
 "index.html",
 "assets/NOTICES",

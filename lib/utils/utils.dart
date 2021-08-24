@@ -47,8 +47,9 @@ BoxDecoration ladecoracion(int item) {
   switch (item) {
     case 0:
       decoracion = BoxDecoration(
-        image: DecorationImage(image: AssetImage(ruta1), fit: BoxFit.cover),
-      );
+          //color: colorFondo,
+          //image: DecorationImage(image: AssetImage(ruta1), fit: BoxFit.cover),
+          );
       break;
     case 1:
       decoracion = BoxDecoration(

@@ -25,7 +25,12 @@ class Ventana extends StatelessWidget {
           floatingActionButton:
               Responsive.isDesktop(context) ? null : BotonMenu(),
           body: Container(
-            color: colorFondo,
+            decoration: BoxDecoration(
+              color: colorFondo,
+              image: DecorationImage(
+                  image: AssetImage("assets/images/banner3.jpg"),
+                  fit: BoxFit.cover),
+            ),
             child: ListView.builder(
               shrinkWrap: true,
               addAutomaticKeepAlives: true,

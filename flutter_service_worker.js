@@ -19,23 +19,23 @@ const RESOURCES = {
 "assets/packages/line_icons/lib/assets/fonts/LineIcons.ttf": "23621397bc1906a79180a918e98f35b2",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/NOTICES": "2e30f4ddf62b487adabfd273b2c60267",
-"icons/Icon-192.png": "9e2b85b916ced9b575361f791d980d05",
-"icons/favicon.png": "62142041faf9d5651c1f1aef426f560d",
-"icons/favicon.ico": "fb827b1ac300607bbfde74e178e10e56",
-"icons/Icon-512.png": "269ee9fffd919c7b31183190452c93b0",
-"favicon.png": "62142041faf9d5651c1f1aef426f560d",
+"icons/Icon-192.png": "0ba73cd722a14d89e29f5d13a24294a2",
+"icons/favicon.png": "8d159029077b9d6629ada4690b3baec0",
+"icons/favicon.ico": "1665e4bb03d060b66d2a82641167a46e",
+"icons/Icon-512.png": "d2f5d6ffc41f7a4d3d05d00fea7c8b72",
+"favicon.png": "8d159029077b9d6629ada4690b3baec0",
 "manifest.json": "ecf8d4eea71ae54799788ad9586a3654",
 "version.json": "a8f83101c2f51eceebd1cdcc7b8ff5fc",
-"favicon.ico": "fb827b1ac300607bbfde74e178e10e56",
-"main.dart.js": "dda5bb098cf77a9eac2f7828632ad7f7",
-"index.html": "c0cb3912f0f5d49614caa2d7a84e6057",
-"/": "c0cb3912f0f5d49614caa2d7a84e6057"
+"favicon.ico": "1665e4bb03d060b66d2a82641167a46e",
+"main.dart.js": "4dd57c9338ab0df91cb408f89524159f",
+"index.html": "afb7933c8b10c1e8c9cc01c13d45fc3a",
+"/": "afb7933c8b10c1e8c9cc01c13d45fc3a"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-//  "/",
+  "/",
 "main.dart.js",
 "index.html",
 "assets/NOTICES",

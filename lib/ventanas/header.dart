@@ -18,8 +18,8 @@ class Header extends StatelessWidget {
     return Container(
       margin: Responsive.isDesktop(context)
           ? EdgeInsets.only(
-              left: 70,
-              right: 70,
+              left: (item != 0) ? 70 : 0,
+              right: (item != 0) ? 70 : 0,
               top: (item == 1) ? 70 : 0,
               bottom: (item == 4) ? 70 : 0,
             )

@@ -277,15 +277,13 @@ class Mails extends StatelessWidget {
                                 align: Alignment.bottomRight, offset: 45));
                         botonClikeado = true;
                       } catch (e) {
-                        showToast(
-                            idioma.value
-                                ? en.contacto17
-                                : es.contacto17 + e.toString(),
+                        showToast(idioma.value ? en.contacto17 : es.contacto17,
                             context: context,
                             duration: Duration(seconds: 4),
                             backgroundColor: Colors.red,
                             position: StyledToastPosition(
                                 align: Alignment.bottomRight, offset: 45));
+                        print(e.toString());
                       }
                     }
                   } else {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 import 'package:mipagina/utils/colores.dart';
 import 'package:mipagina/utils/utils.dart';
@@ -6,6 +7,7 @@ import 'package:mipagina/utils/responsive.dart';
 
 import 'package:mipagina/strings_es.dart' as es;
 import 'package:mipagina/strings_en.dart' as en;
+import 'package:mipagina/ventanas/welcome.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -18,35 +20,50 @@ class Home extends StatelessWidget {
           Container(
             //width: MediaQuery.of(context).size.width,
             margin: EdgeInsets.only(
-              top: 10,
+              top: 15,
+              right: 70,
             ),
             height: 50,
-            child: TextButton(
-              onPressed: () {
-                if (idioma.value) {
-                  idioma.value = false;
-                  colorTemaMenu = colorTemaMenu1;
-                } else {
-                  idioma.value = true;
-                  colorTemaMenu = colorTemaMenu2;
-                }
-              },
-              style: ButtonStyle(
-                overlayColor: MaterialStateProperty.all(
-                  Colors.black.withOpacity(0.1),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                IconButton(
+                  onPressed: () async {
+                    await showDialog(
+                      context: context,
+                      builder: (_) => AbrirWelcome(),
+                    );
+                  },
+                  icon: Icon(LineIcons.arrowLeft, color: textoGrande),
                 ),
-                splashFactory: NoSplash.splashFactory,
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                TextButton(
+                  onPressed: () {
+                    if (idioma.value) {
+                      idioma.value = false;
+                      colorTemaMenu = colorTemaMenu1;
+                    } else {
+                      idioma.value = true;
+                      colorTemaMenu = colorTemaMenu2;
+                    }
+                  },
+                  style: ButtonStyle(
+                    overlayColor: MaterialStateProperty.all(
+                      Colors.black.withOpacity(0.1),
+                    ),
+                    splashFactory: NoSplash.splashFactory,
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(10))),
+                    ),
+                  ),
+                  child: Text(
+                    "EN/ES",
+                    style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        color: textoGrande.withOpacity(0.7)),
+                  ),
                 ),
-              ),
-              child: Text(
-                "EN/ES",
-                style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                    color: textoGrande.withOpacity(0.7)),
-              ),
+              ],
             ),
           ),
           Container(

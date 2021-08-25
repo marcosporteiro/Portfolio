@@ -128,3 +128,6 @@ const String contacto15 = "Sending...";
 const String contacto16 = "Message send.";
 const String contacto17 = "The message could not be sent. ";
 const String contacto18 = "You can only send one message at a time.";
+
+const String consolaText =
+    "1      void main () {\n2            Person me = new Person();\n3            me.Name = ' Marcos ';\n4            me.LastName = ' Porteiro ';\n5            me.SearchingJob = true;\n7\n8             if ( !isEnded( this.web ) ){\n9                       me.Code( this.web );\n10           } else {\n11                     runWeb();\n12           }\n13\n14     }\n\n         marcos.porteiro:~  open myWeb.html";

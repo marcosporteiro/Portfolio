@@ -38,6 +38,7 @@ dependencies:
   http: ^0.13.3
   dwds: ^11.2.0
   syncfusion_flutter_gauges: ^19.2.55
+  animated_text_kit: ^4.2.1
 
 
 

@@ -2,9 +2,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mipagina/utils/colores.dart';
+import 'package:mouse_parallax/mouse_parallax.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 ValueNotifier<bool> idioma = ValueNotifier<bool>(false);
+ValueNotifier<int> animar = ValueNotifier<int>(0);
 
 double posi0 = 0;
 double posi1 = 0;
@@ -42,7 +44,7 @@ bool isWideScreen(double altura, double largo) {
 
 BoxDecoration ladecoracion(int item) {
   BoxDecoration decoracion;
-  const String ruta1 = "assets/images/banner3.jpg";
+  //const String ruta1 = "assets/images/banner3.jpg";
 
   switch (item) {
     case 0:
@@ -112,5 +114,97 @@ TextStyle fuente(int fuente, Color color, double size, FontWeight weight) {
 
     default:
       return raleway;
+  }
+}
+
+class FondoImagenes extends StatelessWidget {
+  const FondoImagenes({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return ParallaxStack(
+      layers: [
+        ParallaxLayer(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/1.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+        ParallaxLayer(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/2.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+        ParallaxLayer(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/3.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+        ParallaxLayer(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/4.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+        ParallaxLayer(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/5.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+        ParallaxLayer(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/6.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+        ParallaxLayer(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/7.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+        ParallaxLayer(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/8.png"),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
   }
 }

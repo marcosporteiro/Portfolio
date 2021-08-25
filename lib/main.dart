@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mipagina/utils/colores.dart';
+
 import 'package:provider/provider.dart';
 import 'dart:ui' as ui;
 
@@ -11,6 +12,7 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
   idioma.value = obtenerIdioma();
+
   runApp(MyApp());
 }
 

@@ -6,12 +6,24 @@ import 'package:mipagina/menu.dart';
 import 'package:mipagina/utils/utils.dart';
 import 'package:mipagina/ventana.dart';
 
+import 'package:mipagina/ventanas/welcome.dart';
+
 class Cuerpo extends State<MyAppBody> {
   @override
   void initState() {
     super.initState();
+    setState(() {
+      Future.delayed(Duration.zero, () => abrirConsola(context));
+    });
 
     idioma.addListener(() {
+      setState(() {
+        // ignore: unnecessary_statements
+        Cuerpo;
+      });
+    });
+
+    animar.addListener(() {
       setState(() {
         // ignore: unnecessary_statements
         Cuerpo;

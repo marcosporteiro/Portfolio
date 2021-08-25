@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mipagina/utils/responsive.dart';
-import 'package:mipagina/utils/utils.dart';
 import 'package:provider/provider.dart';
 
 import 'package:mipagina/utils/colores.dart';
@@ -11,6 +9,9 @@ import 'package:mipagina/ventanas/header.dart';
 import 'package:mipagina/ventanas/home.dart';
 import 'package:mipagina/ventanas/portfolio.dart';
 import 'package:mipagina/menu.dart';
+import 'package:mipagina/ventanas/consola.dart';
+import 'package:mipagina/utils/responsive.dart';
+import 'package:mipagina/utils/utils.dart';
 
 class Ventana extends StatelessWidget {
   Ventana({Key? key}) : super(key: key);
@@ -24,24 +25,30 @@ class Ventana extends StatelessWidget {
           drawer: Menu(),
           floatingActionButton:
               Responsive.isDesktop(context) ? null : BotonMenu(),
-          body: Container(
-            decoration: BoxDecoration(
-              color: colorFondo,
-              image: DecorationImage(
+          body: Stack(
+            children: [
+              Container(
+                color: colorNegroFondo,
+                child: FondoImagenes(),
+              ),
+              ListView.builder(
+                shrinkWrap: true,
+                addAutomaticKeepAlives: true,
+                itemCount: 5,
+                itemExtent: MediaQuery.of(context).size.height,
+                controller: controlador,
+                itemBuilder: (c, i) => Header(
+                    elwid: ItemAmostrar(ventana: i),
+                    decoracion: ladecoracion(i),
+                    item: i),
+              ),
+            ],
+            /*decoration: BoxDecoration(
+              color: colorNegroFondo,
+              /*image: DecorationImage(
                   image: AssetImage("assets/images/banner2.jpg"),
-                  fit: BoxFit.cover),
-            ),
-            child: ListView.builder(
-              shrinkWrap: true,
-              addAutomaticKeepAlives: true,
-              itemCount: 5,
-              itemExtent: MediaQuery.of(context).size.height,
-              controller: controlador,
-              itemBuilder: (c, i) => Header(
-                  elwid: ItemAmostrar(ventana: i),
-                  decoracion: ladecoracion(i),
-                  item: i),
-            ),
+                  fit: BoxFit.cover),*/
+            ),*/
           ),
         ),
       ),
@@ -66,6 +73,8 @@ class ItemAmostrar extends StatelessWidget {
         return Portfolio();
       case 4:
         return Contact();
+      case 5:
+        return MiConsola();
       default:
         return Container(
           color: Colors.red,

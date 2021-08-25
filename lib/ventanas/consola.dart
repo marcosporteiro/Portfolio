@@ -76,7 +76,9 @@ class Consola extends State<MiConsola> {
                 child: Container(
                   child: Stack(
                     children: [
-                      AnimarTexto(),
+                      AnimarTexto(
+                        texto: idioma.value ? en.consolaText : es.consolaText,
+                      ),
                     ],
                   ),
                 ),
@@ -92,16 +94,15 @@ class Consola extends State<MiConsola> {
 class AnimarTexto extends StatelessWidget {
   const AnimarTexto({
     Key? key,
+    this.texto,
   }) : super(key: key);
+  final texto;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.transparent,
-        body: TextoAnimado(
-            texto: idioma.value ? en.consolaText : es.consolaText,
-            posi: 0,
-            color: textoGrande));
+        body: TextoAnimado(texto: texto, posi: 0, color: textoGrande));
   }
 }
 
@@ -117,15 +118,16 @@ class TextoAnimado extends StatelessWidget {
   Widget build(BuildContext context) {
     return animar.value >= posi
         ? AnimatedTextKit(
-            pause: Duration(milliseconds: 0),
-            isRepeatingAnimation: false,
+            pause: Duration(seconds: 20),
+            isRepeatingAnimation: true,
             onFinished: () {
               animar.value = animar.value + 1;
             },
             animatedTexts: [
               TypewriterAnimatedText(
                 texto,
-                speed: Duration(milliseconds: 15),
+                speed: Duration(milliseconds: 40),
+                cursor: " _",
                 textStyle: fuente(3, color, 18, FontWeight.w300),
               ),
             ],

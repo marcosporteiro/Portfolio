@@ -28,8 +28,8 @@ class Cv extends StatelessWidget {
           Expanded(
             flex: 1,
             child: Container(
-              //color: Colors.green,
               child: SingleChildScrollView(
+                controller: controladorCv,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,

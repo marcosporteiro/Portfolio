@@ -34,6 +34,7 @@ class Contact extends StatelessWidget {
             child: Container(
               //color: Colors.green,
               child: SingleChildScrollView(
+                controller: controladorContact,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,

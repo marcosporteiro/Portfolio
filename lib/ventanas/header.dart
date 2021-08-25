@@ -25,7 +25,7 @@ class Header extends StatelessWidget {
             )
           : EdgeInsets.only(
               top: (item == 1) ? 70 : 0,
-              bottom: (item == 4) ? 10 : 0,
+              bottom: (item == 4) ? 0 : 0,
             ),
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,

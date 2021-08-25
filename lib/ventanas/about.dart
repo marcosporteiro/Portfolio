@@ -30,6 +30,7 @@ class About extends StatelessWidget {
             child: Container(
               //color: Colors.green,
               child: SingleChildScrollView(
+                controller: controladorAbout,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,

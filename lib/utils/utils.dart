@@ -18,6 +18,11 @@ bool botonClikeado = false;
 double posiScroll = 0;
 
 ScrollController controlador = ScrollController();
+ScrollController controladorHome = ScrollController();
+ScrollController controladorAbout = ScrollController();
+ScrollController controladorCv = ScrollController();
+ScrollController controladorPortfolio = ScrollController();
+ScrollController controladorContact = ScrollController();
 
 class Utils {
   static Future openLink({required String url}) => _launchUrl(url);
@@ -122,85 +127,69 @@ class FondoImagenes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ParallaxStack(
-      layers: [
-        ParallaxLayer(
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/1.png"),
-                fit: BoxFit.cover,
-              ),
+    return Stack(
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/1.png"),
+              fit: BoxFit.cover,
             ),
           ),
         ),
-        ParallaxLayer(
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/2.png"),
-                fit: BoxFit.cover,
-              ),
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/2.png"),
+              fit: BoxFit.cover,
             ),
           ),
         ),
-        ParallaxLayer(
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/3.png"),
-                fit: BoxFit.cover,
-              ),
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/3.png"),
+              fit: BoxFit.cover,
             ),
           ),
         ),
-        ParallaxLayer(
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/4.png"),
-                fit: BoxFit.cover,
-              ),
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/4.png"),
+              fit: BoxFit.cover,
             ),
           ),
         ),
-        ParallaxLayer(
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/5.png"),
-                fit: BoxFit.cover,
-              ),
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/5.png"),
+              fit: BoxFit.cover,
             ),
           ),
         ),
-        ParallaxLayer(
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/6.png"),
-                fit: BoxFit.cover,
-              ),
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/6.png"),
+              fit: BoxFit.cover,
             ),
           ),
         ),
-        ParallaxLayer(
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/7.png"),
-                fit: BoxFit.cover,
-              ),
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/7.png"),
+              fit: BoxFit.cover,
             ),
           ),
         ),
-        ParallaxLayer(
-          child: Container(
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/8.png"),
-                fit: BoxFit.cover,
-              ),
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/8.png"),
+              fit: BoxFit.cover,
             ),
           ),
         ),

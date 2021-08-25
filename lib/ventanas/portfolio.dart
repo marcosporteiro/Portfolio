@@ -90,6 +90,7 @@ class Portfolio extends StatelessWidget {
               padding: EdgeInsets.all(10),
               //color: Colors.blue,
               child: SingleChildScrollView(
+                controller: controladorPortfolio,
                 child: Wrap(
                   spacing: 10,
                   runSpacing: 10,
@@ -298,9 +299,6 @@ class ImageDialog extends StatelessWidget {
               left: Responsive.isDesktop(context) ? 80 : 10,
               right: Responsive.isDesktop(context) ? 80 : 10,
               child: Container(
-                /*width: MediaQuery.of(context).size.width -
-                    MediaQuery.of(context).size.width / 2.5 -
-                    1000,*/
                 height: Responsive.isDesktop(context) ? 100 : 170,
                 decoration: BoxDecoration(
                   color: colorMenu.withOpacity(0.7),

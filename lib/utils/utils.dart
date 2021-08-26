@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mipagina/utils/colores.dart';
-import 'package:mouse_parallax/mouse_parallax.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 ValueNotifier<bool> idioma = ValueNotifier<bool>(false);

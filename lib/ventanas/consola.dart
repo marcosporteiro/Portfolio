@@ -18,6 +18,7 @@ class Consola extends State<MiConsola> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(15),
       //color: colorNegroFondo.withOpacity(0.5),
       child: Center(
         child: Container(
@@ -126,7 +127,7 @@ class TextoAnimado extends StatelessWidget {
             animatedTexts: [
               TypewriterAnimatedText(
                 texto,
-                speed: Duration(milliseconds: 40),
+                speed: Duration(milliseconds: 30),
                 cursor: " _",
                 textStyle: fuente(3, color, 18, FontWeight.w300),
               ),

@@ -19,38 +19,42 @@ class Ventana extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Container(
-        child: Scaffold(
-          key: context.read<MenuController>().scaffoldKey,
-          drawer: Menu(),
-          floatingActionButton:
-              Responsive.isDesktop(context) ? null : BotonMenu(),
-          body: Stack(
-            children: [
-              Container(
-                color: colorNegroFondo,
-                child: FondoImagenes(),
+      child: Stack(
+        children: [
+          Container(
+            child: Scaffold(
+              key: context.read<MenuController>().scaffoldKey,
+              drawer: Menu(),
+              floatingActionButton:
+                  Responsive.isDesktop(context) ? null : BotonMenu(),
+              body: Stack(
+                children: [
+                  Container(
+                    color: colorNegroFondo,
+                    child: FondoImagenes(),
+                  ),
+                  ListView.builder(
+                    shrinkWrap: true,
+                    addAutomaticKeepAlives: true,
+                    itemCount: 5,
+                    itemExtent: MediaQuery.of(context).size.height,
+                    controller: controlador,
+                    itemBuilder: (c, i) => Header(
+                        elwid: ItemAmostrar(ventana: i),
+                        decoracion: ladecoracion(i),
+                        item: i),
+                  ),
+                ],
+                /*decoration: BoxDecoration(
+                  color: colorNegroFondo,
+                  /*image: DecorationImage(
+                      image: AssetImage("assets/images/banner2.jpg"),
+                      fit: BoxFit.cover),*/
+                ),*/
               ),
-              ListView.builder(
-                shrinkWrap: true,
-                addAutomaticKeepAlives: true,
-                itemCount: 5,
-                itemExtent: MediaQuery.of(context).size.height,
-                controller: controlador,
-                itemBuilder: (c, i) => Header(
-                    elwid: ItemAmostrar(ventana: i),
-                    decoracion: ladecoracion(i),
-                    item: i),
-              ),
-            ],
-            /*decoration: BoxDecoration(
-              color: colorNegroFondo,
-              /*image: DecorationImage(
-                  image: AssetImage("assets/images/banner2.jpg"),
-                  fit: BoxFit.cover),*/
-            ),*/
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

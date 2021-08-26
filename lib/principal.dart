@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mipagina/utils/colores.dart';
 import 'package:mipagina/utils/responsive.dart';
 
 import 'package:mipagina/main.dart';
@@ -84,6 +85,7 @@ class Cuerpo extends State<MyAppBody> {
         width: MediaQuery.of(context).size.width,
         //color: Colors.red,
         child: Container(
+          color: colorNegroFondo,
           child: Row(
             children: [
               if (Responsive.isDesktop(context)) Menu(),

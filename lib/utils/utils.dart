@@ -104,7 +104,7 @@ TextStyle fuente(int fuente, Color color, double size, FontWeight weight) {
     fontSize: size,
     fontWeight: weight,
   );
-  TextStyle lato = GoogleFonts.lato(
+  TextStyle fira = GoogleFonts.firaCode(
     color: color,
     fontSize: size,
     fontWeight: weight,
@@ -115,7 +115,7 @@ TextStyle fuente(int fuente, Color color, double size, FontWeight weight) {
     case 2:
       return roboto;
     case 3:
-      return lato;
+      return fira;
 
     default:
       return raleway;

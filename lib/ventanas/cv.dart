@@ -274,13 +274,13 @@ class Cv extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       direction: isWideScreen(
-                              MediaQuery.of(context).size.height,
+                              MediaQuery.of(context).size.height + 550,
                               MediaQuery.of(context).size.width)
                           ? Axis.horizontal
                           : Axis.vertical,
                       children: [
                         Container(
-                          margin: EdgeInsets.only(top: 20, left: 30, right: 30),
+                          margin: EdgeInsets.only(top: 20, left: 10, right: 10),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -317,7 +317,7 @@ class Cv extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(top: 20, left: 30, right: 30),
+                          margin: EdgeInsets.only(top: 20, left: 10, right: 10),
                           child: Column(
                             children: [
                               Text(

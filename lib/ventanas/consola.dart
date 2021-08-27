@@ -1,11 +1,14 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_decorated_text/flutter_decorated_text.dart';
 
 import 'package:mipagina/utils/colores.dart';
 import 'package:mipagina/utils/utils.dart';
 
 import 'package:mipagina/strings_es.dart' as es;
 import 'package:mipagina/strings_en.dart' as en;
+
+//import 'package:styled_text/styled_text.dart';
 
 class MiConsola extends StatefulWidget {
   const MiConsola({Key? key}) : super(key: key);
@@ -128,8 +131,8 @@ class TextoAnimado extends StatelessWidget {
               TypewriterAnimatedText(
                 texto,
                 speed: Duration(milliseconds: 30),
-                cursor: " _",
-                textStyle: fuente(3, color, 18, FontWeight.w300),
+                cursor: "_",
+                textStyle: fuente(3, color, 17, FontWeight.w300),
               ),
             ],
           )

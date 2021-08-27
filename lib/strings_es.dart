@@ -132,4 +132,4 @@ const String contacto17 = "El mensaje no se pudo enviar. ";
 const String contacto18 = "Solo puedes enviar un mensaje a la vez.";
 
 const String consolaText =
-    "1      void main () {\n2            Persona yo = new Persona();\n3            yo.Nombre = ' Marcos ';\n4            yo.Apellido = ' Porteiro ';\n5            yo.BuscaTrabajo = true;\n7\n8             if ( !terminada( this.web ) ){\n9                       yo.Programar( this.web );\n10           } else {\n11                     runWeb();\n12           }\n13\n14     }\n\n         marcos.porteiro:~  open miPagina.html_";
+    "1    void main () {\n2         Persona yo = new Persona();\n3         yo.Nombre = ' Marcos ';\n4         yo.Apellido = ' Porteiro ';\n5         yo.BuscaTrabajo = true;\n7\n8         if ( !terminada( this.web ) ){\n9              yo.Programar( this.web );\n10        } else {\n11             runWeb();\n12        }\n13\n14   }\n\n     marcos.porteiro:~  open miPagina.html ";

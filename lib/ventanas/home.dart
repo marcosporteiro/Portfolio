@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
             //width: MediaQuery.of(context).size.width,
             margin: EdgeInsets.only(
               top: Responsive.isDesktop(context) ? 38 : 15,
-              right: 70,
+              right: Responsive.isDesktop(context) ? 70 : 20,
             ),
             height: 50,
             child: Row(

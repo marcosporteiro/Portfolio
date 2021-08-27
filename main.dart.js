@@ -64886,25 +64886,25 @@ s=new V.T(0,s,0,0)}r=b.v(m).f
 m=b.v(m).f
 return M.L(n,M.L(n,o.d,C.f,n,n,o.c,n,n,n,n,n,n,n),C.f,n,new S.au(1000,1/0,1000,1/0),n,n,r.a.b,s,n,n,n,m.a.a)}}
 Y.Ez.prototype={
-I:function(a,b){var s,r,q,p=null,o=$.ark(),n=t.w,m=b.v(n).f.a.a>=850?38:15,l=B.al6(L.EE(C.qP,C.d4,p),new Y.Xx(b),p),k=C.d.a8(25.5),j=t.FT,i=t.M1,h=A.j_(p,p,p,p,p,p,p,p,p,new V.bP(P.R(k,0,0,0),j),p,p,new V.bP(new X.cp(K.tF(new P.aJ(10,10)),C.q),i),p,C.bE,p,p,p),g=C.d.a8(178.5),f=t.p
-m=M.L(p,T.wR(H.a([l,U.nE(L.c2("EN/ES",p,p,p,A.d8(p,p,P.R(g,252,247,240),p,p,p,p,p,p,p,p,p,p,C.ai,p,p,!0,p,p,p,p,p,p,p),p,p),new Y.Xy(),h)],f),C.hD),C.f,p,p,p,p,50,new V.T(0,m,70,0),p,p,p,p)
-l=b.v(n).f.a.a>=850?new V.T(130,b.v(n).f.a.b/6.5-0,130,10):new V.T(5,120,5,0)
-h=b.v(n).f.a.a>=850?75:50
-s=P.R(C.d.a8(229.5),252,247,240)
-s=B.aY(1,s,b.v(n).f.a.a>=850?40:25,C.bk)
-r=Q.aQ(p,p,$.av().a?"Hi! my name is ":"Hola! mi nombre es ")
-q=Q.aQ(p,A.d8(p,p,C.d4,p,p,p,p,p,p,p,p,p,p,C.aX,p,p,!0,p,p,p,p,p,p,p),"Marcos Porteiro")
-h=M.L(p,T.l8(p,p,C.aQ,!0,p,Q.aQ(H.a([r,q,Q.aQ(p,p,$.av().a?", on this website I am going to tell you who I am, and show you a bit of what I do. ":", e hice esta p\xe1gina web para contarte qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.Ne),s,""),C.a2,p,p,1,C.ag),C.f,p,p,p,p,p,new V.T(0,h,0,0),p,p,p,p)
-s=b.v(n).f.a.a>=850?50:45
-r=$.av().a?"Do you want to meet me?":"\xbfMe quieres conocer?"
+I:function(a,b){var s,r,q=null,p=$.ark(),o=t.w,n=b.v(o).f.a.a>=850?38:15,m=b.v(o).f.a.a>=850?70:20,l=B.al6(L.EE(C.qP,C.d4,q),new Y.Xx(b),q),k=C.d.a8(25.5),j=t.FT,i=t.M1,h=A.j_(q,q,q,q,q,q,q,q,q,new V.bP(P.R(k,0,0,0),j),q,q,new V.bP(new X.cp(K.tF(new P.aJ(10,10)),C.q),i),q,C.bE,q,q,q),g=C.d.a8(178.5),f=t.p
+m=M.L(q,T.wR(H.a([l,U.nE(L.c2("EN/ES",q,q,q,A.d8(q,q,P.R(g,252,247,240),q,q,q,q,q,q,q,q,q,q,C.ai,q,q,!0,q,q,q,q,q,q,q),q,q),new Y.Xy(),h)],f),C.hD),C.f,q,q,q,q,50,new V.T(0,n,m,0),q,q,q,q)
+n=b.v(o).f.a.a>=850?new V.T(130,b.v(o).f.a.b/6.5-0,130,10):new V.T(5,120,5,0)
+l=b.v(o).f.a.a>=850?75:50
+h=P.R(C.d.a8(229.5),252,247,240)
+h=B.aY(1,h,b.v(o).f.a.a>=850?40:25,C.bk)
+s=Q.aQ(q,q,$.av().a?"Hi! my name is ":"Hola! mi nombre es ")
+r=Q.aQ(q,A.d8(q,q,C.d4,q,q,q,q,q,q,q,q,q,q,C.aX,q,q,!0,q,q,q,q,q,q,q),"Marcos Porteiro")
+l=M.L(q,T.l8(q,q,C.aQ,!0,q,Q.aQ(H.a([s,r,Q.aQ(q,q,$.av().a?", on this website I am going to tell you who I am, and show you a bit of what I do. ":", e hice esta p\xe1gina web para contarte qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.Ne),h,""),C.a2,q,q,1,C.ag),C.f,q,q,q,q,q,new V.T(0,l,0,0),q,q,q,q)
+h=b.v(o).f.a.a>=850?50:45
+s=$.av().a?"Do you want to meet me?":"\xbfMe quieres conocer?"
 g=P.R(g,252,247,240)
-g=M.L(p,L.c2(r,p,p,p,B.aY(1,g,b.v(n).f.a.a>=850?25:20,C.cr),p,p),C.f,p,p,p,p,p,new V.T(0,s,0,0),p,p,p,p)
-s=$.d3().a
-s=P.R(204,s>>>16&255,s>>>8&255,s&255)
-r=K.dJ(10)
-i=A.j_(p,p,p,p,p,p,p,p,p,new V.bP(P.R(k,0,0,0),j),p,p,new V.bP(new X.cp(K.tF(new P.aJ(10,10)),C.q),i),p,C.bE,p,p,p)
-n=$.av().a?"See more":"Leer m\xe1s"
-return E.nv(T.cR(H.a([m,M.L(p,E.nv(T.cR(H.a([h,g,M.L(p,U.nE(M.L(p,M.L(p,T.h5(L.c2(n,p,p,p,B.aY(1,C.k,20,C.a1),C.a2,p),p,p),C.f,p,p,p,p,p,p,p,p,p,p),C.f,p,p,p,p,p,p,p,p,p,p),new Y.Xz(b),i),C.f,p,p,new S.b5(s,p,p,r,p,p,C.u),p,75,new V.T(50,50,50,50),p,p,p,200)],f),C.P,C.U,C.K),p),C.f,p,p,p,p,p,l,new V.T(0,0,0,0),p,p,p)],f),C.P,C.U,C.K),o)}}
+h=M.L(q,L.c2(s,q,q,q,B.aY(1,g,b.v(o).f.a.a>=850?25:20,C.cr),q,q),C.f,q,q,q,q,q,new V.T(0,h,0,0),q,q,q,q)
+g=$.d3().a
+g=P.R(204,g>>>16&255,g>>>8&255,g&255)
+s=K.dJ(10)
+i=A.j_(q,q,q,q,q,q,q,q,q,new V.bP(P.R(k,0,0,0),j),q,q,new V.bP(new X.cp(K.tF(new P.aJ(10,10)),C.q),i),q,C.bE,q,q,q)
+o=$.av().a?"See more":"Leer m\xe1s"
+return E.nv(T.cR(H.a([m,M.L(q,E.nv(T.cR(H.a([l,h,M.L(q,U.nE(M.L(q,M.L(q,T.h5(L.c2(o,q,q,q,B.aY(1,C.k,20,C.a1),C.a2,q),q,q),C.f,q,q,q,q,q,q,q,q,q,q),C.f,q,q,q,q,q,q,q,q,q,q),new Y.Xz(b),i),C.f,q,q,new S.b5(g,q,q,s,q,q,C.u),q,75,new V.T(50,50,50,50),q,q,q,200)],f),C.P,C.U,C.K),q),C.f,q,q,q,q,q,n,new V.T(0,0,0,0),q,q,q)],f),C.P,C.U,C.K),p)}}
 Y.Xx.prototype={
 $0:function(){var s=0,r=P.a6(t.H),q=this
 var $async$$0=P.a2(function(a,b){if(a===1)return P.a3(b,r)

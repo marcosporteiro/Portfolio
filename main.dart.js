@@ -64670,17 +64670,18 @@ Z.pz.prototype={
 aC:function(){return new Z.D3(C.n)}}
 Z.D3.prototype={
 I:function(a,b){var s=null,r=K.dJ(10),q=t.p,p=M.L(s,T.wR(H.a([M.L(s,s,C.f,s,s,new S.b5(C.pE,s,s,K.dJ(20),s,s,C.u),s,12,new V.T(10,0,0,0),s,s,s,12),M.L(s,s,C.f,s,s,new S.b5(C.pJ,s,s,K.dJ(20),s,s,C.u),s,12,new V.T(5,0,0,0),s,s,s,12),M.L(s,s,C.f,s,s,new S.b5(C.p4,s,s,K.dJ(20),s,s,C.u),s,12,new V.T(5,0,0,0),s,s,s,12)],q),C.U),C.f,s,s,new S.b5(new P.y(4282071867),s,s,new K.ch(new P.aJ(10,10),new P.aJ(10,10),C.y,C.y),s,s,C.u),s,20,s,s,s,s,s)
-return M.L(s,T.h5(M.L(s,T.cR(H.a([p,M.L(s,M.L(s,T.fO(C.aI,H.a([new Z.BJ($.av().a?"1    void main () {\n2         Persona me = new Person();\n3         me.Name = ' Marcos ';\n4         me.LastName = ' Porteiro ';\n5         me.SearchingJob = true;\n7\n8         if ( !isEnded( this.web ) ){\n9              me.Code( this.web );\n10        } else {\n11             runWeb();\n12        }\n13\n14   }\n\n     marcos.porteiro:~  open myWeb.html ":"1    void main () {\n2         Persona yo = new Persona();\n3         yo.Nombre = ' Marcos ';\n4         yo.Apellido = ' Porteiro ';\n5         yo.BuscaTrabajo = true;\n7\n8         if ( !terminada( this.web ) ){\n9              yo.Programar( this.web );\n10        } else {\n11             runWeb();\n12        }\n13\n14   }\n\n     marcos.porteiro:~  open miPagina.html ",s)],q),C.aG),C.f,s,s,s,s,s,s,s,s,s,s),C.f,s,s,s,s,330,new V.T(20,20,20,20),s,s,s,700)],q),C.P,C.U,C.K),C.f,s,s,new S.b5(new P.y(4280163870),s,s,r,s,s,C.u),s,400,s,s,s,s,700),s,s),C.f,s,s,s,s,s,s,new V.T(15,15,15,15),s,s,s)}}
+return M.L(s,T.h5(M.L(s,T.cR(H.a([p,M.L(s,M.L(s,T.fO(C.aI,H.a([new Z.BJ($.av().a?"1    void main () {\n2         Persona me = new Person();\n3         me.Name = ' Marcos ';\n4         me.LastName = ' Porteiro ';\n5         me.SearchingJob = true;\n7\n8         if ( !isEnded( this.web ) ){\n9              me.Code( this.web );\n10        } else {\n11             runWeb();\n12        }\n13\n14   }\n\n     marcos.porteiro:~  open myWeb.html ":"1    void main () {\n2         Persona yo = new Persona();\n3         yo.Nombre = 'Marcos';\n4         yo.Apellido = 'Porteiro';\n5         yo.BuscaTrabajo = true;\n7\n8         if ( !terminada( this.web ) ){\n9              yo.Programar( this.web );\n10        } else {\n11             runWeb();\n12        }\n13\n14   }\n\n     marcos.porteiro:~  open miPagina.html ",s)],q),C.aG),C.f,s,s,s,s,s,s,s,s,s,s),C.f,s,s,s,s,330,new V.T(20,20,20,20),s,s,s,700)],q),C.P,C.U,C.K),C.f,s,s,new S.b5(new P.y(4280163870),s,s,r,s,s,C.u),s,400,s,s,s,s,700),s,s),C.f,s,s,s,s,s,s,new V.T(15,15,15,15),s,s,s)}}
 Z.BJ.prototype={
 I:function(a,b){var s=null
 return M.agT(C.af,new Z.Jc(this.c,0,C.d4,s),s,s,s)}}
 Z.Jc.prototype={
-I:function(a,b){var s,r,q,p,o=null
+I:function(a,b){var s,r,q,p,o,n=null
 if($.afe().a>=this.d){s=P.bD(0,0,20)
 r=this.c
 q=P.bD(0,30,0)
-p=new T.eO(r)
-s=new D.tt(H.a([new M.ya(q,"_",r,C.a6,B.aY(3,this.e,17,C.a1),new P.aA(C.h.a8(q.a*(p.gm(p)+8))),new T.eO(r))],t.u6),s,new Z.a6g(),!0,o)}else s=M.L(o,o,C.f,o,o,o,o,o,o,o,o,o,o)
+p=b.v(t.w).f.a.a>=850?16:12
+o=new T.eO(r)
+s=new D.tt(H.a([new M.ya(q,"_",r,C.a6,B.aY(3,this.e,p,C.a1),new P.aA(C.h.a8(q.a*(o.gm(o)+8))),new T.eO(r))],t.u6),s,new Z.a6g(),!0,n)}else s=M.L(n,n,C.f,n,n,n,n,n,n,n,n,n,n)
 return s}}
 Z.a6g.prototype={
 $0:function(){var s=$.afe()
@@ -64885,26 +64886,25 @@ s=new V.T(0,s,0,0)}r=b.v(m).f
 m=b.v(m).f
 return M.L(n,M.L(n,o.d,C.f,n,n,o.c,n,n,n,n,n,n,n),C.f,n,new S.au(1000,1/0,1000,1/0),n,n,r.a.b,s,n,n,n,m.a.a)}}
 Y.Ez.prototype={
-I:function(a,b){var s,r,q,p,o,n=null,m=$.ark(),l=B.al6(L.EE(C.qP,C.d4,n),new Y.Xx(b),n),k=C.d.a8(25.5),j=t.FT,i=t.M1,h=A.j_(n,n,n,n,n,n,n,n,n,new V.bP(P.R(k,0,0,0),j),n,n,new V.bP(new X.cp(K.tF(new P.aJ(10,10)),C.q),i),n,C.bE,n,n,n),g=C.d.a8(178.5),f=t.p
-h=M.L(n,T.wR(H.a([l,U.nE(L.c2("EN/ES",n,n,n,A.d8(n,n,P.R(g,252,247,240),n,n,n,n,n,n,n,n,n,n,C.ai,n,n,!0,n,n,n,n,n,n,n),n,n),new Y.Xy(),h)],f),C.hD),C.f,n,n,n,n,50,new V.T(0,38,70,0),n,n,n,n)
-l=t.w
-s=b.v(l).f.a.a>=850?new V.T(130,b.v(l).f.a.b/6.5-0,130,10):new V.T(5,120,5,0)
-r=b.v(l).f.a.a>=850?75:50
-q=P.R(C.d.a8(229.5),252,247,240)
-q=B.aY(1,q,b.v(l).f.a.a>=850?40:25,C.bk)
-p=Q.aQ(n,n,$.av().a?"Hi! my name is ":"Hola! mi nombre es ")
-o=Q.aQ(n,A.d8(n,n,C.d4,n,n,n,n,n,n,n,n,n,n,C.aX,n,n,!0,n,n,n,n,n,n,n),"Marcos Porteiro")
-r=M.L(n,T.l8(n,n,C.aQ,!0,n,Q.aQ(H.a([p,o,Q.aQ(n,n,$.av().a?", on this website I am going to tell you who I am, and show you a bit of what I do. ":", e hice esta p\xe1gina web para contarte qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.Ne),q,""),C.a2,n,n,1,C.ag),C.f,n,n,n,n,n,new V.T(0,r,0,0),n,n,n,n)
-q=b.v(l).f.a.a>=850?50:45
-p=$.av().a?"Do you want to meet me?":"\xbfMe quieres conocer?"
+I:function(a,b){var s,r,q,p=null,o=$.ark(),n=t.w,m=b.v(n).f.a.a>=850?38:15,l=B.al6(L.EE(C.qP,C.d4,p),new Y.Xx(b),p),k=C.d.a8(25.5),j=t.FT,i=t.M1,h=A.j_(p,p,p,p,p,p,p,p,p,new V.bP(P.R(k,0,0,0),j),p,p,new V.bP(new X.cp(K.tF(new P.aJ(10,10)),C.q),i),p,C.bE,p,p,p),g=C.d.a8(178.5),f=t.p
+m=M.L(p,T.wR(H.a([l,U.nE(L.c2("EN/ES",p,p,p,A.d8(p,p,P.R(g,252,247,240),p,p,p,p,p,p,p,p,p,p,C.ai,p,p,!0,p,p,p,p,p,p,p),p,p),new Y.Xy(),h)],f),C.hD),C.f,p,p,p,p,50,new V.T(0,m,70,0),p,p,p,p)
+l=b.v(n).f.a.a>=850?new V.T(130,b.v(n).f.a.b/6.5-0,130,10):new V.T(5,120,5,0)
+h=b.v(n).f.a.a>=850?75:50
+s=P.R(C.d.a8(229.5),252,247,240)
+s=B.aY(1,s,b.v(n).f.a.a>=850?40:25,C.bk)
+r=Q.aQ(p,p,$.av().a?"Hi! my name is ":"Hola! mi nombre es ")
+q=Q.aQ(p,A.d8(p,p,C.d4,p,p,p,p,p,p,p,p,p,p,C.aX,p,p,!0,p,p,p,p,p,p,p),"Marcos Porteiro")
+h=M.L(p,T.l8(p,p,C.aQ,!0,p,Q.aQ(H.a([r,q,Q.aQ(p,p,$.av().a?", on this website I am going to tell you who I am, and show you a bit of what I do. ":", e hice esta p\xe1gina web para contarte qui\xe9n soy, y mostrarte un poco de lo que hago. ")],t.Ne),s,""),C.a2,p,p,1,C.ag),C.f,p,p,p,p,p,new V.T(0,h,0,0),p,p,p,p)
+s=b.v(n).f.a.a>=850?50:45
+r=$.av().a?"Do you want to meet me?":"\xbfMe quieres conocer?"
 g=P.R(g,252,247,240)
-g=M.L(n,L.c2(p,n,n,n,B.aY(1,g,b.v(l).f.a.a>=850?25:20,C.cr),n,n),C.f,n,n,n,n,n,new V.T(0,q,0,0),n,n,n,n)
-q=$.d3().a
-q=P.R(204,q>>>16&255,q>>>8&255,q&255)
-p=K.dJ(10)
-i=A.j_(n,n,n,n,n,n,n,n,n,new V.bP(P.R(k,0,0,0),j),n,n,new V.bP(new X.cp(K.tF(new P.aJ(10,10)),C.q),i),n,C.bE,n,n,n)
-l=$.av().a?"See more":"Leer m\xe1s"
-return E.nv(T.cR(H.a([h,M.L(n,E.nv(T.cR(H.a([r,g,M.L(n,U.nE(M.L(n,M.L(n,T.h5(L.c2(l,n,n,n,B.aY(1,C.k,20,C.a1),C.a2,n),n,n),C.f,n,n,n,n,n,n,n,n,n,n),C.f,n,n,n,n,n,n,n,n,n,n),new Y.Xz(b),i),C.f,n,n,new S.b5(q,n,n,p,n,n,C.u),n,75,new V.T(50,50,50,50),n,n,n,200)],f),C.P,C.U,C.K),n),C.f,n,n,n,n,n,s,new V.T(0,0,0,0),n,n,n)],f),C.P,C.U,C.K),m)}}
+g=M.L(p,L.c2(r,p,p,p,B.aY(1,g,b.v(n).f.a.a>=850?25:20,C.cr),p,p),C.f,p,p,p,p,p,new V.T(0,s,0,0),p,p,p,p)
+s=$.d3().a
+s=P.R(204,s>>>16&255,s>>>8&255,s&255)
+r=K.dJ(10)
+i=A.j_(p,p,p,p,p,p,p,p,p,new V.bP(P.R(k,0,0,0),j),p,p,new V.bP(new X.cp(K.tF(new P.aJ(10,10)),C.q),i),p,C.bE,p,p,p)
+n=$.av().a?"See more":"Leer m\xe1s"
+return E.nv(T.cR(H.a([m,M.L(p,E.nv(T.cR(H.a([h,g,M.L(p,U.nE(M.L(p,M.L(p,T.h5(L.c2(n,p,p,p,B.aY(1,C.k,20,C.a1),C.a2,p),p,p),C.f,p,p,p,p,p,p,p,p,p,p),C.f,p,p,p,p,p,p,p,p,p,p),new Y.Xz(b),i),C.f,p,p,new S.b5(s,p,p,r,p,p,C.u),p,75,new V.T(50,50,50,50),p,p,p,200)],f),C.P,C.U,C.K),p),C.f,p,p,p,p,p,l,new V.T(0,0,0,0),p,p,p)],f),C.P,C.U,C.K),o)}}
 Y.Xx.prototype={
 $0:function(){var s=0,r=P.a6(t.H),q=this
 var $async$$0=P.a2(function(a,b){if(a===1)return P.a3(b,r)

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_decorated_text/flutter_decorated_text.dart';
 
 import 'package:mipagina/utils/colores.dart';
+import 'package:mipagina/utils/responsive.dart';
 import 'package:mipagina/utils/utils.dart';
 
 import 'package:mipagina/strings_es.dart' as es;
@@ -132,7 +133,8 @@ class TextoAnimado extends StatelessWidget {
                 texto,
                 speed: Duration(milliseconds: 30),
                 cursor: "_",
-                textStyle: fuente(3, color, 17, FontWeight.w300),
+                textStyle: fuente(3, color,
+                    Responsive.isDesktop(context) ? 16 : 12, FontWeight.w300),
               ),
             ],
           )

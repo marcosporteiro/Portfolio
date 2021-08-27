@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
           Container(
             //width: MediaQuery.of(context).size.width,
             margin: EdgeInsets.only(
-              top: 38,
+              top: Responsive.isDesktop(context) ? 38 : 15,
               right: 70,
             ),
             height: 50,

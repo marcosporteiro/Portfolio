@@ -9,12 +9,19 @@ import 'package:mipagina/ventanas/header.dart';
 import 'package:mipagina/ventanas/home.dart';
 import 'package:mipagina/ventanas/portfolio.dart';
 import 'package:mipagina/menu.dart';
-import 'package:mipagina/ventanas/consola.dart';
 import 'package:mipagina/utils/responsive.dart';
 import 'package:mipagina/utils/utils.dart';
 
 class Ventana extends StatelessWidget {
   Ventana({Key? key}) : super(key: key);
+
+  List lista = List.generate(
+    5,
+    (index) => Header(
+        elwid: ItemAmostrar(ventana: index),
+        decoracion: ladecoracion(index),
+        item: index),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -39,10 +46,9 @@ class Ventana extends StatelessWidget {
                     itemCount: 5,
                     itemExtent: MediaQuery.of(context).size.height,
                     controller: controlador,
-                    itemBuilder: (c, i) => Header(
-                        elwid: ItemAmostrar(ventana: i),
-                        decoracion: ladecoracion(i),
-                        item: i),
+                    itemBuilder: (c, i) => Container(
+                      child: lista[i],
+                    ),
                   ),
                 ],
                 /*decoration: BoxDecoration(
@@ -77,8 +83,6 @@ class ItemAmostrar extends StatelessWidget {
         return Portfolio();
       case 4:
         return Contact();
-      case 5:
-        return MiConsola();
       default:
         return Container(
           color: Colors.red,

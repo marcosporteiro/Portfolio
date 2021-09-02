@@ -43,7 +43,7 @@ class Ventana extends StatelessWidget {
                   ListView.builder(
                     shrinkWrap: true,
                     addAutomaticKeepAlives: true,
-                    itemCount: 5,
+                    itemCount: lista.length,
                     itemExtent: MediaQuery.of(context).size.height,
                     controller: controlador,
                     itemBuilder: (c, i) => Container(

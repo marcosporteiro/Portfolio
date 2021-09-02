@@ -84,7 +84,6 @@ class Cv extends StatelessWidget {
                           : Axis.vertical,
                       children: [
                         Container(
-                          //color: Colors.red,
                           margin: EdgeInsets.only(top: 20, left: 0, right: 0),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -99,7 +98,9 @@ class Cv extends StatelessWidget {
                                 height: 50,
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width / 4,
+                                width: Responsive.isDesktop(context)
+                                    ? MediaQuery.of(context).size.width / 4
+                                    : MediaQuery.of(context).size.width,
                                 child: Column(
                                   children: [
                                     Column(
@@ -193,7 +194,9 @@ class Cv extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.only(top: 20, left: 30, right: 30),
+                          margin: Responsive.isDesktop(context)
+                              ? EdgeInsets.only(top: 20, left: 30, right: 30)
+                              : EdgeInsets.only(top: 20, left: 0, right: 0),
                           child: Column(
                             children: [
                               Text(
@@ -205,7 +208,9 @@ class Cv extends StatelessWidget {
                                 height: 15,
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width / 4,
+                                width: Responsive.isDesktop(context)
+                                    ? MediaQuery.of(context).size.width / 4
+                                    : MediaQuery.of(context).size.width,
                                 child: Column(
                                   children: [
                                     SelectableText(
@@ -294,7 +299,9 @@ class Cv extends StatelessWidget {
                                 height: 15,
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width / 4,
+                                width: Responsive.isDesktop(context)
+                                    ? MediaQuery.of(context).size.width / 4
+                                    : MediaQuery.of(context).size.width,
                                 child: Column(
                                   children: [
                                     Column(
@@ -329,7 +336,9 @@ class Cv extends StatelessWidget {
                                 height: 15,
                               ),
                               Container(
-                                width: MediaQuery.of(context).size.width / 4,
+                                width: Responsive.isDesktop(context)
+                                    ? MediaQuery.of(context).size.width / 4
+                                    : MediaQuery.of(context).size.width,
                                 child: Column(
                                   children: [
                                     SelectableText(

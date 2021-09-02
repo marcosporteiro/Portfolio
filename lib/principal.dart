@@ -24,6 +24,8 @@ class Cuerpo extends State<MyAppBody> {
       });
     });
 
+    /*
+
     animar.addListener(() {
       setState(() {
         // ignore: unnecessary_statements
@@ -31,7 +33,10 @@ class Cuerpo extends State<MyAppBody> {
       });
     });
 
+    */
+/*
     controlador.addListener(() {
+      
       //print(controlador.position.pixels.round());
       posi0 = MediaQuery.of(context).size.height * 0;
       posi1 = MediaQuery.of(context).size.height * 1;
@@ -74,7 +79,7 @@ class Cuerpo extends State<MyAppBody> {
           Botones;
         });
       }
-    });
+    });*/
   }
 
   @override

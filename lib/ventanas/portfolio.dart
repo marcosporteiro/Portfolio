@@ -299,10 +299,10 @@ class ImageDialog extends StatelessWidget {
               left: Responsive.isDesktop(context) ? 80 : 10,
               right: Responsive.isDesktop(context) ? 80 : 10,
               child: Container(
-                height: Responsive.isDesktop(context) ? 100 : 170,
+                height: Responsive.isDesktop(context) ? 85 : 170,
                 decoration: BoxDecoration(
-                  color: colorMenu.withOpacity(0.7),
-                  borderRadius: BorderRadius.circular(20),
+                  color: colorMenu.withOpacity(0.9),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Center(
                   child: Text(

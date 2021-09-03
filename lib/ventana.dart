@@ -37,8 +37,13 @@ class Ventana extends StatelessWidget {
               body: Stack(
                 children: [
                   Container(
-                    color: colorNegroFondo,
-                    child: FondoImagenes(),
+                    //child: FondoImagenes(),
+                    decoration: BoxDecoration(
+                      color: colorNegroFondo,
+                      image: DecorationImage(
+                          image: AssetImage("assets/images/banner3.jpg"),
+                          fit: BoxFit.cover),
+                    ),
                   ),
                   ListView.builder(
                     shrinkWrap: true,
@@ -51,12 +56,6 @@ class Ventana extends StatelessWidget {
                     ),
                   ),
                 ],
-                /*decoration: BoxDecoration(
-                  color: colorNegroFondo,
-                  /*image: DecorationImage(
-                      image: AssetImage("assets/images/banner2.jpg"),
-                      fit: BoxFit.cover),*/
-                ),*/
               ),
             ),
           ),

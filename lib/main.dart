@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         scrollbarTheme: ScrollbarThemeData(
           interactive: true,
           isAlwaysShown: false,
-          thumbColor: MaterialStateProperty.all(colorTemaMenu.withOpacity(0.3)),
+          thumbColor: MaterialStateProperty.all(colorTemaMenu),
         ),
       ),
       title: "Marcos Porteiro",

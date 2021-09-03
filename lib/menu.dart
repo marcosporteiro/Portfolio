@@ -44,7 +44,7 @@ class Menu extends StatelessWidget {
                 posi: 4),
             Container(
               constraints: BoxConstraints(minHeight: 20),
-              height: MediaQuery.of(context).size.height - 650,
+              height: MediaQuery.of(context).size.height - 680,
               width: MediaQuery.of(context).size.width,
             ),
             Container(

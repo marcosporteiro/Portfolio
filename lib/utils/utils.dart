@@ -20,6 +20,7 @@ bool botonClikeado = false;
 ValueNotifier<double> posiScroll = ValueNotifier<double>(0);
 
 ScrollController controlador = ScrollController();
+ScrollController scroll = ScrollController();
 ScrollController controladorHome = ScrollController();
 ScrollController controladorAbout = ScrollController();
 ScrollController controladorCv = ScrollController();

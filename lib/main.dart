@@ -21,6 +21,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: colorTemaMenu,
+        scrollbarTheme: ScrollbarThemeData(
+          interactive: true,
+          isAlwaysShown: false,
+          radius: Radius.circular(2),
+          thumbColor: MaterialStateProperty.all(colorTemaMenu),
+          trackColor: MaterialStateProperty.all(Colors.white),
+        ),
+      ),
       title: "Marcos Porteiro",
       home: MultiProvider(
         providers: [

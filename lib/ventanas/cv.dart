@@ -77,9 +77,7 @@ class Cv extends StatelessWidget {
                     Flex(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      direction: isWideScreen(
-                              MediaQuery.of(context).size.height,
-                              MediaQuery.of(context).size.width)
+                      direction: Responsive.isDesktop(context)
                           ? Axis.horizontal
                           : Axis.vertical,
                       children: [
@@ -128,8 +126,13 @@ class Cv extends StatelessWidget {
                                         Divider(
                                           thickness: 2,
                                           color: colorMenu.withOpacity(0.5),
-                                          indent: 50,
-                                          endIndent: 50,
+                                          indent: Responsive.isDesktop(context)
+                                              ? 100
+                                              : 250,
+                                          endIndent:
+                                              Responsive.isDesktop(context)
+                                                  ? 100
+                                                  : 250,
                                         ),
                                       ],
                                     ),
@@ -157,8 +160,13 @@ class Cv extends StatelessWidget {
                                         ),
                                         Divider(
                                           thickness: 2,
-                                          indent: 50,
-                                          endIndent: 50,
+                                          indent: Responsive.isDesktop(context)
+                                              ? 100
+                                              : 250,
+                                          endIndent:
+                                              Responsive.isDesktop(context)
+                                                  ? 100
+                                                  : 250,
                                           color: colorMenu.withOpacity(0.5),
                                         ),
                                       ],

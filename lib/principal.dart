@@ -26,8 +26,9 @@ class Cuerpo extends State<MyAppBody> {
 
     controlador.addListener(() {
       //print(controlador.position.pixels.round());
-      posi0 = MediaQuery.of(context).size.height * 0;
-      posi1 = MediaQuery.of(context).size.height * 1;
+
+      posi0 = 0;
+      posi1 = MediaQuery.of(context).size.height;
       posi2 = MediaQuery.of(context).size.height * 2;
       posi3 = MediaQuery.of(context).size.height * 3;
       posi4 = MediaQuery.of(context).size.height * 4;

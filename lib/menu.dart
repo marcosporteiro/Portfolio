@@ -228,8 +228,8 @@ class Botones extends State<miBoton> {
                 controlador.animateTo(posi * MediaQuery.of(context).size.height,
                     duration: Duration(milliseconds: 1000),
                     curve: Curves.easeIn);
-                posi0 = MediaQuery.of(context).size.height * 0;
-                posi1 = MediaQuery.of(context).size.height * 1;
+                posi0 = 0;
+                posi1 = MediaQuery.of(context).size.height;
                 posi2 = MediaQuery.of(context).size.height * 2;
                 posi3 = MediaQuery.of(context).size.height * 3;
                 posi4 = MediaQuery.of(context).size.height * 4;

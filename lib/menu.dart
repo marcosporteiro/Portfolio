@@ -22,19 +22,32 @@ class Menu extends StatelessWidget {
         child: Column(
           children: [
             TopMenu(),
-            Botones(idioma.value ? en.boton1 : es.boton1, Icons.home, 0),
-            Botones(idioma.value ? en.boton2 : es.boton2, Icons.person, 1),
-            Botones(idioma.value ? en.boton4 : es.boton4, Icons.description, 2),
-            Botones(idioma.value ? en.boton3 : es.boton3, Icons.collections, 3),
-            Botones(idioma.value ? en.boton5 : es.boton5, Icons.mail, 4),
+            miBoton(
+                texto: idioma.value ? en.boton1 : es.boton1,
+                icono: Icons.home,
+                posi: 0),
+            miBoton(
+                texto: idioma.value ? en.boton2 : es.boton2,
+                icono: Icons.person,
+                posi: 1),
+            miBoton(
+                texto: idioma.value ? en.boton4 : es.boton4,
+                icono: Icons.description,
+                posi: 2),
+            miBoton(
+                texto: idioma.value ? en.boton3 : es.boton3,
+                icono: Icons.collections,
+                posi: 3),
+            miBoton(
+                texto: idioma.value ? en.boton5 : es.boton5,
+                icono: Icons.mail,
+                posi: 4),
             Container(
-              //color: Colors.red,
               constraints: BoxConstraints(minHeight: 20),
               height: MediaQuery.of(context).size.height - 650,
               width: MediaQuery.of(context).size.width,
             ),
             Container(
-              //color: Colors.white,
               height: 50,
               width: MediaQuery.of(context).size.width,
               child: Row(
@@ -125,12 +138,36 @@ Color getColor(int posi) {
   }
 }
 
-class Botones extends StatelessWidget {
-  Botones(this.texto, this.icono, this.posi, {Key? key}) : super(key: key);
+class miBoton extends StatefulWidget {
+  final String texto;
+  final IconData icono;
+  final double posi;
+
+  miBoton(
+      {Key? key, required this.texto, required this.icono, required this.posi})
+      : super(key: key);
+
+  @override
+  Botones createState() => Botones(texto: texto, icono: icono, posi: posi);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+class Botones extends State<miBoton> {
+  Botones({required this.texto, required this.icono, required this.posi});
 
   final IconData icono;
   final double posi;
   final String texto;
+
+  @override
+  void initState() {
+    posiScroll.addListener(() {
+      setState(() {
+        // ignore: unnecessary_statements
+        miBoton;
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

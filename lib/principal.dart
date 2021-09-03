@@ -24,24 +24,6 @@ class Cuerpo extends State<MyAppBody> {
       });
     });
 
-    posiScroll.addListener(() {
-      setState(() {
-        // ignore: unnecessary_statements
-        Botones;
-      });
-    });
-
-    /*
-
-    animar.addListener(() {
-      setState(() {
-        // ignore: unnecessary_statements
-        Cuerpo;
-      });
-    });
-
-    */
-
     controlador.addListener(() {
       //print(controlador.position.pixels.round());
       posi0 = MediaQuery.of(context).size.height * 0;
@@ -66,6 +48,15 @@ class Cuerpo extends State<MyAppBody> {
         posiScroll.value = 4;
       }
     });
+
+    /*
+    animar.addListener(() {
+      setState(() {
+        // ignore: unnecessary_statements
+        Cuerpo;
+      });
+    });
+    */
   }
 
   @override
@@ -74,7 +65,6 @@ class Cuerpo extends State<MyAppBody> {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        //color: Colors.red,
         child: Container(
           color: colorNegroFondo,
           child: Row(

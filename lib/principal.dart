@@ -24,6 +24,13 @@ class Cuerpo extends State<MyAppBody> {
       });
     });
 
+    posiScroll.addListener(() {
+      setState(() {
+        // ignore: unnecessary_statements
+        Botones;
+      });
+    });
+
     /*
 
     animar.addListener(() {
@@ -34,9 +41,8 @@ class Cuerpo extends State<MyAppBody> {
     });
 
     */
-/*
+
     controlador.addListener(() {
-      
       //print(controlador.position.pixels.round());
       posi0 = MediaQuery.of(context).size.height * 0;
       posi1 = MediaQuery.of(context).size.height * 1;
@@ -44,42 +50,22 @@ class Cuerpo extends State<MyAppBody> {
       posi3 = MediaQuery.of(context).size.height * 3;
       posi4 = MediaQuery.of(context).size.height * 4;
 
-      if (posi0.round() <= (controlador.position.pixels).round()) {
-        posiScroll = 0;
-        setState(() {
-          // ignore: unnecessary_statements
-          Botones;
-        });
+      if (posi0.round() <= (controlador.position.pixels.round())) {
+        posiScroll.value = 0;
       }
       if (posi1 <= controlador.position.pixels.round()) {
-        posiScroll = 1;
-        setState(() {
-          // ignore: unnecessary_statements
-          Botones;
-        });
+        posiScroll.value = 1;
       }
       if (posi2.round() <= controlador.position.pixels.round()) {
-        posiScroll = 2;
-        setState(() {
-          // ignore: unnecessary_statements
-          Botones;
-        });
+        posiScroll.value = 2;
       }
       if (posi3.round() <= controlador.position.pixels.round()) {
-        posiScroll = 3;
-        setState(() {
-          // ignore: unnecessary_statements
-          Botones;
-        });
+        posiScroll.value = 3;
       }
       if (posi4.round() <= controlador.position.pixels.round()) {
-        posiScroll = 4;
-        setState(() {
-          // ignore: unnecessary_statements
-          Botones;
-        });
+        posiScroll.value = 4;
       }
-    });*/
+    });
   }
 
   @override

@@ -6,6 +6,7 @@ import 'package:mipagina/utils/colores.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 ValueNotifier<bool> idioma = ValueNotifier<bool>(false);
+
 ValueNotifier<int> animar = ValueNotifier<int>(0);
 
 double posi0 = 0;
@@ -13,9 +14,10 @@ double posi1 = 0;
 double posi2 = 0;
 double posi3 = 0;
 double posi4 = 0;
+
 bool botonClikeado = false;
 
-double posiScroll = 0;
+ValueNotifier<double> posiScroll = ValueNotifier<double>(0);
 
 ScrollController controlador = ScrollController();
 ScrollController controladorHome = ScrollController();

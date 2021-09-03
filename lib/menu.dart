@@ -110,7 +110,7 @@ class Menu extends StatelessWidget {
 }
 
 bool activo(int posi) {
-  if (posi == posiScroll) {
+  if (posi == posiScroll.value) {
     return true;
   } else {
     return false;

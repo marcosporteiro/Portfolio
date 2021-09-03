@@ -151,7 +151,6 @@ class miBoton extends StatefulWidget {
   Botones createState() => Botones(texto: texto, icono: icono, posi: posi);
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////
 class Botones extends State<miBoton> {
   Botones({required this.texto, required this.icono, required this.posi});
 
